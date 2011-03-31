@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+/* PROUDLYMADEINCHILE */
+/* Development by Continuum Chile*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
+var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+center, u, b, i {
+	margin: 0;
+	padding: 0;
+	font-weight:normal;
+}
+
+strong {
+	font-weight:normal;
+}
+
+
+@font-face {
+	font-family: Condensada;
+ 	src: url('condensed.otf');
+}
+
+@font-face {
+	font-family: CondensadaBold;
+ 	src: url('condensed-bold.otf');
+}
+
+@font-face {
+	font-family: CondensadaExtraBold;
+ 	src: url('condensed-black.otf');
+}
+
+@font-face {
+	font-family: CondensadaComapcta;
+ 	src: url('condensed-compact.otf');
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+}
+
+.no-mostrar{
+	display:none;
+}
+
