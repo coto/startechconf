@@ -1,0 +1,27 @@
+{% extends "templates/base.html" %}
+
+{% block title %}StarTechConf{% endblock %}
+
+{% block article %}
+
+Same URL? 
+Post or Get?
+
+<ul>
+	{% for register in registers %}
+	
+	<li>{{ register.email }} - {{ register.when }} - IP</li>
+	{% endfor %}
+	
+</ul>
+
+{{ count }}
+
+<form method="post">
+<label>email <input name="email" /></label>
+
+<input type="submit" value="Registrar!" />
+
+</form>
+
+{% endblock %}
