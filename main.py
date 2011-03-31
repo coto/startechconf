@@ -86,16 +86,16 @@ class RegisterHandler(webapp.RequestHandler):
 			self.response.out.write("""doh! Please try to insert a valid email address, c'mon you can.<p><a href="/">Try again</a></p>""")
 			return
 		# Bot identifier
-		registers = db.GqlQuery(
-			"SELECT * FROM Register "
-			"WHERE remote_addr = :1", ip)
-		bot = registers.count()
-		if bot >= 3:
-			self.response.out.write("""<p>I'm sorry, but are you sure that you are not a Bot?</p> 
-			<p>We know you'd love to attend, but take it easy, one pre-register is enough.</p>
-			<p><a href="/">Go home</a></p>
-			""")
-			return
+		#registers = db.GqlQuery(
+		#	"SELECT * FROM Register "
+		#	"WHERE remote_addr = :1", ip)
+		#bot = registers.count()
+		#if bot >= 3:
+		#	self.response.out.write("""<p>I'm sorry, but are you sure that you are not a Bot?</p> 
+		#	<p>We know you'd love to attend, but take it easy, one pre-register is enough.</p>
+		#	<p><a href="/">Go home</a></p>
+		#	""")
+		#	return
 		# Already regitered identifier
 		registers = db.GqlQuery(
 			"SELECT * FROM Register "
@@ -120,7 +120,12 @@ class RegisterHandler(webapp.RequestHandler):
 		
 		#External 
 		message.to = email
-		message.body = "Hey, Thank you for preregister, keep following our twitter (@startech2011) in order to know when Inscriptions will be open."
+		message.body = """<p>Hey, Thank you for preregistering, keep following our twitter (<a href="http://twitter.com/startech2011">@startech2011</a>) 
+		in order to know when Inscriptions will be open.</p>
+		<br/><br/>
+		<p>Gracias por preregistrarte en StarTech Conference, sigue nuestro Twitter (<a href="http://twitter.com/startech2011">@startech2011</a>) 
+		para saber cuando las inscripciones serán abiertas.</p>
+		"""
 		message.send()
 		
 		register = Register(
