@@ -71,15 +71,30 @@ class RegisterHandler(webapp.RequestHandler):
 		ip = self.request.remote_addr
 		now = datetime.datetime.now()
 		email = self.request.get("email")
+		gohome = '<p><a href="/">Go home</a></p>'
 		registers = db.GqlQuery(
 			"SELECT * FROM Register "
-			"WHERE remote_addr = '127.0.0.1'")
+			"WHERE remote_addr = :1", ip)
 		bot = registers.count()
-		if bot > 5:
-			self.response.out.write("I'm sorry, but are you sure that you are not a Bot? \n\nWe know you'd love to attend, but take it easy, one pre-register is enough.")
+		if bot >= 3:
+			self.response.out.write("""<p>I'm sorry, but are you sure that you are not a Bot?</p> 
+			<p>We know you'd love to attend, but take it easy, one pre-register is enough.</p>
+			<p><a href="/">Go home</a></p>
+			""")
 			return
+		registers = db.GqlQuery(
+			"SELECT * FROM Register "
+			"WHERE email = :1", email)
+		bot = registers.count()
+		if bot >= 1:
+			self.response.out.write("""<p>You are already registered. 
+			Thank you and follow our twitter (<a href="http://www.twitter.com/startech2011">@startech2011</a>)</p>
+			<p><a href="/">Go home</a></p>
+			""")
+			return
+		
 		if not isAddressValid(email):
-			self.response.out.write("doh! Please try to insert a valid email address, c'mon you can." + str(bot))
+			self.response.out.write("""doh! Please try to insert a valid email address, c'mon you can.<p><a href="/">Try again</a></p>""")
 			return
 		message = mail.EmailMessage()
 		message.sender = "contact@startechconf.com"
@@ -101,14 +116,12 @@ class RegisterHandler(webapp.RequestHandler):
 			remote_addr = ip
 		)
 		register.put()
-		self.response.out.write(temp)
-		#self.redirect("/register")
+		self.redirect("/?registered=ok")
 
 
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
-		('/[R|r]egister', RegisterHandler)
 	], debug=True)
     util.run_wsgi_app(application)
 
