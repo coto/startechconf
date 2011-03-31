@@ -41,6 +41,10 @@ class Register(db.Model):
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
+		registers = db.GqlQuery(
+			'SELECT * FROM Register '
+			'ORDER BY when DESC')
+		count = registers.count()
 		uastring = self.request.user_agent
 		ip = self.request.remote_addr
 		now = datetime.datetime.now()
@@ -52,26 +56,34 @@ class MainHandler(webapp.RequestHandler):
 			'ip': ip,
 			'user': user,
 			'path' : path,
+			'count': count
 		}
 		self.response.out.write(
-			template.render('comingsoon.html', params))
+			template.render('index.html', params))
 
 class RegisterHandler(webapp.RequestHandler):
 	def get(self):
-		registers = db.GqlQuery(
-			'SELECT * FROM Register '
-			'ORDER BY when DESC')
-		count = registers.count()
-		values = {
-			'registers': registers,
-			'count': count
-		}
-		self.response.out.write(template.render('register.html', values))
+		#registers = db.GqlQuery(
+		#	'SELECT * FROM Register '
+		#	'ORDER BY when DESC')
+		#count = registers.count()
+		#values = {
+		#	'registers': registers,
+		#	'count': count
+		#}
+		#self.response.out.write(template.render('register.html', values))
+		self.redirect("/")
 	def post(self):
+		if not self.request.referer.find("://localhost") < 5 or not self.request.referer.find("startechconf.com") < 10:
+			self.redirect("/")
+			return
 		ip = self.request.remote_addr
 		now = datetime.datetime.now()
 		email = self.request.get("email")
-		gohome = '<p><a href="/">Go home</a></p>'
+		if not isAddressValid(email):
+			self.response.out.write("""doh! Please try to insert a valid email address, c'mon you can.<p><a href="/">Try again</a></p>""")
+			return
+		# Bot identifier
 		registers = db.GqlQuery(
 			"SELECT * FROM Register "
 			"WHERE remote_addr = :1", ip)
@@ -82,6 +94,7 @@ class RegisterHandler(webapp.RequestHandler):
 			<p><a href="/">Go home</a></p>
 			""")
 			return
+		# Already regitered identifier
 		registers = db.GqlQuery(
 			"SELECT * FROM Register "
 			"WHERE email = :1", email)
@@ -93,9 +106,6 @@ class RegisterHandler(webapp.RequestHandler):
 			""")
 			return
 		
-		if not isAddressValid(email):
-			self.response.out.write("""doh! Please try to insert a valid email address, c'mon you can.<p><a href="/">Try again</a></p>""")
-			return
 		message = mail.EmailMessage()
 		message.sender = "contact@startechconf.com"
 		message.subject = "StarTechConf - Preregister"
@@ -122,6 +132,7 @@ class RegisterHandler(webapp.RequestHandler):
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
+		('/[R|r]egister', RegisterHandler)
 	], debug=True)
     util.run_wsgi_app(application)
 
