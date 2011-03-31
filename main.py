@@ -44,22 +44,24 @@ class MainHandler(webapp.RequestHandler):
 		registers = db.GqlQuery(
 			'SELECT * FROM Register '
 			'ORDER BY when DESC')
-		count = registers.count()
 		uastring = self.request.user_agent
-		ip = self.request.remote_addr
-		now = datetime.datetime.now()
-		user = users.get_current_user()
-		path = self.request.path
+		if self.request.get("hl") == "":
+			hl = "en"
+		else:
+			hl = self.request.get("hl")
 		params = {
 			'device': 'desktop',
 			'uastring': uastring,
-			'ip': ip,
-			'user': user,
-			'path' : path,
-			'count': count
+			'path' : self.request.path,
+			'count': registers.count(),
+			'hl': hl
 		}
-		self.response.out.write(
-			template.render('index.html', params))
+		if hl == "es":
+			self.response.out.write(
+				template.render('index-es.html', params))
+		else:
+			self.response.out.write(
+				template.render('index.html', params))
 
 class RegisterHandler(webapp.RequestHandler):
 	def get(self):
