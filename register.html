@@ -7,10 +7,9 @@
 Same URL? 
 Post or Get?
 
-<ul>
 	{% for register in registers %}
 	
-	<li>{{ register.email }} - {{ register.when }} - IP</li>
+	<li>{{ register.email }} - {{ register.when }} - {{ register.remote_addr }}</li>
 	{% endfor %}
 	
 </ul>
