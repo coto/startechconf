@@ -13,12 +13,11 @@
 		<div id="main-nav">
 				<div class="block-content">
 						<ul id="menu">
-								<li><a href="#">Info</a>
-								<li><a href="#">Expositores</a>
-								<li><a href="#">Charlistas</a>
-								<li><a href="#">Sponsors</a>
+								<li><a href="/">{{ lang.menu_home }}</a>
+								<li><a href="/#keynoters">{{ lang.menu_speakers }}</a>
+								<li><a href="/#sponsors">{{ lang.menu_sponsors }}</a>
 						</ul>
-						<div id="select-language"> <span>Choose your Language</span> <a href="/?hl=es" class="spanish" title="Español">Espa&ntilde;ol</a> <a href="/?hl=en" class="english" title="Inglés">Ingl&eacute;s</a> </div>
+						<div id="select-language"> <span>{{lang.choose_your_language}}</span> <a href="/?hl=es" class="spanish" title="{{lang.spanish}}">{{lang.spanish}}</a> <a href="/?hl=en" class="english" title="{{lang.english}}">{{lang.english}}</a> </div>
 				</div>
 		</div>
 		<div class="title-header">
@@ -27,36 +26,32 @@
 								<h1>STARTECHCONF Santiago Chile 2011</h1>
 						</div>
 						<div id="counter">
-								<p>Ya somos</p>
+								<p>{{lang.we_are}}</p>
 								<p class="numbers">{{ count }}</p>
 						</div>
 						<div class="preinscription-block">
-								<button id="action-open-register"> PRE-REGISTER </button>
-								<p>get 30% off</p>
+								<button id="action-open-register"> {{lang.pre_register_btn}} </button>
+								<p>{{lang.get_discount}}</p>
 						</div>
 				</div>
 		</div>
 		<div class="subtitle-header">
 				<div class="block-content">
-						<h2> 48 horas y el mayor <span>evento de tecnolog&iacute;a </span>en Chile </h2>
+						<h2>{{lang.event_title}}</h2>
 				</div>
 		</div>
 </div>
 <div class="content-section" id="resume">
 		<div class="block-content">
-				<p>Hey, <strong>programadores, ingenieros, diseñadores y estudiantes</strong>, juntemosnos
-por dos días y escuchemos a algunos de los mejores exponentes locales
- y de nivel mundial hablar de tecnologías como <strong>HTML5, CSS3,
-Javascript, Ruby, Java, Python</strong>, y otras.</p>
-				<p>Serán dos intensos días de aprendizaje e intercambio de conocimientos.
-Aprovecha la oportunidad de obtener un cupón con un <strong>precio
-promocional.</strong></p>
+		    <p class="date">{{lang.when}}</p>
+				<p>{{lang.event_desc_p1}}</p>
+				<p>{{lang.event_desc_p2}}</strong></p>
 		</div>
 </div>
 <div class="content-section bg-on" id="keynoters">
 		<div class="block-content">
-			<h3>Charlistas</h3>
-			<p class="phrase">9 estrellas mundiales como keynoters</p>
+			<h3>{{lang.speakers_title}}</h3>
+			<p class="phrase">{{lang.speakers_desc}}</p>
 				<div class="allkeynoters">
 						<div class="keynoter">
 								<div class="photo-keynoter"> <img src="media/images/keynoters/rey_bango.jpg" alt="Rey Bango"> </div>
@@ -108,7 +103,7 @@ promocional.</strong></p>
 </div>
 <div class="content-section bg-off last" id="sponsors">
 		<div class="block-content">
-				<h3>Auspiciadores</h3>
+				<h3>{{lang.sponsors_title}}</h3>
 				<div class="sponsor-content">
 					<div class="sponsor-block platinum">
 						<h4>Platinuum</h4>
@@ -118,14 +113,19 @@ promocional.</strong></p>
 						<h4>Golden</h4>
 						<div class="sponsors-list"> </div>
 				</div>
-				<p> <strong>&iquest;Quieres ser auspiciador?</strong> Escríbenos un mail a <a href="mailto:contact@startechconf.com">contact@startechconf.com</a></p>
+				<p> <strong>{{lang.want_to_be_sponsor}}</strong> {{ .send_us_an_email_to}} <strong>contact@startechconf.com</strong> </p>
 				</div>
 		</div>
 </div>
 
 <div id="footer">
 		<div class="block-content">
-				<p class="social"> <a href="http://www.facebook.com/startechconf" title="Facebook" class="facebook">Facebook</a> <a href="http://www.twitter.com/startech2011" title="Twitter" class="twitter">Twitter</a> </p>
+		    <p class="copyright"> &copy; 2011 All rights reserved.</p>
+				<p class="social">
+				  <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2FStarTechConf&amp;layout=button_count&amp;show_faces=false&amp;width=124&amp;action=like&amp;font=verdana&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:124px; height:21px;" allowTransparency="true"></iframe>
+				  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://startechconf.com" data-text="Star Tech Conference 2011" data-count="horizontal" data-via="StarTech2011" data-related="StartTech2011">Tweet</a>
+				  <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+				  <a href="http://www.twitter.com/startech2011" title="Twitter" class="twitter">Twitter</a> </p>
 				<div class="clearfix"></div>
 		</div>
 </div>
@@ -133,19 +133,33 @@ promocional.</strong></p>
 <div class="modal" id="register">
 		<div class="modal-border"></div>
 		<div class="modal-content">
-				<h3>Preregistro</h3>
-				<p>Ingresa tu e-mail y recibirás información actualizada y las indicaciones para obtener el descuento</p>
+				<h3>{{lang.pre_register_popup_title}}</h3>
+				<p>{{lang.pre_register_popup_desc}}</p>
 				<div class="content-register">
 						<div class="to-mail">
 							<form action="/register" method="post">
 								<input type="email" name="email" class="box" autofocus required placeholder="user@example.com"><br>
-								<input type="submit" name="registrarme" value="Preinscribirme" class="button">
-								<a href="#" class="action-close-register">Cancelar</a>
+								<input type="submit" name="registrarme" value="{{lang.pre_register_popup_ok_btn}}" class="button">
+								<a href="#" class="action-close-register">{{lang.pre_register_popup_cancel_btn}}</a>
 							</form>
 						</div>
 				</div>
 		</div>
 </div>
+
+{% if msg %}
+<div class="modal" id="msg">
+		<div class="modal-border-error"></div>
+		<div class="modal-content">
+				<h3>{% if is_error %} ERROR {% else %} {{lang.message_title}} {% endif %}</h3>
+				<p>{{msg}}</p>
+				<div class="content-register">
+					<input type="submit" name="Ok" value="Ok" class="button action-close-register" />
+				</div>
+		</div>
+</div>
+{% endif %}
+
 <!-- Mask to cover the whole screen --> 
 <div id="mask"></div>
 {% endblock %}
