@@ -17,8 +17,8 @@ en["event_title"] = "48 hours and the <span>biggest tech conference </span>in Ch
 
 en["when"] = "Coming in November(ish), 2011 @ Santiago de Chile"
 
-en["event_desc_p1"] = "Hey, <strong> programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best locals and globals technology speakers talking about <strong> HTML5, CSS3, Javascript, Ruby, Java, Python, </strong> and others."
-en["event_desc_p2"] = "There will be two days of intense learning and knowledge sharing. Don't miss the opportunity to get a promotional price <strong>."
+en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best local and global technology experts talk about <strong>HTML5, CSS3, Javascript, Ruby, Java, Python,</strong> and more."
+en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
 en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Nine rock stars as keynoters"
 
@@ -65,8 +65,8 @@ es["event_title"] = "48 horas y el mayor <span>evento de tecnolog&iacute;a </spa
 
 es["when"] = "Pr&oacute;ximamente, Noviembre 2011 @ Santiago de Chile"
 
-es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, juntemosnos por dos d&iacute;as y escuchemos a algunos de los mejores exponentes locales y de nivel mundial hablar de tecnolog&iacute;as como <strong>HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, y otras."
-es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos. Aprovecha la oportunidad de obtener un cup&oacute;n con un <strong>precio promocional."
+es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, juntemosnos por dos d&iacute;as y escuchemos a algunos de los mejores exponentes locales y de nivel mundial hablar de tecnolog&iacute;as como <strong>HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, y m&aacute;s."
+es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Nueve estrellas mundiales como keynoters"
 
