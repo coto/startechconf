@@ -586,11 +586,10 @@ p.date {
 
 #footer .social{
 	float:right;
-	width:49%;
 	text-align:right;
 	overflow:hidden;
-	padding: 6px 5px 0 0;
-	width:55%
+	padding: 0 5px 5px 0;
+	width:42%;
 }
 
 #footer .social a{
@@ -605,10 +604,14 @@ p.date {
 
 #footer .social span {
 	margin-top: 3px;
+	display: block;
+	float: left;
 }
 
 #footer .social span.like {
-	margin-top: 3px;
+	display: block;
+	padding-top: 3px;
+	width: 230px;
 }
 
 #footer  .facebook{
