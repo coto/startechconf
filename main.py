@@ -26,8 +26,6 @@ from google.appengine.ext.webapp \
 from google.appengine.ext.webapp.util import login_required
 from string import *
 
-import logging
-import Cookie
 import languages
 
 rfc822_specials = '()<>@,;:\\"[]'
