@@ -132,11 +132,10 @@ class RegisterHandler(webapp.RequestHandler):
 		
 				#External 
 				message.to = email
-				message.body = """<p>Hey, Thank you for preregistering, keep following our twitter: http://twitter.com/startech2011
-				in order to know when Inscriptions will be open.</p>
-				<br/><br/>
-				<p>Gracias por preregistrarte en StarTech Conference, sigue nuestro twitter: http://twitter.com/startech2011
-				para saber cuando van a abrise las inscripciones.</p>
+				message.body = """Hey, Thank you for preregistering, keep following our twitter: http://twitter.com/startech2011
+				in order to know when inscriptions will be open.\n\n
+				Gracias por preregistrarte en StarTech Conference, sigue nuestro twitter: http://twitter.com/startech2011
+				para saber cuando van a abrise las inscripciones.
 				"""
 				message.send()
 				register = Register(
