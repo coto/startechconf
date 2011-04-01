@@ -37,7 +37,7 @@ en["successfuly_registered"] = "Thank you, You were successfully registered. Che
 en["invalid_email_address"] = "Pleae enter a valid email address"
 
 en["registered_email_subject"] = "You are Signed up for StarTechConf Conference Event Notifications"
-en["registered_email_body"] = "Thank you for your interest in StarTechConf being hosted in Santiago, Chile!.\n\n We're finalizing all the conference details and will contact you as soon as we're ready to take early bird registrations. In the meantime, be sure to follow us on Twitter for the latest information on the conference: http://twitter.com/startech2011. \n\nThis also gives you time to ensure that a 30% discount is viable once you've put together your final budget. \n\nStarTechConf Team."
+en["registered_email_body"] = "Thank you for your interest in StarTechConf being hosted in Santiago, Chile!.\n\n We're finalizing all the conference details and will contact you as soon as we're ready to take early bird registrations. In the meantime, be sure to follow us on Twitter for the latest information on the conference: http://twitter.com/startechconf. \n\nThis also gives you time to ensure that a 30% discount is viable once you've put together your final budget. \n\nStarTechConf Team."
 
 en["speaker_ReyBango"] = "Client-Web Community Program Manager for Microsoft and member of the jQuery Team. Editor of ScriptJunkier.com"
 en["speaker_CharlesNutter"] = "Creator of JRuby language. Recognized Java developer. JRuby developer at Engine Yard."
@@ -88,7 +88,7 @@ es["successfuly_registered"] = "Gracias, has sido registrado exitosamente. Revis
 es["invalid_email_address"] = "Ingresa una direcci&oacute;n de email v&aacute;lida"
 
 es["registered_email_subject"] = "Te has registrado para la Conferencia StarTechConf"
-es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso de inscripcion. Entre medio asegurate de seguirnos en twitter para mantenerte actualizado: http://twitter.com/startech2011. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
+es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso de inscripcion. Entre medio asegurate de seguirnos en twitter para mantenerte actualizado: http://twitter.com/startechconf. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
 
 es["speaker_ReyBango"] = "Miembro del equipo jQuery y Administrador de Programa de Desarrollo Comunitario para Microsoft. Editor de ScriptJunkier.com"
 es["speaker_CharlesNutter"] = "Creador del lenguage JRuby. Reconocido desarrollador Java. Desarrollador JRuby en Engine Yard."
