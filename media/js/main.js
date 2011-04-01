@@ -41,6 +41,7 @@ $(document).ready(function(){
 
 		$('#mask').hide();
 		$(id).hide();
+		location.href="/";
 	});		
 
 	//if mask is clicked
