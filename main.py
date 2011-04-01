@@ -136,7 +136,7 @@ class RegisterHandler(webapp.RequestHandler):
 				in order to know when Inscriptions will be open.</p>
 				<br/><br/>
 				<p>Gracias por preregistrarte en StarTech Conference, sigue nuestro twitter: http://twitter.com/startech2011
-				para saber cuando las inscripciones serán abiertas.</p>
+				para saber cuando van a abrise las inscripciones.</p>
 				"""
 				message.send()
 				register = Register(
