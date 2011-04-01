@@ -313,7 +313,7 @@ body {
 }
 
 .content-section#resume .block-content{
-	padding:66px 0 34px 10px;
+	padding:45px 0 34px 10px;
 	font-size:22px;
 	line-height:26px;
 	color:#fff;
@@ -321,6 +321,11 @@ body {
 	font-family:"Newsgoth-light", Arial, sans-serif;
 	text-shadow:-3px 2px 0 #000;
 	width:970px !important;
+}
+
+p.date {
+	font-size: 30px;
+	font-family:"Newsgoth-bold", Arial, sans-serif;
 }
 
 .content-section#resume .block-content p{
@@ -561,8 +566,9 @@ body {
 
 #footer .copyright{
 	float:left;
-	width:49%;
 	padding-left:6px;
+	width: 40%;
+	margin-top: 8px;
 }
 
 #footer .author{
@@ -575,15 +581,9 @@ body {
 	float:right;
 	width:49%;
 	text-align:right;
-	padding-right:6px;
-}
-
-#footer .social{
-	float:right;
-	width:49%;
-	text-align:right;
-	padding-right:6px;
 	overflow:hidden;
+	padding: 6px 5px 0 0;
+	width:55%
 }
 
 #footer .social a{
@@ -594,6 +594,7 @@ body {
 	float:right;
 	text-indent:10000px;
 	margin-left:3px;
+	margin-top: 2px;
 }
 
 #footer  .facebook{
@@ -640,17 +641,24 @@ body {
 	display: none;
 }
 
-.modal-border{
+.modal-border, .modal-border-error {
 	position:absolute;
 	background:##17202e;
 	opacity:0.8;
-	width: 590px;
-	height:265px;
+	width: 590px;	
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
 	z-index:98;
 	border:20px solid #17202e;
+}
+
+.modal-border {
+	height:265px;
+}
+
+.modal-border-error {
+	height:208px;
 }
 
 .modal-content{

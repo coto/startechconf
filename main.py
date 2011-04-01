@@ -26,6 +26,10 @@ from google.appengine.ext.webapp \
 from google.appengine.ext.webapp.util import login_required
 from string import *
 
+import logging
+import Cookie
+import languages
+
 rfc822_specials = '()<>@,;:\\"[]'
 
 def isAddressValid(email):
@@ -39,107 +43,136 @@ class Register(db.Model):
   when = db.DateTimeProperty(auto_now_add=True)
   remote_addr = db.StringProperty(required=True)
 
+def set_lang_cookie_and_return_dict(request, response):
+	lang_cookie = "en"
+	if request.get("hl") == "":
+		# ask for cookie
+		lang_cookie = request.cookies.get("hl")
+		if not lang_cookie:
+			lang_cookie = "en"
+	else:
+		# set cookie to en
+		lang_cookie = request.get("hl")
+	
+	response.headers.add_header("Set-Cookie", "hl=" + lang_cookie + ";")
+	return languages.en if lang_cookie == "en" else languages.es
+
+def we_are():
+	return db.GqlQuery(
+		'SELECT * FROM Register '
+		'ORDER BY when DESC')		
+
 class MainHandler(webapp.RequestHandler):
-    def get(self):
-		registers = db.GqlQuery(
-			'SELECT * FROM Register '
-			'ORDER BY when DESC')
+	def get(self):
 		uastring = self.request.user_agent
-		if self.request.get("hl") == "":
-			hl = "en"
-		else:
-			hl = self.request.get("hl")
 		params = {
 			'device': 'desktop',
 			'uastring': uastring,
 			'path' : self.request.path,
-			'count': registers.count(),
-			'hl': hl
+			'count': we_are().count(),
+			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
 		}
-		if hl == "es":
-			self.response.out.write(
-				template.render('index-es.html', params))
-		else:
-			self.response.out.write(
-				template.render('index.html', params))
+		self.response.out.write(
+			template.render('index.html', params))
 
 class RegisterHandler(webapp.RequestHandler):
+	
 	def get(self):
-		#registers = db.GqlQuery(
-		#	'SELECT * FROM Register '
-		#	'ORDER BY when DESC')
-		#count = registers.count()
-		#values = {
-		#	'registers': registers,
-		#	'count': count
-		#}
-		#self.response.out.write(template.render('register.html', values))
 		self.redirect("/")
+		
 	def post(self):
+		uastring = self.request.user_agent
 		if not self.request.referer.find("://localhost") < 5 or not self.request.referer.find("startechconf.com") < 10:
 			self.redirect("/")
 			return
+		
+		lang = set_lang_cookie_and_return_dict(self.request, self.response)
+		
 		ip = self.request.remote_addr
 		now = datetime.datetime.now()
 		email = self.request.get("email")
+		
 		if not isAddressValid(email):
-			self.response.out.write("""doh! Please try to insert a valid email address, c'mon you can.<p><a href="/">Try again</a></p>""")
-			return
-		# Bot identifier
-		#registers = db.GqlQuery(
-		#	"SELECT * FROM Register "
-		#	"WHERE remote_addr = :1", ip)
-		#bot = registers.count()
-		#if bot >= 3:
-		#	self.response.out.write("""<p>I'm sorry, but are you sure that you are not a Bot?</p> 
-		#	<p>We know you'd love to attend, but take it easy, one pre-register is enough.</p>
-		#	<p><a href="/">Go home</a></p>
-		#	""")
-		#	return
-		# Already regitered identifier
-		registers = db.GqlQuery(
-			"SELECT * FROM Register "
-			"WHERE email = :1", email)
-		bot = registers.count()
-		if bot >= 1:
-			self.response.out.write("""<p>You are already registered. 
-			Thank you and follow our twitter (<a href="http://www.twitter.com/startech2011">@startech2011</a>)</p>
-			<p><a href="/">Go home</a></p>
-			""")
-			return
+			params = {
+				'device': 'desktop',
+				'uastring': uastring,
+				'path' : self.request.path,
+				'count': we_are().count(),
+				'lang': lang,
+				'msg': lang["invalid_email_address"],
+				'is_error': False				
+			}
+			self.response.out.write(
+				template.render('index.html', params))
+		else:
+			registers = db.GqlQuery(
+				"SELECT * FROM Register "
+				"WHERE email = :1", email)
+			bot = registers.count()
+			if bot >= 1:
+				params = {
+					'device': 'desktop',
+					'uastring': uastring,
+					'path' : self.request.path,
+					'count': we_are().count(),
+					'lang': lang,
+					'msg': lang["already_registered"],
+					'is_error': False
+				}
+				self.response.out.write(
+					template.render('index.html', params))
+			else:		
+				message = mail.EmailMessage()
+				message.sender = "contact@startechconf.com"
+				message.subject = "StarTechConf - Preregister"
 		
-		message = mail.EmailMessage()
-		message.sender = "contact@startechconf.com"
-		message.subject = "StarTechConf - Preregister"
+				# Internal
+				message.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
+				message.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s"\n},' % \
+				          {'email': email, "when": str(now), "remote_addr": ip}
+				message.send()
 		
-		# Internal
-		message.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
-		message.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s"\n},' % \
-		          {'email': email, "when": str(now), "remote_addr": ip}
-		message.send()
-		
-		#External 
-		message.to = email
-		message.body = """<p>Hey, Thank you for preregistering, keep following our twitter (<a href="http://twitter.com/startech2011">@startech2011</a>) 
-		in order to know when Inscriptions will be open.</p>
-		<br/><br/>
-		<p>Gracias por preregistrarte en StarTech Conference, sigue nuestro Twitter (<a href="http://twitter.com/startech2011">@startech2011</a>) 
-		para saber cuando las inscripciones serán abiertas.</p>
-		"""
-		message.send()
-		
-		register = Register(
-			email = email,
-			remote_addr = ip
-		)
-		register.put()
-		self.redirect("/?registered=ok")
+				#External 
+				message.to = email
+				message.body = """<p>Hey, Thank you for preregistering, keep following our twitter: http://twitter.com/startech2011
+				in order to know when Inscriptions will be open.</p>
+				<br/><br/>
+				<p>Gracias por preregistrarte en StarTech Conference, sigue nuestro twitter: http://twitter.com/startech2011
+				para saber cuando las inscripciones serán abiertas.</p>
+				"""
+				message.send()
+				register = Register(
+					email = email,
+					remote_addr = ip
+				)
+				register.put()
+				params = {
+					'device': 'desktop',
+					'uastring': uastring,
+					'path' : self.request.path,
+					'count': we_are().count(),
+					'lang': lang,
+					'msg': lang["successfuly_registered"],
+					'is_error': False
+				}
+				self.response.out.write(
+					template.render('index.html', params))
 
+class OrganizersHandler(webapp.RequestHandler):
+	def get(self):
+		params = {
+			'device': 'desktop',
+			'count': we_are().count(),
+			'path' : self.request.path,
+			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
+		}		
+		self.response.out.write(template.render('organizers.html', params))
 
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
 		('/[R|r]egister', RegisterHandler)
+		#('/[O|o]rganizers', OrganizersHandler)
 	], debug=True)
     util.run_wsgi_app(application)
 
