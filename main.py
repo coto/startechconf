@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import datetime, re
+import datetime, re, languages
 
 from google.appengine.api import mail
 from google.appengine.api import users
@@ -23,12 +23,7 @@ from google.appengine.ext import db
 from google.appengine.ext.webapp \
 	import util, template
 	
-from google.appengine.ext.webapp.util import login_required
 from string import *
-
-import languages
-
-rfc822_specials = '()<>@,;:\\"[]'
 
 def isAddressValid(email):
 	if len(email) > 7:
@@ -40,6 +35,9 @@ class Register(db.Model):
   email = db.StringProperty(required=True)
   when = db.DateTimeProperty(auto_now_add=True)
   remote_addr = db.StringProperty(required=True)
+
+def get_device():
+	return "desktop"
 
 def set_lang_cookie_and_return_dict(request, response):
 	lang_cookie = "en"
@@ -64,7 +62,7 @@ class MainHandler(webapp.RequestHandler):
 	def get(self):
 		uastring = self.request.user_agent
 		params = {
-			'device': 'desktop',
+			'device': get_device(),
 			'uastring': uastring,
 			'path' : self.request.path,
 			'count': we_are().count(),
@@ -92,7 +90,7 @@ class RegisterHandler(webapp.RequestHandler):
 		
 		if not isAddressValid(email):
 			params = {
-				'device': 'desktop',
+				'device': get_device(),
 				'uastring': uastring,
 				'path' : self.request.path,
 				'count': we_are().count(),
@@ -144,7 +142,7 @@ class RegisterHandler(webapp.RequestHandler):
 				)
 				register.put()
 				params = {
-					'device': 'desktop',
+					'device': get_device(),
 					'uastring': uastring,
 					'path' : self.request.path,
 					'count': we_are().count(),
@@ -158,7 +156,7 @@ class RegisterHandler(webapp.RequestHandler):
 class OrganizersHandler(webapp.RequestHandler):
 	def get(self):
 		params = {
-			'device': 'desktop',
+			'device': get_device(),
 			'count': we_are().count(),
 			'path' : self.request.path,
 			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
@@ -168,7 +166,7 @@ class OrganizersHandler(webapp.RequestHandler):
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
-		('/[R|r]egister', RegisterHandler)
+		('/[R|r]egister', RegisterHandler),
 		#('/[O|o]rganizers', OrganizersHandler)
 	], debug=True)
     util.run_wsgi_app(application)
