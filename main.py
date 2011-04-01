@@ -25,6 +25,8 @@ from google.appengine.ext.webapp \
 	
 from string import *
 
+import logging
+
 def isAddressValid(email):
 	if len(email) > 7:
 		if re.match("^.+\\@(\\[?)[a-zA-Z0-9\\-\\.]+\\.([a-zA-Z]{2,3}|[0-9]{1,3})(\\]?)$", email) != None:
@@ -120,7 +122,9 @@ class RegisterHandler(webapp.RequestHandler):
 			else:		
 				message = mail.EmailMessage()
 				message.sender = "contact@startechconf.com"
-				message.subject = "StarTechConf - Preregister"
+				message.subject = lang["registered_email_subject"]
+				
+				logging.info(lang["registered_email_subject"])
 		
 				# Internal
 				message.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
@@ -130,11 +134,10 @@ class RegisterHandler(webapp.RequestHandler):
 		
 				#External 
 				message.to = email
-				message.body = """Hey, Thank you for preregistering, keep following our twitter: http://twitter.com/startech2011
-				in order to know when inscriptions will be open.\n\n
-				Gracias por preregistrarte en StarTech Conference, sigue nuestro twitter: http://twitter.com/startech2011
-				para saber cuando van a abrise las inscripciones.
-				"""
+				message.body = lang["registered_email_body"]
+				
+				logging.info(logging.info(lang["registered_email_body"]))
+				
 				message.send()
 				register = Register(
 					email = email,
