@@ -122,23 +122,20 @@ class RegisterHandler(webapp.RequestHandler):
 			else:		
 				message = mail.EmailMessage()
 				message.sender = "contact@startechconf.com"
-				message.subject = lang["registered_email_subject"]
 				
-				logging.info(lang["registered_email_subject"])
-		
 				# Internal
+				message.subject = "StarTechConf - Preregister"
 				message.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
 				message.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s"\n},' % \
 				          {'email': email, "when": str(now), "remote_addr": ip}
 				message.send()
 		
 				#External 
+				message.subject = lang["registered_email_subject"]
 				message.to = email
 				message.body = lang["registered_email_body"]
-				
-				logging.info(logging.info(lang["registered_email_body"]))
-				
 				message.send()
+				
 				register = Register(
 					email = email,
 					remote_addr = ip
