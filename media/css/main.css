@@ -153,8 +153,9 @@ body {
 	text-align:right;
 	margin-left:715px;
 	margin-top:-25px;
-	padding:20px 15px 18px 35px;
 	text-align:center;
+	padding: 20px 0 18px 0;
+	width: 275px;			
 }
 
 .preinscription-block p{
@@ -163,7 +164,8 @@ body {
 	font-size:15px;
 	font-family:"Newsgoth-bold", Arial, sans-serif;
 	line-height:25px;
-	margin-top:8px;
+	margin-top:10px;
+	padding-left: 17px;
 }
 
 .preinscription-block button{
@@ -181,6 +183,8 @@ body {
 	box-shadow:-1px 1px 10px #000000;
 	-moz-box-shadow:-1px 1px 10px #000000;
 	-webkit-box-shadow:-1px 1px 10px #000000;
+	margin-left: 16px;
+	width: 200px;	
 }
 
 .preinscription-block button:hover{
@@ -591,13 +595,20 @@ p.date {
 
 #footer .social a{
 	display:block;
-	width:18px;
-	height:18px;
-	background-image:url(../images/socialfooter.png);
+	width:160px;
+	height:27px;
+	background: url(http://twitter-badges.s3.amazonaws.com/follow_me-b.png) no-repeat;
 	float:right;
 	text-indent:10000px;
 	margin-left:3px;
-	margin-top: 2px;
+}
+
+#footer .social span {
+	margin-top: 3px;
+}
+
+#footer .social span.like {
+	margin-top: 3px;
 }
 
 #footer  .facebook{
