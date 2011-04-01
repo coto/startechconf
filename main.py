@@ -80,7 +80,7 @@ class RegisterHandler(webapp.RequestHandler):
 		
 	def post(self):
 		uastring = self.request.user_agent
-		if not self.request.referer.find("://localhost") < 5 or not self.request.referer.find("startechconf.com") < 10:
+		if self.request.referer.find("http://localhost") == -1 and self.request.referer.find("http://www.startechconf.com/") == -1:
 			self.redirect("/")
 			return
 		
@@ -119,28 +119,31 @@ class RegisterHandler(webapp.RequestHandler):
 				}
 				self.response.out.write(
 					template.render('index.html', params))
-			else:		
-				message = mail.EmailMessage()
-				message.sender = "contact@startechconf.com"
-				
-				# Internal
-				message.subject = "StarTechConf - Preregister"
-				message.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
-				message.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s"\n},' % \
-				          {'email': email, "when": str(now), "remote_addr": ip}
-				message.send()
-		
-				#External 
-				message.subject = lang["registered_email_subject"]
-				message.to = email
-				message.body = lang["registered_email_body"]
-				message.send()
-				
+			else:
 				register = Register(
 					email = email,
 					remote_addr = ip
 				)
 				register.put()
+				
+				# Internal
+				message_to_admin = mail.EmailMessage()
+				message_to_admin.sender = "contact@startechconf.com"
+				message_to_admin.subject = "StarTechConf - Preregister"
+				message_to_admin.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
+				message_to_admin.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s"\n},' % \
+				          {'email': email, "when": str(now), "remote_addr": ip}
+				message_to_admin.send()
+		
+				
+				#External
+				message_to_user = mail.EmailMessage()
+				message_to_user.sender = "contact@startechconf.com"
+				message_to_user.subject = lang["registered_email_subject"]
+				message_to_user.to = email
+				message_to_user.body = lang["registered_email_body"]
+				message_to_user.send()
+				
 				params = {
 					'device': get_device(),
 					'uastring': uastring,
