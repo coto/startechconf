@@ -53,7 +53,12 @@ def set_lang_cookie_and_return_dict(request, response):
 		lang_cookie = request.get("hl")
 	
 	response.headers.add_header("Set-Cookie", "hl=" + lang_cookie + ";")
-	return languages.en if lang_cookie == "en" else languages.es
+	lang = {
+	  'en': languages.en,
+	  'es': languages.es,
+	  'pt': languages.pt
+	}[lang_cookie]
+	return lang
 
 def we_are():
 	return db.GqlQuery(
@@ -140,8 +145,14 @@ class RegisterHandler(webapp.RequestHandler):
 				message_to_user = mail.EmailMessage()
 				message_to_user.sender = "contact@startechconf.com"
 				message_to_user.subject = lang["registered_email_subject"]
+				
+				logging.info(message_to_user.subject)
+				
 				message_to_user.to = email
 				message_to_user.body = lang["registered_email_body"]
+				
+				logging.info(message_to_user.body)
+				
 				message_to_user.send()
 				
 				params = {

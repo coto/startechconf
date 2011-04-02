@@ -68,7 +68,7 @@ es["event_title"] = "48 horas y el mayor <span>evento de tecnolog&iacute;a </spa
 
 es["when"] = "Pr&oacute;ximamente, Noviembre 2011 @ Santiago de Chile"
 
-es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores exponentes locales y de nivel mundial hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, y m&aacute;s."
+es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores locales y de nivel mundial hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, y m&aacute;s."
 es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Nueve estrellas mundiales como keynoters"
@@ -99,3 +99,57 @@ es["speaker_ObieFernandez"] = "L&iacute;der tecnol&oacute;gico mundialmente reco
 es["speaker_GregRewis"] = "Principal evangelista de Adobe Systems. Enfocado en HTML5 y CSS3. Co-Autor de &quot;Mastering CSS with Dreamweaver CS4&quot;."
 es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. Fundador de Compound Thinking"
 es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS and NodeJS."
+
+## portuguese dict
+
+pt = {}
+pt["menu_home"] = "INICIO"
+pt["menu_speakers"] = "PALESTRANTES"
+pt["menu_sponsors"] = "PATROCINADORES"
+pt["menu_organizers"] = "ORGANIZADORES"
+
+pt["choose_your_language"] = "Selecione seu idioma"
+pt["spanish"] = "ESPANHOL"
+pt["english"] = "INGL&Ecirc;S"
+pt["portuguese"] = "PORTUGU&Ecirc;S"
+
+pt["we_are"] = "J&Aacute; SOMOS"
+pt["pre_register_btn"] = "pre-inscri&ccedil;&atilde;o"
+pt["get_discount"] = "Obtenha 30 % de desconto"
+pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
+
+pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
+
+pt["event_desc_p1"] = "Programadores, engenheiros, desenhadores e estudantes, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, e mais."
+pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder"
+pt["speakers_title"] = "Palestrantes"
+
+pt["speakers_desc"] = "Nove estrelas  mundiais como palestrantes principais"
+pt["sponsors_title"] = "Patrocinadores"
+pt["want_to_be_sponsor"] = "Voc&ecirc; quer ser um patrocinador?"
+pt["send_us_an_email_to"] = "Nos escreva um email a:"
+
+pt["rights"] = "Todos os direitos reservados"
+pt["pre_register_popup_title"] = "pre-inscri&ccedil;&atilde;o"
+pt["pre_register_popup_desc"] = "Ingresse seu email para receber informa&ccedil;&atilde;o atualizada e indica&ccedil;&ocirc;es de como obter o desconto"
+
+pt["pre_register_popup_ok_btn"] = "Aceitar"
+pt["pre_register_popup_cancel_btn"] = "Cancelar"
+
+pt["message_title"] = "Mensagem"
+pt["already_registered"] = "J&acirc; estais cadastrado"
+
+pt["successfuly_registered"] = "Foi cadastrado com sucesso. Revise seu mail."
+pt["invalid_email_address"] = "Ingresse uma dire&ccedil;&atilde;o de email v&acirc;lida"
+pt["registered_email_subject"] = "Voce se cadastro na conferencia StarTechConf"
+pt["registered_email_body"] = "Obrigado por querer participar da conferencia StarTechConf a ser realizada em Chile!.\n\nEstamos finalizando todos os detalhes e vamos a entrar em contacto com voce assim que estejam prontas a inscricao.Por enquanto siga nos em twitter para se manter atualizado: http://twitter.com/startechconf.\n\nEstar pre-inscrito lhe garante ter acesso a um 30% de desconto toda vez que os detalhes do preco final estejam prontos.\n\nEquipo da StarTechConf."
+
+pt["speaker_ReyBango"] = "Client-Web Community Program Manager for Microsoft and member of the jQuery Team. Editor of ScriptJunkier.com"
+pt["speaker_CharlesNutter"] = "Creator of JRuby language. Recognized Java developer. JRuby developer at Engine Yard."
+pt["speaker_PaulIrish"] = "Google Chrome and JQuery team member. Leader of some HTML5 and CSS3 libraries like Modernizr."
+pt["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of Mastering CSS with Dreamweaver CS4. Founder of W3Conversions."
+pt["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
+pt["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
+pt["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on HTML5 and CSS3. Co-author of Mastering CSS with Dreamweaver CS4."
+pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. Founder of Compound Thinking."
+pt["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
