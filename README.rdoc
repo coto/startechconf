@@ -1,11 +1,12 @@
 = StarTechConf 2011 - Web Site
- Author: <contact@startechconf.com>
- Twitter: http://twitter.com/StarTech2011
+ Author: contact@startechconf.com
+ Twitter: http://twitter.com/StarTechConf
+ Facebook: http://facebook.com/StarTechConf
  URL: http://startechconf.com
  Created: March 2011
 
 = Description
 
- Awesome developer conference
+ Awesome Developer Conference
 
 
