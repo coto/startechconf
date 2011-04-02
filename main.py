@@ -15,7 +15,8 @@
 # limitations under the License.
 #
 import datetime, re, languages
-
+from os import environ
+import captcha
 from google.appengine.api import mail
 from google.appengine.api import users
 from google.appengine.ext import webapp
@@ -53,7 +54,12 @@ def set_lang_cookie_and_return_dict(request, response):
 		lang_cookie = request.get("hl")
 	
 	response.headers.add_header("Set-Cookie", "hl=" + lang_cookie + ";")
-	return languages.en if lang_cookie == "en" else languages.es
+	if lang_cookie == "en":
+		return languages.en
+	elif lang_cookie == "pt":
+		return languages.pt
+	else:
+		return languages.es
 
 def we_are():
 	return db.GqlQuery(
@@ -62,13 +68,18 @@ def we_are():
 
 class MainHandler(webapp.RequestHandler):
 	def get(self):
+		chtml = captcha.displayhtml(
+		  public_key = "6Lc_FsMSAAAAAHTVnQXGrWvzdshrKixBJghOgl3O",
+		  use_ssl = False,
+		  error = None)
 		uastring = self.request.user_agent
 		params = {
 			'device': get_device(),
 			'uastring': uastring,
 			'path' : self.request.path,
 			'count': we_are().count(),
-			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
+			'lang': set_lang_cookie_and_return_dict(self.request, self.response),
+			 'captchahtml': chtml,
 		}
 		self.response.out.write(
 			template.render('index.html', params))
@@ -79,17 +90,28 @@ class RegisterHandler(webapp.RequestHandler):
 		self.redirect("/")
 		
 	def post(self):
+		# ***** Damain Control *****
 		uastring = self.request.user_agent
 		if self.request.referer.find("http://localhost") == -1 and self.request.referer.find("http://www.startechconf.com/") == -1:
 			self.redirect("/")
 			return
-		
+			
+		# ***** Define some variables *****
 		lang = set_lang_cookie_and_return_dict(self.request, self.response)
 		
 		ip = self.request.remote_addr
 		now = datetime.datetime.now()
 		email = self.request.get("email")
-		
+		challenge = self.request.get('recaptcha_challenge_field')
+		response  = self.request.get('recaptcha_response_field')
+		remoteip  = environ['REMOTE_ADDR']
+
+		cResponse = captcha.submit(
+		                 challenge,
+		                 response,
+		                 "6Lc_FsMSAAAAAEeoIjOaGU_M0obCkgDPbIevfUUV",
+		                 remoteip)
+		# ***** Email Verification *****
 		if not isAddressValid(email):
 			params = {
 				'device': get_device(),
@@ -97,11 +119,12 @@ class RegisterHandler(webapp.RequestHandler):
 				'path' : self.request.path,
 				'count': we_are().count(),
 				'lang': lang,
-				'msg': lang["invalid_email_address"],
+				'msg': lang["invalid_email_address"] + str(cResponse.is_valid) + " " + str(cResponse.error_code),
 				'is_error': False				
 			}
 			self.response.out.write(
 				template.render('index.html', params))
+			
 		else:
 			registers = db.GqlQuery(
 				"SELECT * FROM Register "

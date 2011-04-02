@@ -246,8 +246,12 @@ body {
 	vertical-align:top;
 }
 
+#select-language a.portuguese{
+	background-position:0 -22px;
+}
+
 #select-language a.english{
-	background-position:0 -12px;
+	background-position:0 -11px;
 }
 
 #select-language a.spanish{
@@ -678,6 +682,10 @@ p.date {
 	height:208px;
 }
 
+.modal-captcha{
+	text-align: center;
+}
+
 .modal-content{
 	position:absolute;
 	background:#495666;
@@ -745,13 +753,13 @@ p.date {
 	color:#FFF;
 }
 
-.modal-content a{
+.modal-content .content-register a{
 	color:#a4b8d0;
 	margin-left:10px;
 	text-decoration:none;
 }
 
-.modal-content a:hover{
+.modal-content .content-register a:hover{
 	color:#FFF;
 	text-decoration:underline;
 }
@@ -777,4 +785,3 @@ p.date {
 .modal-content .button:hover{
 	background-position:0 bottom;
 }
-
