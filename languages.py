@@ -100,7 +100,7 @@ es["speaker_JonathanSnook"] = "Ingeniero Front en Yahoo!. Co-Autor del best sell
 es["speaker_ObieFernandez"] = "L&iacute;der tecnol&oacute;gico mundialmente reconocido. Autor del best seller &quot;The Rails Way&quot;. Fundador de Hashrocket, una de las consultoras de desarrollo web basado en Rails l&iacute;deres en el mundo."
 es["speaker_GregRewis"] = "Principal evangelista de Adobe Systems. Enfocado en HTML5 y CSS3. Co-Autor de &quot;Mastering CSS with Dreamweaver CS4&quot;."
 es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. Fundador de Compound Thinking"
-es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS and NodeJS."
+es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS y NodeJS."
 
 ## portuguese dict
 
@@ -123,7 +123,7 @@ pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
 
-pt["event_desc_p1"] = "Programadores, engenheiros, desenhadores e estudantes, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, e mais."
+pt["event_desc_p1"] = "Programadores, engenheiros, desenhadores e estudantes, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder"
 pt["speakers_title"] = "Palestrantes"
 
