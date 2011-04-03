@@ -14,8 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import datetime, re, languages
-
+import datetime, re, languages, captcha
 from google.appengine.api import mail
 from google.appengine.api import users
 from google.appengine.ext import webapp
@@ -33,12 +32,14 @@ def isAddressValid(email):
 			return 1
 	return 0
 
-class Register(db.Model):
+class RegisterTest(db.Model):
   email = db.StringProperty(required=True)
   when = db.DateTimeProperty(auto_now_add=True)
   remote_addr = db.StringProperty(required=True)
+  language = db.StringProperty()
 
-def get_device():
+def get_device(self):
+	uastring = self.request.user_agent
 	return "desktop"
 
 def set_lang_cookie_and_return_dict(request, response):
@@ -62,18 +63,21 @@ def set_lang_cookie_and_return_dict(request, response):
 
 def we_are():
 	return db.GqlQuery(
-		'SELECT * FROM Register '
+		'SELECT * FROM RegisterTest '
 		'ORDER BY when DESC')		
 
 class MainHandler(webapp.RequestHandler):
 	def get(self):
-		uastring = self.request.user_agent
+		chtml = captcha.displayhtml(
+		  public_key = "6Lc_FsMSAAAAAHTVnQXGrWvzdshrKixBJghOgl3O",
+		  use_ssl = False,
+		  error = None)
 		params = {
-			'device': get_device(),
-			'uastring': uastring,
+			'device': get_device(self),
 			'path' : self.request.path,
 			'count': we_are().count(),
-			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
+			'lang': set_lang_cookie_and_return_dict(self.request, self.response),
+			'captchahtml': chtml,
 		}
 		self.response.out.write(
 			template.render('index.html', params))
@@ -84,21 +88,28 @@ class RegisterHandler(webapp.RequestHandler):
 		self.redirect("/")
 		
 	def post(self):
-		uastring = self.request.user_agent
+		# ***** Damain Control *****
 		if self.request.referer.find("http://localhost") == -1 and self.request.referer.find("http://www.startechconf.com/") == -1:
 			self.redirect("/")
 			return
-		
+			
+		# ***** Define some variables *****
 		lang = set_lang_cookie_and_return_dict(self.request, self.response)
-		
 		ip = self.request.remote_addr
 		now = datetime.datetime.now()
 		email = self.request.get("email")
+		challenge = self.request.get('recaptcha_challenge_field')
+		response  = self.request.get('recaptcha_response_field')
+		cResponse = captcha.submit(
+		                 challenge,
+		                 response,
+		                 "6Lc_FsMSAAAAAEeoIjOaGU_M0obCkgDPbIevfUUV",
+		                 ip)
 		
+		# ***** Email Verification *****
 		if not isAddressValid(email):
 			params = {
-				'device': get_device(),
-				'uastring': uastring,
+				'device': get_device(self),
 				'path' : self.request.path,
 				'count': we_are().count(),
 				'lang': lang,
@@ -107,15 +118,15 @@ class RegisterHandler(webapp.RequestHandler):
 			}
 			self.response.out.write(
 				template.render('index.html', params))
+			
 		else:
 			registers = db.GqlQuery(
-				"SELECT * FROM Register "
+				"SELECT * FROM RegisterTest "
 				"WHERE email = :1", email)
 			bot = registers.count()
 			if bot >= 1:
 				params = {
-					'device': 'desktop',
-					'uastring': uastring,
+					'device': get_device(self),
 					'path' : self.request.path,
 					'count': we_are().count(),
 					'lang': lang,
@@ -125,9 +136,10 @@ class RegisterHandler(webapp.RequestHandler):
 				self.response.out.write(
 					template.render('index.html', params))
 			else:
-				register = Register(
+				register = RegisterTest(
 					email = email,
-					remote_addr = ip
+					remote_addr = ip,
+					language = lang["id"]
 				)
 				register.put()
 				
@@ -136,8 +148,8 @@ class RegisterHandler(webapp.RequestHandler):
 				message_to_admin.sender = "contact@startechconf.com"
 				message_to_admin.subject = "StarTechConf - Preregister"
 				message_to_admin.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
-				message_to_admin.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s"\n},' % \
-				          {'email': email, "when": str(now), "remote_addr": ip}
+				message_to_admin.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s", \n\t"language": "%(language)s"\n},' % \
+				          {'email': email, "when": str(now), "remote_addr": ip, "language": lang["id"]}
 				message_to_admin.send()
 		
 				
@@ -156,8 +168,7 @@ class RegisterHandler(webapp.RequestHandler):
 				message_to_user.send()
 				
 				params = {
-					'device': get_device(),
-					'uastring': uastring,
+					'device': get_device(self),
 					'path' : self.request.path,
 					'count': we_are().count(),
 					'lang': lang,
@@ -170,7 +181,7 @@ class RegisterHandler(webapp.RequestHandler):
 class OrganizersHandler(webapp.RequestHandler):
 	def get(self):
 		params = {
-			'device': get_device(),
+			'device': get_device(self),
 			'count': we_are().count(),
 			'path' : self.request.path,
 			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
