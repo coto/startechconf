@@ -35,7 +35,7 @@ def isAddressValid(email):
 			return 1
 	return 0
 
-class RegisterTest(db.Model):
+class Register(db.Model):
   email = db.StringProperty(required=True)
   when = db.DateTimeProperty(auto_now_add=True)
   remote_addr = db.StringProperty(required=True)
@@ -66,7 +66,7 @@ def set_lang_cookie_and_return_dict(request, response):
 
 def we_are():
 	return db.GqlQuery(
-		'SELECT * FROM RegisterTest '
+		'SELECT * FROM Register '
 		'ORDER BY when DESC')		
 
 class MainHandler(webapp.RequestHandler):
@@ -142,7 +142,7 @@ class RegisterHandler(webapp.RequestHandler):
 			
 		else:
 			registers = db.GqlQuery(
-				"SELECT * FROM RegisterTest "
+				"SELECT * FROM Register "
 				"WHERE email = :1", email)
 			bot = registers.count()
 			if bot >= 1:
@@ -157,7 +157,7 @@ class RegisterHandler(webapp.RequestHandler):
 				self.response.out.write(
 					template.render('index.html', params))
 			else:
-				register = RegisterTest(
+				register = Register(
 					email = email,
 					remote_addr = ip,
 					language = lang["id"]
