@@ -2,16 +2,12 @@ $(document).ready(function(){
 	var id = "#msg";
 
 	function show(id) {
-		
 		//Get the screen height and width
 		var maskHeight = $(document).height();
 		var maskWidth = $(window).width();
 		//Get the window height and width
 		var winH = $(window).height();
 		var winW = $(window).width();
-		console.log(winH  + " - " + winW);
-		console.log($(id).height());
-		console.log( winH/2-$(id).height()/2);
 
 		//Set heigth and width to mask to fill up the whole screen
 		$('#mask').css({'width':maskWidth,'height':maskHeight});
@@ -30,7 +26,7 @@ $(document).ready(function(){
 	$("#action-open-register").click(function(e){
 		//Cancel the link behavior
 		e.preventDefault();
-		id = "#register";
+		id = "#register";		
 		show(id);
 	});
 	

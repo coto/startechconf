@@ -126,7 +126,7 @@ pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
 
 pt["event_desc_p1"] = "Programadores, engenheiros, desenhadores e estudantes, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
-pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder"
+pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
 pt["speakers_title"] = "Palestrantes"
 
 pt["speakers_desc"] = "Nove estrelas  mundiais como palestrantes principais"

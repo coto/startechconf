@@ -92,23 +92,23 @@ body {
 	-webkit-box-shadow:-5px 1px 2px #000;
 }
 
-#header h1{
-	position:absolute;
-	z-index:-1;
-}
+	#header h1{
+		position:absolute;
+		z-index:-1;
+	}
 
-#header img{
-	margin:50px 0;
-}
+	#header img{
+		margin:50px 0;
+	}
 
-#header h1 a{
-	background:url(../images/main-logo.png) repeat-x 0 0;
-	width:363px;
-	height:145px;
-	text-indent:-100000px;
-	display:block;
-	outline:0px;
-}
+	#header h1 a{
+		background:url(../images/main-logo.png) repeat-x 0 0;
+		width:363px;
+		height:145px;
+		text-indent:-100000px;
+		display:block;
+		outline:0px;
+	}
 
 .title-header{
 	background:#fff;
@@ -135,15 +135,15 @@ body {
 	line-height:48px;
 }
 
-#counter p.numbers{
-	color:#f29133;
-	text-transform:uppercase;
-	font-size:140px;
-	font-family:"CondensadaExtraBold", Arial, sans-serif;
-	text-shadow:2px 2px 0px #000;
-	letter-spacing:-0.02em;
-	line-height:146px;
-}
+	#counter p.numbers{
+		color:#f29133;
+		text-transform:uppercase;
+		font-size:140px;
+		font-family:"CondensadaExtraBold", Arial, sans-serif;
+		text-shadow:2px 2px 0px #000;
+		letter-spacing:-0.02em;
+		line-height:146px;
+	}
 
 .preinscription-block{
 	position:absolute;
@@ -158,70 +158,70 @@ body {
 	width: 275px;			
 }
 
-.preinscription-block p{
-	color:#FFF;
-	text-transform:uppercase;
-	font-size:15px;
-	font-family:"Newsgoth-bold", Arial, sans-serif;
-	line-height:25px;
-	margin-top:10px;
-	padding-left: 17px;
-}
+	.preinscription-block p{
+		color:#FFF;
+		text-transform:uppercase;
+		font-size:15px;
+		font-family:"Newsgoth-bold", Arial, sans-serif;
+		line-height:25px;
+		margin-top:10px;
+		padding-left: 17px;
+	}
 
-.preinscription-block button{
-	background:url(../images/bg-big-button.png) no-repeat;
-	border:0;
-	text-transform:uppercase;
-	color:#FFF;
-	text-shadow:2px 2px 0px #000;
-	font-size:22px;
-	padding:11px 30px;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	cursor:pointer;
-	box-shadow:-1px 1px 10px #000000;
-	-moz-box-shadow:-1px 1px 10px #000000;
-	-webkit-box-shadow:-1px 1px 10px #000000;
-	margin-left: 16px;
-	width: 200px;	
-}
+	.preinscription-block button{
+		background:url(../images/bg-big-button.png) no-repeat;
+		border:0;
+		text-transform:uppercase;
+		color:#FFF;
+		text-shadow:2px 2px 0px #000;
+		font-size:22px;
+		padding:11px 30px;
+		-webkit-border-radius: 3px;
+		-moz-border-radius: 3px;
+		border-radius: 3px;
+		cursor:pointer;
+		box-shadow:-1px 1px 10px #000000;
+		-moz-box-shadow:-1px 1px 10px #000000;
+		-webkit-box-shadow:-1px 1px 10px #000000;
+		margin-left: 16px;
+		width: 200px;	
+	}
 
-.preinscription-block button:hover{
-	background-position:0 bottom;
-}
+	.preinscription-block button:hover{
+		background-position:0 bottom;
+	}
 
 #main-nav{
 	border-bottom:4px solid #8f99a5;
 	overflow:hidden;
 }
 
-#main-nav ul{
-	list-style:none;
-	float:left;
-	font-family:"Newsgoth", Arial, sans-serif;
-}
+	#main-nav ul{
+		list-style:none;
+		float:left;
+		font-family:"Newsgoth", Arial, sans-serif;
+	}
 
-#main-nav ul li{
-	float:left;
-}
+	#main-nav ul li{
+		float:left;
+	}
 
-#main-nav ul li a{
-	color:#FFF;
-	padding:14px 10px;
-	text-decoration:none;
-	display:block;
-	font-size:14px;
-	text-transform:uppercase;
-}
+	#main-nav ul li a{
+		color:#FFF;
+		padding:14px 10px;
+		text-decoration:none;
+		display:block;
+		font-size:14px;
+		text-transform:uppercase;
+	}
 
-#main-nav ul li a:hover,
-#main-nav ul li.selected a{
-	background:#495666;
-	text-shadow:1px -1px 10px #333;
-	outline:0px;
-	text-shadow:1px 2px 0px #000;
-}
+	#main-nav ul li a:hover,
+	#main-nav ul li.selected a{
+		background:#495666;
+		text-shadow:1px -1px 10px #333;
+		outline:0px;
+		text-shadow:1px 2px 0px #000;
+	}
 
 #select-language{
 	display:block;
@@ -231,36 +231,36 @@ body {
 	color:#FFF;
 }
 
-#select-language a{
-	display:inline-block;
-	width:16px;
-	height:11px;
-	outline:0px;
-	text-indent:-100000px;
-	margin-left:4px;
-	margin-top:2px;
-	background:url(../images/sprite-flags.png) no-repeat;
-}
+	#select-language a{
+		display:inline-block;
+		width:16px;
+		height:11px;
+		outline:0px;
+		text-indent:-100000px;
+		margin-left:4px;
+		margin-top:2px;
+		background:url(../images/sprite-flags.png) no-repeat;
+	}
 
-#select-language span{
-	vertical-align:top;
-}
+	#select-language span{
+		vertical-align:top;
+	}
 
-#select-language a.portuguese{
-	background-position:0 -22px;
-}
+	#select-language a.portuguese{
+		background-position:0 -22px;
+	}
 
-#select-language a.english{
-	background-position:0 -11px;
-}
+	#select-language a.english{
+		background-position:0 -11px;
+	}
 
-#select-language a.spanish{
-	background-position:0 0;
-}
+	#select-language a.spanish{
+		background-position:0 0;
+	}
 
-#select-language a.portuguese{
-	background-position:0 -22px;
-}
+	#select-language a.portuguese{
+		background-position:0 -22px;
+	}
 
 .subtitle-header{
 	background:#495666;
@@ -271,69 +271,69 @@ body {
 	-webkit-box-shadow:inset -5px 1px 2px #000;
 }
 
-.subtitle-header .block-content{
-	padding:0 15px;
-	width:950px !important;
-}
+	.subtitle-header .block-content{
+		padding:0 15px;
+		width:950px !important;
+	}
 
-.subtitle-header h2{
-	font-size:26px;
-	text-shadow:-3px 2px 0 #000;
-}
+	.subtitle-header h2{
+		font-size:26px;
+		text-shadow:-3px 2px 0 #000;
+	}
 
-.subtitle-header h2 span{
-	font-family:"Newsgoth-bold", Arial, sans-serif;
-}
+	.subtitle-header h2 span{
+		font-family:"Newsgoth-bold", Arial, sans-serif;
+	}
 
 .content-section {
 	overflow:hidden;
 }
 
-.content-section h3{
-	font-size:30px;
-	line-height:38px;
-	color:#fff;
-	letter-spacing:-0.01em;
-	text-shadow:-3px 2px 0 #000;
-	text-transform:uppercase;
-	display:block;
-	padding:8px 22px;
-	box-shadow:-1px 1px 1px #000000;
-	-moz-box-shadow:-1px 1px 1px #000000;
-	-webkit-box-shadow:-1px 1px 1px #000000;
-	float:left;
-}
+	.content-section h3{
+		font-size:30px;
+		line-height:38px;
+		color:#fff;
+		letter-spacing:-0.01em;
+		text-shadow:-3px 2px 0 #000;
+		text-transform:uppercase;
+		display:block;
+		padding:8px 22px;
+		box-shadow:-1px 1px 1px #000000;
+		-moz-box-shadow:-1px 1px 1px #000000;
+		-webkit-box-shadow:-1px 1px 1px #000000;
+		float:left;
+	}
 
-.content-section.bg-on {
-	background-color:#364455;
-}
+	.content-section.bg-on {
+		background-color:#364455;
+	}
 
-.content-section.bg-on h3{
-	background-color:#2D3849;
-}
+	.content-section.bg-on h3{
+		background-color:#2D3849;
+	}
 
-.content-section.bg-off {
-	background:none;
-}
+	.content-section.bg-off {
+		background:none;
+	}
 
-.content-section.bg-off h3{
-	background-color:#364455;
-}
+	.content-section.bg-off h3{
+		background-color:#364455;
+	}
 
-.content-section.last{
-	margin-bottom:70px;
-}
+	.content-section.last{
+		margin-bottom:70px;
+	}
 
-.content-section#resume .block-content{
-	padding:45px 0 34px 10px;
-	font-size:22px;
-	line-height:26px;
-	color:#fff;
-	letter-spacing:-0.01em;
-	font-family:"Newsgoth-light", Arial, sans-serif;
-	text-shadow:-3px 2px 0 #000;
-	width:970px !important;
-}
+	.content-section#resume .block-content{
+		padding:45px 0 34px 10px;
+		font-size:22px;
+		line-height:26px;
+		color:#fff;
+		letter-spacing:-0.01em;
+		font-family:"Newsgoth-light", Arial, sans-serif;
+		text-shadow:-3px 2px 0 #000;
+		width:970px !important;
+	}
 
 p.date {
 	font-size: 30px;
