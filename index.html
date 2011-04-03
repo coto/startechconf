@@ -140,25 +140,23 @@
 		</div>
 </div>
 
+<form action="/register" method="post">
 <div class="modal" id="register">
 		<div class="modal-border"></div>
 		<div class="modal-content">
 				<h3>{{lang.pre_register_popup_title}}</h3>
 				<p>{{lang.pre_register_popup_desc}}</p>
-				<div class="modal-captcha">
 				{{ captchahtml }}
-				</div>
 				<div class="content-register">
 						<div class="to-mail">
-							<form action="/register" method="post">
 								<input type="email" name="email" class="box" autofocus required placeholder="user@example.com"><br>
 								<input type="submit" name="registrarme" value="{{lang.pre_register_popup_ok_btn}}" class="button">
 								<a href="#" class="action-close-register">{{lang.pre_register_popup_cancel_btn}}</a>
-							</form>
 						</div>
 				</div>
 		</div>
 </div>
+</form>
 
 {% if msg %}
 <div class="modal" id="msg">

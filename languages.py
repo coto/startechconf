@@ -36,6 +36,7 @@ en["message_title"] = "Message"
 en["already_registered"] = "You are already registered"
 en["successfuly_registered"] = "Thank you, You were successfully registered. Check your mail."
 en["invalid_email_address"] = "Please enter a valid email address"
+en["invalid_captcha"] = "Invalid Captcha"
 
 en["registered_email_subject"] = "You are Signed up for StarTechConf Conference Event Notifications"
 en["registered_email_body"] = "Thank you for your interest in StarTechConf being hosted in Santiago, Chile!.\n\nWe're finalizing all the conference details and will contact you as soon as we're ready to take early bird registrations. In the meantime, be sure to follow us on Twitter for the latest information on the conference: http://twitter.com/startechconf. \n\nThis also gives you time to ensure that a 30% discount is viable once you've put together your final budget. \n\nStarTechConf Team."
