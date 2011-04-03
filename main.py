@@ -93,7 +93,7 @@ class RegisterHandler(webapp.RequestHandler):
 	def post(self):
 		# ***** Damain Control *****
 		if self.request.referer.find("http://localhost") == -1 and self.request.referer.find("http://www.startechconf.com/") == -1:
-			self.redirect("/")
+			self.redirect("/?error=fake")
 			return
 			
 		# ***** Define some variables *****
