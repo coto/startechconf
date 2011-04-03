@@ -114,7 +114,7 @@ pt["english"] = "INGL&Ecirc;S"
 pt["portuguese"] = "PORTUGU&Ecirc;S"
 
 pt["we_are"] = "J&Aacute; SOMOS"
-pt["pre_register_btn"] = "pre-inscri&ccedil;&atilde;o"
+pt["pre_register_btn"] = "preinscri&ccedil;&atilde;o"
 pt["get_discount"] = "Obtenha 30 % de desconto"
 pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
