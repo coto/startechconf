@@ -151,11 +151,11 @@ body {
 	overflow:hidden;
 	z-index:10;
 	text-align:right;
-	margin-left:715px;
+	margin-left:695px;
 	margin-top:-25px;
 	text-align:center;
 	padding: 20px 0 18px 0;
-	width: 275px;			
+	width: 295px;			
 }
 
 .preinscription-block p{
@@ -184,7 +184,7 @@ body {
 	-moz-box-shadow:-1px 1px 10px #000000;
 	-webkit-box-shadow:-1px 1px 10px #000000;
 	margin-left: 16px;
-	width: 200px;	
+	width: 230px;	
 }
 
 .preinscription-block button:hover{
