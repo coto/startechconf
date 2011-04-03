@@ -89,6 +89,7 @@ es["message_title"] = "Mensaje"
 es["already_registered"] = "Ya estabas registrado"
 es["successfuly_registered"] = "Gracias, has sido registrado exitosamente. Revisa tu mail."
 es["invalid_email_address"] = "Ingresa una direcci&oacute;n de email v&aacute;lida"
+es["invalid_captcha"] = "Captcha inv&aacute;lido"
 
 es["registered_email_subject"] = "Te has registrado para la Conferencia StarTechConf"
 es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso para inscribirte. Mientras tanto siguenos en twitter para mantenerte actualizado: http://twitter.com/startechconf. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
@@ -142,9 +143,10 @@ pt["pre_register_popup_cancel_btn"] = "Cancelar"
 
 pt["message_title"] = "Mensagem"
 pt["already_registered"] = "J&acirc; estais cadastrado"
-
 pt["successfuly_registered"] = "Foi cadastrado com sucesso. Revise seu mail."
 pt["invalid_email_address"] = "Ingresse uma dire&ccedil;&atilde;o de email v&acirc;lida"
+pt["invalid_captcha"] = "Captcha invalido"
+
 pt["registered_email_subject"] = "Voce se cadastro na conferencia StarTechConf"
 pt["registered_email_body"] = "Obrigado por querer participar da conferencia StarTechConf a ser realizada em Chile!.\n\nEstamos finalizando todos os detalhes e vamos a entrar em contacto com voce assim que estejam prontas a inscricao.Por enquanto siga nos em twitter para se manter atualizado: http://twitter.com/startechconf.\n\nEstar pre-inscrito lhe garante ter acesso a um 30% de desconto toda vez que os detalhes do preco final estejam prontos.\n\nEquipo da StarTechConf."
 
