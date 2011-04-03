@@ -165,7 +165,9 @@
 				<h3>{% if is_error %} ERROR {% else %} {{lang.message_title}} {% endif %}</h3>
 				<p>{{msg}}</p>
 				<div class="content-register">
-					<input type="submit" name="Ok" value="Ok" class="button action-close-register" />
+					<form action="/">
+					<input type="submit" name="Ok" value="Ok" class="button" />
+					</form>
 				</div>
 		</div>
 </div>
