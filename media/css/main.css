@@ -686,8 +686,9 @@ p.date {
 	height:208px;
 }
 
-.modal-captcha{
+#recaptcha_widget_div {
 	text-align: center;
+	padding-left:136px;
 }
 
 .modal-content{

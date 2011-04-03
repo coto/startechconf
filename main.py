@@ -100,11 +100,29 @@ class RegisterHandler(webapp.RequestHandler):
 		email = self.request.get("email")
 		challenge = self.request.get('recaptcha_challenge_field')
 		response  = self.request.get('recaptcha_response_field')
+		
+		logging.info(challenge)
+		logging.info(response)
+		
 		cResponse = captcha.submit(
 		                 challenge,
 		                 response,
 		                 "6Lc_FsMSAAAAAEeoIjOaGU_M0obCkgDPbIevfUUV",
 		                 ip)
+		
+		logging.info(cResponse.error_code)
+		if not cResponse.is_valid:
+			params = {
+				'device': get_device(self),
+				'path' : self.request.path,
+				'count': we_are().count(),
+				'lang': lang,
+				'msg': lang["invalid_captcha"],
+				'is_error': True
+			}
+			self.response.out.write(
+				template.render('index.html', params))
+			return
 		
 		# ***** Email Verification *****
 		if not isAddressValid(email):
