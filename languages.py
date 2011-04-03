@@ -1,6 +1,7 @@
 ## english dict
 
 en = {}
+en["id"] = "en"
 en["menu_home"] = "HOME"
 en["menu_speakers"] = "SPEAKERS"
 en["menu_sponsors"] = "SPONSORS"
@@ -24,7 +25,7 @@ en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Nine rock stars as keynoters"
 
 en["sponsors_title"] = "Sponsors"
-en["want_to_be_sponsor"] = "Want to be an sponsor?"
+en["want_to_be_sponsor"] = "Want to be a sponsor?"
 en["send_us_an_email_to"] = "Send us an email to "
 
 en["pre_register_popup_title"] = "Preregister"
@@ -43,7 +44,7 @@ en["speaker_ReyBango"] = "Client-Web Community Program Manager for Microsoft and
 en["speaker_CharlesNutter"] = "Creator of JRuby language. Recognized Java developer. JRuby developer at Engine Yard."
 en["speaker_PaulIrish"] = "Google Chrome and JQuery team member. Leader of some HTML5 and CSS3 libraries like Modernizr."
 en["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of Mastering CSS with Dreamweaver CS4. Founder of W3Conversions."
-en["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best sellers &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
+en["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
 en["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
 en["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on HTML5 and CSS3. Co-author of Mastering CSS with Dreamweaver CS4."
 en["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. Founder of Compound Thinking."
@@ -52,6 +53,7 @@ en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contribut
 ## spanish dict
 
 es = {}
+es["id"] = "es"
 es["menu_home"] = "INICIO"
 es["menu_speakers"] = "CHARLISTAS"
 es["menu_sponsors"] = "AUSPICIADORES"
@@ -69,7 +71,7 @@ es["event_title"] = "48 horas y el mayor <span>evento de tecnolog&iacute;a </spa
 
 es["when"] = "Pr&oacute;ximamente, Noviembre 2011 @ Santiago de Chile"
 
-es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, juntemosnos por dos d&iacute;as y escuchemos a algunos de los mejores exponentes locales y de nivel mundial hablar de tecnolog&iacute;as como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
+es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores locales y de nivel mundial hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
 es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Nueve estrellas mundiales como keynoters"
@@ -88,64 +90,68 @@ es["successfuly_registered"] = "Gracias, has sido registrado exitosamente. Revis
 es["invalid_email_address"] = "Ingresa una direcci&oacute;n de email v&aacute;lida"
 
 es["registered_email_subject"] = "Te has registrado para la Conferencia StarTechConf"
-es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso de inscripcion. Entre medio asegurate de seguirnos en twitter para mantenerte actualizado: http://twitter.com/startechconf. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
+es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso para inscribirte. Mientras tanto siguenos en twitter para mantenerte actualizado: http://twitter.com/startechconf. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
 
 es["speaker_ReyBango"] = "Miembro del equipo jQuery y Administrador de Programa de Desarrollo Comunitario para Microsoft. Editor de ScriptJunkier.com"
-es["speaker_CharlesNutter"] = "Creador del lenguage JRuby. Reconocido desarrollador Java. Desarrollador JRuby en Engine Yard."
-es["speaker_PaulIrish"] = "Miembro de los equipos Google Chrome y JQuery. Lider de algunas bibliotecas HTML5 y CSS3 tales como Modernizr"
+es["speaker_CharlesNutter"] = "Creador del lenguaje JRuby. Reconocido desarrollador Java. Desarrollador JRuby en Engine Yard."
+es["speaker_PaulIrish"] = "Miembro de los equipos Google Chrome y JQuery. L&iacute;der de algunas bibliotecas HTML5 y CSS3 tales como Modernizr"
 es["speaker_StephanieSullivan"] = "Experta de alto nivel en CSS y Prominente desarrolladora de aplicaciones Front-End. Co-Autora de &quot;Mastering CSS with Dreamweaver CS4&quot;. Fundadora de W3Conversions."
-es["speaker_JonathanSnook"] = "Ingeniero Front en Yahoo!. Co-Autor del best sellers &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; y &quot;The Art and Science of CSS&quot;"
-es["speaker_ObieFernandez"] = "Lider tecnol&oacute;gico ampliamente reconozido. Autor del best sellers &quot;The Rails Way&quot;. Fundador de Hashrocket, una de las consultoras de desarrollo web basado en Rails l&iacute;deres en el mundo."
+es["speaker_JonathanSnook"] = "Ingeniero Front en Yahoo!. Co-Autor del best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; y &quot;The Art and Science of CSS&quot;"
+es["speaker_ObieFernandez"] = "L&iacute;der tecnol&oacute;gico mundialmente reconocido. Autor del best seller &quot;The Rails Way&quot;. Fundador de Hashrocket, una de las consultoras de desarrollo web basado en Rails l&iacute;deres en el mundo."
 es["speaker_GregRewis"] = "Principal evangelista de Adobe Systems. Enfocado en HTML5 y CSS3. Co-Autor de &quot;Mastering CSS with Dreamweaver CS4&quot;."
-es["speaker_MarkRamm"] = "Lider t&eacute;cnico en Sourceforge.net. Fundador de Compound Thinking"
+es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. Fundador de Compound Thinking"
 es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS and NodeJS."
 
-#Portuguese
+## portuguese dict
 
 pt = {}
-pt["menu_home"] = "HOME"
-pt["menu_speakers"] = "SPEAKERS"
-pt["menu_sponsors"] = "SPONSORS"
-pt["menu_organizers"] = "ORGANIZERS"
+pt["id"] = "pt"
+pt["menu_home"] = "INICIO"
+pt["menu_speakers"] = "PALESTRANTES"
+pt["menu_sponsors"] = "PATROCINADORES"
+pt["menu_organizers"] = "ORGANIZADORES"
 
-pt["choose_your_language"] = "Escolha o seu idioma"
-pt["spanish"] = "Espanhol"
-pt["english"] = "Ingl&ecirc;s"
-en["portuguese"] = "Portugu&ecirc;s"
+pt["choose_your_language"] = "Selecione seu idioma"
+pt["spanish"] = "ESPANHOL"
+pt["english"] = "INGL&Ecirc;S"
+pt["portuguese"] = "PORTUGU&Ecirc;S"
 
-pt["we_are"] = "Somos"
-pt["pre_register_btn"] = "CADASTRE-PRE"
-pt["get_discount"] = "obter 30% de desconto"
-pt["event_title"] = "48 horas e a maior confer&ecirc;ncia de tecnologia no Chile"
+pt["we_are"] = "J&Aacute; SOMOS"
+pt["pre_register_btn"] = "pre-inscri&ccedil;&atilde;o"
+pt["get_discount"] = "Obtenha 30 % de desconto"
+pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
-pt["when"] = "Que vem em Novembro 2011 @ Santiago do Chile"
+pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
 
-pt["event_desc_p1"] = "Hey, <strong>programadores, engenheiros, designers e estudantes</strong>, vamos ficar juntos por dois dias e ouvir alguns dos melhores especialistas em tecnologia locais e globais falar sobre <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> e muito mais."
-pt["event_desc_p2"] = "Ser&aacute; de dois dias de intenso aprendizado e partilha de conhecimentos que voc&ecirc; n&atilde;o vai querer perder."
-pt["speakers_title"] = "Speakers"
-pt["speakers_desc"] = "Nove estrelas do mundo como keynoters"
+pt["event_desc_p1"] = "Programadores, engenheiros, desenhadores e estudantes, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como HTML5, CSS3, Javascript, Ruby, Java, Python</strong>, e mais."
+pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder"
+pt["speakers_title"] = "Palestrantes"
 
+pt["speakers_desc"] = "Nove estrelas  mundiais como palestrantes principais"
 pt["sponsors_title"] = "Patrocinadores"
-pt["want_to_be_sponsor"] = "Quer ser um patrocinador?"
-pt["send_us_an_email_to"] = "Envie-nos um e-mail para "
+pt["want_to_be_sponsor"] = "Voc&ecirc; quer ser um patrocinador?"
+pt["send_us_an_email_to"] = "Nos escreva um email a:"
 
-pt["pre_register_popup_title"] = "Preregister"
-pt["pre_register_popup_desc"] = "Enter your email to receive updates and instructions on how to get the discount"
-pt["pre_register_popup_ok_btn"] = "Ok"
+pt["rights"] = "Todos os direitos reservados"
+pt["pre_register_popup_title"] = "pre-inscri&ccedil;&atilde;o"
+pt["pre_register_popup_desc"] = "Ingresse seu email para receber informa&ccedil;&atilde;o atualizada e indica&ccedil;&ocirc;es de como obter o desconto"
+
+pt["pre_register_popup_ok_btn"] = "Aceitar"
 pt["pre_register_popup_cancel_btn"] = "Cancelar"
-pt["message_title"] = "Mensagem"
-pt["already_registered"] = "Voc&ecirc; j&aacute; est&aacute; registrado"
-pt["successfuly_registered"] = "Obrigado, Voc&ecirc; foi registrado com &ecirc;xito. Verifique seu e-mail."
-pt["invalid_email_address"] = "Por favor insira um email v&aacute;lido"
 
-pt["registered_email_subject"] = "Voc&ecirc; se inscreveu para receber as notifica&ccedil;&otilde;es de eventos StarTechConf Confer&ecirc;ncia"
-pt["registered_email_body"] = "Obrigado pelo seu interesse em StarTechConf sendo hospedados em Santiago, Chile!.\n\nEstamos a ultimar todos os detalhes da confer&ecirc;ncia e entraremos em contato com voc&ecirc; assim que n&oacute;s estamos prontos para tomar inscri&ccedil;&otilde;es para os madrugadores. Entretanto, n&atilde;o se esque&ccedil;a de acompanhar-nos no Twitter para as &uacute;ltimas informa&ccedil;&otilde;es sobre a confer&ecirc;ncia: http://twitter.com/startechconf. \n\nIsto tamb&eacute;m lhe d&aacute; tempo para garantir que um desconto de 30% &eacute; vi&aacute;vel uma vez que voc&ecirc; montar o seu or&ccedil;amento final. \n\nEquipe StarTechConf."
+pt["message_title"] = "Mensagem"
+pt["already_registered"] = "J&acirc; estais cadastrado"
+
+pt["successfuly_registered"] = "Foi cadastrado com sucesso. Revise seu mail."
+pt["invalid_email_address"] = "Ingresse uma dire&ccedil;&atilde;o de email v&acirc;lida"
+pt["registered_email_subject"] = "Voce se cadastro na conferencia StarTechConf"
+pt["registered_email_body"] = "Obrigado por querer participar da conferencia StarTechConf a ser realizada em Chile!.\n\nEstamos finalizando todos os detalhes e vamos a entrar em contacto com voce assim que estejam prontas a inscricao.Por enquanto siga nos em twitter para se manter atualizado: http://twitter.com/startechconf.\n\nEstar pre-inscrito lhe garante ter acesso a um 30% de desconto toda vez que os detalhes do preco final estejam prontos.\n\nEquipo da StarTechConf."
 
 pt["speaker_ReyBango"] = "Client-Web Community Program Manager for Microsoft and member of the jQuery Team. Editor of ScriptJunkier.com"
 pt["speaker_CharlesNutter"] = "Creator of JRuby language. Recognized Java developer. JRuby developer at Engine Yard."
 pt["speaker_PaulIrish"] = "Google Chrome and JQuery team member. Leader of some HTML5 and CSS3 libraries like Modernizr."
 pt["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of Mastering CSS with Dreamweaver CS4. Founder of W3Conversions."
-pt["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best sellers &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
+pt["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
 pt["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
 pt["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on HTML5 and CSS3. Co-author of Mastering CSS with Dreamweaver CS4."
 pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. Founder of Compound Thinking."
