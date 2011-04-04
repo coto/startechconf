@@ -214,7 +214,7 @@ def main():
 		('/', MainHandler),
 		('/[R|r]egister', RegisterHandler),
 		#('/[O|o]rganizers', OrganizersHandler)
-	], debug=True)
+	], debug=False)
     util.run_wsgi_app(application)
 
 
