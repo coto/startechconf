@@ -6,6 +6,7 @@ en["menu_home"] = "HOME"
 en["menu_speakers"] = "SPEAKERS"
 en["menu_sponsors"] = "SPONSORS"
 en["menu_organizers"] = "ORGANIZERS"
+en["menu_price"] = "PRICE"
 
 en["choose_your_language"] = "Choose your Language"
 en["spanish"] = "Spanish"
@@ -51,6 +52,11 @@ en["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on H
 en["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. TurboGears 2 leader and Pylons core developer. Founder of Compound Thinking."
 en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
 
+en["conf_price"] = "Price"
+en["ticket_general"] = "General"
+en["ticket_students"] = "Students"
+en["conf_price_details"] = "Include the two-days conference"
+
 ## spanish dict
 
 es = {}
@@ -59,6 +65,7 @@ es["menu_home"] = "INICIO"
 es["menu_speakers"] = "CHARLISTAS"
 es["menu_sponsors"] = "AUSPICIADORES"
 es["menu_organizers"] = "ORGANIZADORES"
+es["menu_price"] = "PRECIO"
 
 es["choose_your_language"] = "Selecciona tu idioma"
 es["spanish"] = "Espa&ntilde;ol"
@@ -104,6 +111,11 @@ es["speaker_GregRewis"] = "Principal evangelista de Adobe Systems. Enfocado en H
 es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. L&iacute;der de TurboGears 2 y desarrollador principal de Pylons. Fundador de Compound Thinking"
 es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS y NodeJS."
 
+es["conf_price"] = "Precio"
+es["ticket_general"] = "General"
+es["ticket_students"] = "Estudiantes"
+es["conf_price_details"] = "Incluye los dos d&iacute;as de conferencia"
+
 ## portuguese dict
 
 pt = {}
@@ -112,6 +124,7 @@ pt["menu_home"] = "INICIO"
 pt["menu_speakers"] = "PALESTRANTES"
 pt["menu_sponsors"] = "PATROCINADORES"
 pt["menu_organizers"] = "ORGANIZADORES"
+pt["menu_price"] = "PRE&Ccedil;O"
 
 pt["choose_your_language"] = "Selecione seu idioma"
 pt["spanish"] = "ESPANHOL"
@@ -125,7 +138,7 @@ pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
 
-pt["event_desc_p1"] = "Programadores, engenheiros, desenhadores e estudantes, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
+pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
 pt["speakers_title"] = "Palestrantes"
 
@@ -159,3 +172,9 @@ pt["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of th
 pt["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on HTML5 and CSS3. Co-author of Mastering CSS with Dreamweaver CS4."
 pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. TurboGears 2 leader and Pylons core developer. Founder of Compound Thinking."
 pt["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
+
+pt["conf_price"] = "Pre&ccedil;o"
+pt["ticket_general"] = "Geral"
+pt["ticket_students"] = "Estudantes"
+pt["conf_price_details"] = "Inclui os dois dias da confer&ecirc;ncia"
+
