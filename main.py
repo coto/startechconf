@@ -103,13 +103,10 @@ class RegisterHandler(webapp.RequestHandler):
 		email = self.request.get("email")
 		challenge = self.request.get('recaptcha_challenge_field')
 		response  = self.request.get('recaptcha_response_field')
-		
-		logging.info(challenge)
-		logging.info(response)
-		
+				
 		cResponse = captcha.submit(
 		                 challenge,
-		                 response,
+		                 response.encode('utf-8'),
 		                 "6Lc_FsMSAAAAAEeoIjOaGU_M0obCkgDPbIevfUUV",
 		                 ip)
 		
@@ -126,7 +123,8 @@ class RegisterHandler(webapp.RequestHandler):
 			self.response.out.write(
 				template.render('index.html', params))
 			return
-		
+	
+		logging.info(email)
 		# ***** Email Verification *****
 		if not isAddressValid(email):
 			params = {
@@ -214,7 +212,7 @@ def main():
 		('/', MainHandler),
 		('/[R|r]egister', RegisterHandler),
 		#('/[O|o]rganizers', OrganizersHandler)
-	], debug=True)
+	], debug=False)
     util.run_wsgi_app(application)
 
 

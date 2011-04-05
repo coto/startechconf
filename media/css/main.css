@@ -35,7 +35,7 @@ strong {
 
 @font-face {
 	font-family: CondensadaExtraBold;
- 	src: url('condensed-black.otf');
+ 	src: url('Compctab.ttf');
 }
 
 @font-face {
@@ -116,23 +116,24 @@ body {
 }
 
 #counter{
-	position:absolute;
-	overflow:hidden;
-	font-family:"Newsgoth", Arial, sans-serif;
-	font-size:16px;
-	z-index:10;
-	text-align:right;
-	margin-top:-195px;
-	margin-left:708px;
-	width:275px;
+	position: absolute;
+	overflow: hidden;
+	font-family: "Newsgoth", Arial, sans-serif;
+	font-size: 16px;
+	z-index: 10;
+	text-align: right;
+	margin-top: -195px;
+	margin-left: 665px;
+	width: 305px;
 }
 
 #counter p{
-	color:#6a7787;
-	text-transform:uppercase;
-	font-size:20px;
-	font-family:"Newsgoth-bold", Arial, sans-serif;
-	line-height:48px;
+	color: #6a7787;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: "Newsgoth-bold", Arial, sans-serif;
+	line-height: 26px;
+	padding-right: 5px;
 }
 
 #counter p.numbers{
@@ -158,6 +159,7 @@ body {
 	width: 275px;			
 }
 
+<<<<<<< HEAD
 .preinscription-block p{
 	color:#FFF;
 	text-transform:uppercase;
@@ -183,6 +185,39 @@ body {
 	box-shadow:-1px 1px 10px #000000;
 	-moz-box-shadow:-1px 1px 10px #000000;
 	-webkit-box-shadow:-1px 1px 10px #000000;
+	margin-left: 16px;
+	width: 200px;	
+}
+
+.preinscription-block button:hover{
+	background-position:0 bottom;
+}
+
+.preinscription-block p{
+	color:#FFF;
+	text-transform:uppercase;
+	font-size:15px;
+	font-family:"Newsgoth-bold", Arial, sans-serif;
+	line-height:25px;
+	margin-top:10px;
+	padding-left: 17px;
+}
+
+.preinscription-block button{
+	background: url("../images/bg-big-button.png") no-repeat;
+	border: 0;
+	text-transform: uppercase;
+	color: #FFF;
+	text-shadow: 2px 2px 0px #000;
+	font-size: 22px;
+	padding: 11px 0px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+	box-shadow: -1px 1px 10px #000000;
+	-moz-box-shadow: -1px 1px 10px #000000;
+	-webkit-box-shadow: -1px 1px 10px #000000;
 	margin-left: 16px;
 	width: 200px;	
 }
@@ -263,12 +298,12 @@ body {
 }
 
 .subtitle-header{
-background:#495666;
-color:#d5e1ef;
-padding:15px 10px;
-box-shadow:inset -5px 1px 2px #000;
--moz-box-shadow:inset -5px 1px 2px #000;
--webkit-box-shadow:inset -5px 1px 2px #000;
+	background:#495666;
+	color:#d5e1ef;
+	padding:15px 10px;
+	box-shadow:inset -5px 1px 2px #000;
+	-moz-box-shadow:inset -5px 1px 2px #000;
+	-webkit-box-shadow:inset -5px 1px 2px #000;
 }
 
 .subtitle-header .block-content{
