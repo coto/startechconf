@@ -25,7 +25,7 @@ en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Nine rock stars as keynoters"
 
 en["sponsors_title"] = "Sponsors"
-en["want_to_be_sponsor"] = "Want to be a sponsor?"
+en["want_to_be_sponsor"] = "Want to be an sponsor?"
 en["send_us_an_email_to"] = "Send us an email to "
 
 en["pre_register_popup_title"] = "Preregister"
