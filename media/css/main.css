@@ -141,7 +141,7 @@ body {
 	text-transform:uppercase;
 	font-size:140px;
 	font-family:"CondensadaExtraBold", Arial, sans-serif;
-	text-shadow:2px 2px 0px #000;
+	text-shadow:2px 2px 0px #999;
 	letter-spacing:-0.02em;
 	line-height:146px;
 }
@@ -155,7 +155,7 @@ body {
 	margin-left:695px;
 	margin-top:-25px;
 	text-align:center;
-	padding: 20px 0 18px 0;
+	padding: 20px 0 14px 0;
 	width: 275px;			
 }
 
@@ -301,9 +301,9 @@ body {
 	background:#495666;
 	color:#d5e1ef;
 	padding:15px 10px;
-	box-shadow:inset -5px 1px 2px #000;
-	-moz-box-shadow:inset -5px 1px 2px #000;
-	-webkit-box-shadow:inset -5px 1px 2px #000;
+	box-shadow:inset 0px 1px 2px #000;
+	-moz-box-shadow:inset 0px 1px 2px #000;
+	-webkit-box-shadow:inset 0px 1px 2px #000;
 }
 
 .subtitle-header .block-content{
@@ -356,6 +356,7 @@ overflow:hidden;
 }
 
 .content-section.last{
+	padding-top: 35px;
 	margin-bottom:60px;
 }
 
@@ -461,6 +462,10 @@ p.date {
 	margin-top:4px;
 }
 
+.sponsor-content a {
+	outline: 0px;
+}
+
 #sponsors h3 {
 	box-shadow: none;
 }
@@ -490,10 +495,10 @@ p.date {
 
 .sponsor-content p a{
 	color:#364455;
-	font-weight: bold;
 }
 .sponsor-content p a.contact{
 	text-decoration: none;
+	letter-spacing: -0.02em;
 }
 
 .sponsor-content h4{
@@ -558,7 +563,6 @@ p.date {
 	float:right;
 }
 
-
 .content-section#register{
 	padding:30px;
 }
@@ -612,6 +616,44 @@ p.date {
 
 .twitter-share-button {
 	margin-right: 20px;
+}
+
+.price-numbers{
+	text-align:left;
+	padding:45px 6px 6px 6px;
+	float:left;
+	margin:0 5px;
+	width:25%;
+	color:#BFCFE1;
+}
+
+.price-numbers h4{
+	font-size:42px;
+	font-family:"CondensadaBold", Arial, sans-serif;
+	letter-spacing:-0.03em;
+	color:#FFF;
+	display:block;
+	margin:0;
+	line-height:32px;
+}
+
+.price-numbers p{
+	font-size:24px;
+	margin:0;
+	font-family:"Newsgoth-light", Arial, sans-serif;
+	display:block;
+	margin:5px 0;
+}
+
+.price-desc {
+	margin-left: 10px;
+}
+
+.price-desc p {
+	clear:both;
+	color:#fff;
+	font-size:16px;
+	margin: 10px 0 20px 0;
 }
 
 #footer {
