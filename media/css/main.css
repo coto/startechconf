@@ -312,8 +312,9 @@ body {
 }
 
 .subtitle-header h2{
-	font-size:26px;
+	font-size:24px;
 	text-shadow:-3px 2px 0 #000;
+	letter-spacing: -0.02em;
 }
 
 .subtitle-header h2 span{
@@ -362,8 +363,8 @@ overflow:hidden;
 
 .content-section#resume .block-content{
 	padding:45px 0 34px 10px;
-	font-size:22px;
-	line-height:26px;
+	font-size:18px;
+	line-height:22px;
 	color:#fff;
 	letter-spacing:-0.01em;
 	font-family:"Newsgoth-light", Arial, sans-serif;
@@ -635,6 +636,7 @@ p.date {
 	display:block;
 	margin:0;
 	line-height:32px;
+	text-shadow: 0 0 6px #000;
 }
 
 .price-numbers p{
