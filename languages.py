@@ -48,7 +48,7 @@ en["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent
 en["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
 en["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
 en["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on HTML5 and CSS3. Co-author of Mastering CSS with Dreamweaver CS4."
-en["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. Founder of Compound Thinking."
+en["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. TurboGears 2 leader and Pylons core developer. Founder of Compound Thinking."
 en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
 
 ## spanish dict
@@ -101,7 +101,7 @@ es["speaker_StephanieSullivan"] = "Experta de alto nivel en CSS y Prominente des
 es["speaker_JonathanSnook"] = "Ingeniero Front en Yahoo!. Co-Autor del best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; y &quot;The Art and Science of CSS&quot;"
 es["speaker_ObieFernandez"] = "L&iacute;der tecnol&oacute;gico mundialmente reconocido. Autor del best seller &quot;The Rails Way&quot;. Fundador de Hashrocket, una de las consultoras de desarrollo web basado en Rails l&iacute;deres en el mundo."
 es["speaker_GregRewis"] = "Principal evangelista de Adobe Systems. Enfocado en HTML5 y CSS3. Co-Autor de &quot;Mastering CSS with Dreamweaver CS4&quot;."
-es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. Fundador de Compound Thinking"
+es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. L&iacute;der de TurboGears 2 y desarrollador principal de Pylons. Fundador de Compound Thinking"
 es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS y NodeJS."
 
 ## portuguese dict
@@ -157,5 +157,5 @@ pt["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent
 pt["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
 pt["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
 pt["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on HTML5 and CSS3. Co-author of Mastering CSS with Dreamweaver CS4."
-pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. Founder of Compound Thinking."
+pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. TurboGears 2 leader and Pylons core developer. Founder of Compound Thinking."
 pt["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
