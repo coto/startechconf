@@ -52,10 +52,11 @@ en["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on H
 en["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. TurboGears 2 leader and Pylons core developer. Founder of Compound Thinking."
 en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
 
-en["conf_price"] = "Price"
+en["conf_price"] = "Ticket price"
 en["ticket_general"] = "General"
 en["ticket_students"] = "Students"
-en["conf_price_details"] = "Include the two-days conference"
+en["conf_price_details_1"] = "Include the two-days conference"
+en["conf_price_details_2"] = "Students have discount too"
 
 ## spanish dict
 
@@ -111,10 +112,11 @@ es["speaker_GregRewis"] = "Principal evangelista de Adobe Systems. Enfocado en H
 es["speaker_MarkRamm"] = "L&iacute;der t&eacute;cnico en Sourceforge.net. L&iacute;der de TurboGears 2 y desarrollador principal de Pylons. Fundador de Compound Thinking"
 es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor de YUI enfocado en SSJS y NodeJS."
 
-es["conf_price"] = "Precio"
+es["conf_price"] = "Precio del ticket"
 es["ticket_general"] = "General"
 es["ticket_students"] = "Estudiantes"
-es["conf_price_details"] = "Incluye los dos d&iacute;as de conferencia"
+es["conf_price_details_1"] = "Incluye los dos d&iacute;as de conferencia"
+es["conf_price_details_2"] = "Estudiantes tambi&eacute;n tienen descuento"
 
 ## portuguese dict
 
@@ -173,8 +175,9 @@ pt["speaker_GregRewis"] = "Principal evangelist for Adobe Systems. Focussed on H
 pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. TurboGears 2 leader and Pylons core developer. Founder of Compound Thinking."
 pt["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contributor focus on SSJS and NodeJS."
 
-pt["conf_price"] = "Pre&ccedil;o"
+pt["conf_price"] = "Pre&ccedil;o do bilhete"
 pt["ticket_general"] = "Geral"
 pt["ticket_students"] = "Estudantes"
-pt["conf_price_details"] = "Inclui os dois dias da confer&ecirc;ncia"
+pt["conf_price_details_1"] = "Inclui os dois dias da confer&ecirc;ncia"
+pt["conf_price_details_2"] = "Estudantes tamb&eacute;n tem desconto"
 
