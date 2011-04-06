@@ -448,7 +448,7 @@ p.date {
 }
 
 .content-section#sponsors .block-content{
-	padding:35px 5px 35px 5px;
+	padding:35px 5px 10px 5px;
 	width:960px !important;
 }
 
@@ -461,6 +461,7 @@ p.date {
 	float:left;
 	overflow:hidden;
 	margin-top:4px;
+	margin-bottom: 10px;
 }
 
 .sponsor-content a {
@@ -478,26 +479,26 @@ p.date {
 	padding-left:4px;
 }
 
-.sponsor-content p{
+.sponsors-endorsements-content p{
 	float:left;
 	display::block;
 	clear:both;
 	font-size:22px;
 	color:#364455;
-	margin-bottom:14px;
+	margin-bottom:24px;
 	/*text-shadow:-3px 2px 0 #000;*/
 	/*temporalmente mientras los bloques de sponsors estan desactivados*/
-	margin-top:25px;
+	margin-top:8px;
 }
 
-.sponsor-content p strong{
+.sponsors-endorsements-content p strong{
 	font-family:"Newsgoth-bold", Arial, sans-serif;
 }
 
-.sponsor-content p a{
+.sponsors-endorsements-content p a{
 	color:#364455;
 }
-.sponsor-content p a.contact{
+.sponsors-endorsements-content p a.contact{
 	text-decoration: none;
 	letter-spacing: -0.02em;
 }
@@ -780,7 +781,7 @@ p.date {
 }
 
 .modal-border {
-	height:265px;
+	height:392px;
 }
 
 .modal-border-error {
@@ -811,7 +812,7 @@ p.date {
 	-webkit-box-shadow:0 0 12px #333;
 }
 
-.modal-content h3{
+.modal-content h3 {
 	text-transform:uppercase;
 	font-size:30px;
 	letter-spacing:-0.02em;

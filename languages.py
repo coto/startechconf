@@ -26,6 +26,7 @@ en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Nine rock stars as keynoters"
 
 en["sponsors_title"] = "Sponsors"
+en["endorsement_title"] = "Endorsement"
 en["want_to_be_sponsor"] = "Want to be an sponsor?"
 en["send_us_an_email_to"] = "Send us an email to "
 
@@ -86,6 +87,7 @@ es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Nueve estrellas mundiales como keynoters"
 
 es["sponsors_title"] = "Auspiciadores"
+es["endorsement_title"] = "Apoyo"
 es["want_to_be_sponsor"] = "&iquest;Quieres ser auspiciador?"
 es["send_us_an_email_to"] = "Escr&iacute;benos un mail a "
 
@@ -136,16 +138,17 @@ pt["portuguese"] = "PORTUGU&Ecirc;S"
 pt["we_are"] = "J&Aacute; SOMOS"
 pt["pre_register_btn"] = "preinscri&ccedil;&atilde;o"
 pt["get_discount"] = "Obtenha 30 % de desconto"
-pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
+pt["event_title"] = "48 horas e o <span>maior evento de tecnologia</span> no Chile"
 
 pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
 
 pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
 pt["speakers_title"] = "Palestrantes"
-
 pt["speakers_desc"] = "Nove estrelas  mundiais como palestrantes principais"
+
 pt["sponsors_title"] = "Patrocinadores"
+pt["endorsement_title"] = "Apoio"
 pt["want_to_be_sponsor"] = "Voc&ecirc; quer ser um patrocinador?"
 pt["send_us_an_email_to"] = "Nos escreva um email a:"
 
