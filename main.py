@@ -206,12 +206,17 @@ class OrganizersHandler(webapp.RequestHandler):
 			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
 		}		
 		self.response.out.write(template.render('organizers.html', params))
+		
+class PersonalCounter(webapp.RequestHandler):
+	def get(self):
+		self.response.out.write(str(we_are().count()))
 
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
 		('/[R|r]egister', RegisterHandler),
-		#('/[O|o]rganizers', OrganizersHandler)
+		('/cx', PersonalCounter),
+		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
     util.run_wsgi_app(application)
 
