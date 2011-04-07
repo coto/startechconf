@@ -56,7 +56,7 @@ en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contribut
 en["conf_price"] = "Ticket price"
 en["ticket_general"] = "General"
 en["ticket_students"] = "Students"
-en["conf_price_details_1"] = "Include the two-days conference"
+en["conf_price_details_1"] = "Includes the two-days conference"
 en["conf_price_details_2"] = "Students have discount too"
 
 ## spanish dict
@@ -87,7 +87,7 @@ es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Nueve estrellas mundiales como keynoters"
 
 es["sponsors_title"] = "Auspiciadores"
-es["endorsement_title"] = "Apoyo"
+es["endorsement_title"] = "Patrocinadores"
 es["want_to_be_sponsor"] = "&iquest;Quieres ser auspiciador?"
 es["send_us_an_email_to"] = "Escr&iacute;benos un mail a "
 
