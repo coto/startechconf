@@ -18,7 +18,7 @@ en["pre_register_btn"] = "PREREGISTER"
 en["get_discount"] = "get 30% off"
 en["event_title"] = "48 hours and the <span>biggest tech conference </span>in Chile"
 
-en["when"] = "Coming in November(ish), 2011 @ Santiago de Chile"
+en["when"] = "November 4-5, 2011 / Santiago of Chile"
 
 en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best local and global technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
 en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
@@ -45,7 +45,7 @@ en["registered_email_body"] = "Thank you for your interest in StarTechConf being
 
 en["speaker_ReyBango"] = "Client-Web Community Program Manager for Microsoft and member of the jQuery Team. Editor of ScriptJunkier.com"
 en["speaker_CharlesNutter"] = "Creator of JRuby language. Recognized Java developer. JRuby developer at Engine Yard."
-en["speaker_PaulIrish"] = "Google Chrome and jQuery team member. Leader of some HTML5 and CSS3 libraries like Modernizr."
+en["speaker_PaulIrish"] = "Google Chrome developer and jQuery Team member. He maintains the HTML5 Boilerplate, the feature detection library Modernizr, and other bits and bobs of open source code. Big fan of gelato."
 en["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of Mastering CSS with Dreamweaver CS4. Founder of W3Conversions."
 en["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
 en["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
@@ -56,8 +56,8 @@ en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contribut
 en["conf_price"] = "Ticket price"
 en["ticket_general"] = "General"
 en["ticket_students"] = "Students"
-en["conf_price_details_1"] = "Includes the two-days conference"
-en["conf_price_details_2"] = "Students have discount too"
+en["conf_price_details_1"] = "Includes the two-days conference."
+en["conf_price_details_2"] = "Students have discount too."
 
 ## spanish dict
 
@@ -79,7 +79,7 @@ es["pre_register_btn"] = "PREINSCRIBETE"
 es["get_discount"] = "obt&eacute;n 30% de descuento"
 es["event_title"] = "48 horas y el mayor <span>evento de tecnolog&iacute;a </span>en Chile"
 
-es["when"] = "Pr&oacute;ximamente, Noviembre 2011 @ Santiago de Chile"
+es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
 
 es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores locales y de nivel mundial hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
 es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
@@ -104,9 +104,9 @@ es["invalid_captcha"] = "Captcha inv&aacute;lido"
 es["registered_email_subject"] = "Te has registrado para la Conferencia StarTechConf"
 es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso para inscribirte. Mientras tanto siguenos en twitter para mantenerte actualizado: http://twitter.com/startechconf. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
 
-es["speaker_ReyBango"] = "Miembro del equipo jQuery y Administrador de Programa de Desarrollo Comunitario para Microsoft. Editor de ScriptJunkier.com"
+es["speaker_ReyBango"] = "Miembro del equipo jQuery y Administrador del Programa Web-Cliente en Microsoft. Editor de ScriptJunkier.com"
 es["speaker_CharlesNutter"] = "Creador del lenguaje JRuby. Reconocido desarrollador Java. Desarrollador JRuby en Engine Yard."
-es["speaker_PaulIrish"] = "Miembro de los equipos Google Chrome y jQuery. L&iacute;der de algunas bibliotecas HTML5 y CSS3 tales como Modernizr"
+es["speaker_PaulIrish"] = "Desarrollador de Google Chrome y miembro del equipo jQuery. L&iacute;der de algunas bibliotecas HTML5 y CSS3 tales como Modernizr. Gran fan del helado."
 es["speaker_StephanieSullivan"] = "Experta de alto nivel en CSS y Prominente desarrolladora de aplicaciones Front-End. Co-Autora de &quot;Mastering CSS with Dreamweaver CS4&quot;. Fundadora de W3Conversions."
 es["speaker_JonathanSnook"] = "Ingeniero Front en Yahoo!. Co-Autor del best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; y &quot;The Art and Science of CSS&quot;"
 es["speaker_ObieFernandez"] = "L&iacute;der tecnol&oacute;gico mundialmente reconocido. Autor del best seller &quot;The Rails Way&quot;. Fundador de Hashrocket, una de las consultoras de desarrollo web basado en Rails l&iacute;deres en el mundo."
@@ -117,8 +117,8 @@ es["speaker_CaridyPatino"] = "Ingeniero Front-end Senior en Yahoo!. Contribuidor
 es["conf_price"] = "Precio del ticket"
 es["ticket_general"] = "General"
 es["ticket_students"] = "Estudiantes"
-es["conf_price_details_1"] = "Incluye los dos d&iacute;as de conferencia"
-es["conf_price_details_2"] = "Estudiantes tambi&eacute;n tienen descuento"
+es["conf_price_details_1"] = "Incluye los dos d&iacute;as de conferencia."
+es["conf_price_details_2"] = "Estudiantes tambi&eacute;n tienen descuento."
 
 ## portuguese dict
 
@@ -140,7 +140,7 @@ pt["pre_register_btn"] = "preinscri&ccedil;&atilde;o"
 pt["get_discount"] = "Obtenha 30 % de desconto"
 pt["event_title"] = "48 horas e o <span>maior evento de tecnologia</span> no Chile"
 
-pt["when"] = "Proximamente, novembro 2011, Santiago de Chile"
+pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
 
 pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
@@ -170,7 +170,7 @@ pt["registered_email_body"] = "Obrigado por querer participar da conferencia Sta
 
 pt["speaker_ReyBango"] = "Client-Web Community Program Manager for Microsoft and member of the jQuery Team. Editor of ScriptJunkier.com"
 pt["speaker_CharlesNutter"] = "Creator of JRuby language. Recognized Java developer. JRuby developer at Engine Yard."
-pt["speaker_PaulIrish"] = "Google Chrome and jQuery team member. Leader of some HTML5 and CSS3 libraries like Modernizr."
+pt["speaker_PaulIrish"] = "Google Chrome developer and jQuery Team member. He maintains the HTML5 Boilerplate, the feature detection library Modernizr, and other bits and bobs of open source code. Big fan of gelato."
 pt["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of Mastering CSS with Dreamweaver CS4. Founder of W3Conversions."
 pt["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;Accelerated DOM Scripting with AJAX, APIS and Libraries&quot; and &quot;The Art and Science of CSS&quot;."
 pt["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;The Rails Way&quot;. Founder of Hashrocket, one of the world&rsquo;s leading Rails-based web development consultancies."
@@ -181,6 +181,6 @@ pt["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. YUI contribut
 pt["conf_price"] = "Pre&ccedil;o do bilhete"
 pt["ticket_general"] = "Geral"
 pt["ticket_students"] = "Estudantes"
-pt["conf_price_details_1"] = "Inclui os dois dias da confer&ecirc;ncia"
-pt["conf_price_details_2"] = "Estudantes tamb&eacute;n tem desconto"
+pt["conf_price_details_1"] = "Inclui os dois dias da confer&ecirc;ncia."
+pt["conf_price_details_2"] = "Estudantes tamb&eacute;n tem desconto."
 
