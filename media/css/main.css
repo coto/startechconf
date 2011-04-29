@@ -17,6 +17,9 @@ strong {
 	font-weight:normal;
 }
 
+.clearfix {
+	clear:both;
+}
 
 @font-face {
 	font-family: Condensada;
@@ -156,7 +159,8 @@ body {
 	margin-top:-25px;
 	text-align:center;
 	padding: 20px 0 14px 0;
-	width: 275px;			
+	width: 275px;	
+	height:95px;		
 }
 
 	.preinscription-block p{
@@ -333,9 +337,9 @@ overflow:hidden;
 		text-transform:uppercase;
 		display:block;
 		padding:8px 22px;
-		box-shadow:-1px 1px 1px #000000;
-		-moz-box-shadow:-1px 1px 1px #000000;
-		-webkit-box-shadow:-1px 1px 1px #000000;
+		box-shadow:0 0 5px #131D28;
+		-moz-box-shadow:0 0 5px #131D28;
+		-webkit-box-shadow:0 0 5px #131D28;
 		float:left;
 	}
 
@@ -400,14 +404,14 @@ p.date {
 	float:left;
 	font-size:24px;
 	color:#a4b8d0;
-	text-shadow:-3px 2px 0 #000;
+	text-shadow:-1px 1px 2px #000;
 	margin-left:18px;
 	padding-top:12px;
 }
 
 .content-section#keynoters .allkeynoters{
 	clear:both;
-	margin:50px 0 25px 0;
+	margin:50px 0 0 0;
 	overflow:hidden;
 	float:left;
 	padding-left:4px;
@@ -415,9 +419,9 @@ p.date {
 
 .keynoter{
 	float:left;
-	width:293px;
-	margin:0 25px 45px 0;
+	margin:0 15px 25px 0;
 	color:#bfcfe1;
+	clear:both;
 }
 
 	.keynoter h4{
@@ -440,6 +444,8 @@ p.date {
 	-moz-box-shadow:-4px 4px 0 #000000;
 	-webkit-box-shadow:-4px 4px 0 #000000;
 	background:#000;
+	margin-right:18px;
+	float:left;
 }
 
 .last-row{
@@ -455,9 +461,18 @@ p.date {
 	background: #fff;
 }
 
+.content-section .leftblock {
+	float:left;
+	width:528px;
+}
+
+.content-section .rightblock {
+	float:right;
+	width:400px;
+}
+
 .sponsor-content{
 	clear:both;
-	float:left;
 	overflow:hidden;
 	margin-top:4px;
 	margin-bottom: 10px;
@@ -472,68 +487,72 @@ p.date {
 }
 
 .sponsor-block{
-	float:left;
 	overflow:hidden;
-	padding:40px 0 20px 0;
+	padding:40px 0 0 0;
 	padding-left:4px;
 }
 
-.sponsors-endorsements-content p{
-	float:left;
-	display::block;
-	clear:both;
-	font-size:22px;
-	color:#364455;
-	margin-bottom:24px;
-	/*text-shadow:-3px 2px 0 #000;*/
-	/*temporalmente mientras los bloques de sponsors estan desactivados*/
-	margin-top:8px;
-}
-
-.sponsors-endorsements-content p strong{
-	font-family:"Newsgoth-bold", Arial, sans-serif;
-}
-
-.sponsors-endorsements-content p a{
-	color:#364455;
-}
-.sponsors-endorsements-content p a.contact{
-	text-decoration: none;
+.sponsor-content p{
+	color:#FFF;
+	font-size:16px;
+	padding-left:10px;
 	letter-spacing: -0.02em;
+	
+}
+.sponsor-content p a.contact{
+	text-decoration: none;
+	color:#aabacc;
 }
 
 .sponsor-content h4{
-	font-size:24px;
-	color:#364455;
+	font-size:20px;
+	color:#FFF;
 	margin-bottom:14px;
-	text-shadow:-3px 2px 0 #000;
 }
 
 .sponsors-list{
 	background:#fff;
-	min-height:400px;
-	box-shadow:-4px 4px 0 #000000;
-	-moz-box-shadow:-4px 4px 0 #000000;
-	-webkit-box-shadow:-4px 4px 0 #000000;
+	min-height:95px;
+	box-shadow:-2px 2px 0 #000000;
+	-moz-box-shadow:-2px 2px 0 #000000;
+	-webkit-box-shadow:-2px 2px 0 #000000;
 }
 
-#sponsor-google {
-	margin-top: 8px;
-	display: block;
-	float: left;
+.sponsors-list ul{
+	list-style:none;
+	margin:14px 0;
 }
 
-#sponsor-continnuum {
+.sponsor-content li{
+	float:left;
+	margin:8px 4px;
 }
 
-
-.platinum{
-	width:560px;
-	margin-right:30px;
+.sponsor-content li a{
+	display:block;
 }
 
-.golden{
-	width:360px;
+.sponsor-content .platinum img,
+.sponsor-content .golden img{
+	width:190px;
+}
+
+.sponsor-content .golden{
+	padding-top:20px;
+}
+
+.sponsor-content .silver{
+	padding-top:20px;
+}
+
+.sponsor-content .silver img,
+.sponsor-content .endorsements img
+{
+	width:122px;
+}
+
+.sponsor-content .endorsements{
+	padding-top:20px;
 }
 
 .content-section#follow .content-follow{
@@ -654,7 +673,7 @@ p.date {
 	clear:both;
 	color:#fff;
 	font-size:16px;
-	margin: 10px 0 20px 0;
+	margin: 10px 0 50px 0;
 }
 
 #footer {
@@ -662,7 +681,7 @@ p.date {
 	background-image: -moz-linear-gradient(top, #2e3b4b, #495666);
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2e3b4b), color-stop(1, #495666));
 	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#2e3b4b', EndColorStr='#495666')";
-	padding:13px 0 11px 0;
+	padding:6px 0 4px 0;
 	bottom:0;
 	display:block;
 	overflow:hidden;
