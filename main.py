@@ -207,15 +207,15 @@ class OrganizersHandler(webapp.RequestHandler):
 		}		
 		self.response.out.write(template.render('organizers.html', params))
 		
-class PersonalCounter(webapp.RequestHandler):
+class Counter(webapp.RequestHandler):
 	def get(self):
-		self.response.out.write(str(we_are().count()))
+		self.response.out.write("<h1 style=\"font-size: 5em;\">"+str(we_are().count())+"</h1>")
 
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
 		('/[R|r]egister', RegisterHandler),
-		('/cx', PersonalCounter),
+		('/counter', Counter),
 		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
     util.run_wsgi_app(application)

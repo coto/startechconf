@@ -6,6 +6,8 @@
         <option name="rootFolder" value="$MODULE_DIR$" />
         <option name="sdkFolder" value="/usr/local/google_appengine" />
         <option name="templatesFolder" value="$MODULE_DIR$/templates" />
+        <option name="email" value="rodrigo.augosto@gmail.com" />
+        <option name="gp" value="dfc6dfdedfc5dfc5dfd3dfcfdfd8dfc6dfd0dfd0dfcddfc2dfc1dfd0dfc1dfda" />
       </configuration>
     </facet>
   </component>
