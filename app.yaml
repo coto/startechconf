@@ -8,6 +8,10 @@ handlers:
   static_files: media/favicon.ico
   upload: media/favicon.ico
 
+- url: /favicon.png
+  static_files: media/favicon.png
+  upload: media/favicon.png
+
 - url: /presentation.pdf
   static_files: media/docs/startechconf-presentation.pdf
   upload: media/docs/startechconf-presentation.pdf
