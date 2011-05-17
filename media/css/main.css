@@ -192,7 +192,7 @@ body {
 		width: 200px;
 	}
 
-	.preinscription-block button: hover{
+	.preinscription-block button:hover{
 		background-position: 0 bottom;
 	}
 
@@ -225,7 +225,7 @@ body {
 		width: 200px;
 	}
 
-	.preinscription-block button: hover{
+	.preinscription-block button:hover{
 		background-position: 0 bottom;
 	}
 
@@ -253,7 +253,7 @@ body {
 		text-transform: uppercase;
 	}
 
-	#main-nav ul li a: hover,
+	#main-nav ul li a:hover,
 	#main-nav ul li.selected a{
 		background: #495666;
 		text-shadow: 1px -1px 10px #333;
@@ -888,7 +888,7 @@ p.date {
 		text-decoration: none;
 	}
 
-	.modal-content .content-register a: hover{
+	.modal-content .content-register a:hover{
 		color: #FFF;
 		text-decoration: underline;
 	}
@@ -911,6 +911,6 @@ p.date {
 		margin-top: 18px;
 	}
 
-	.modal-content .button: hover{
+	.modal-content .button:hover{
 		background-position: 0 bottom;
 	}
