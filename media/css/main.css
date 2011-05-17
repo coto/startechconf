@@ -834,36 +834,40 @@ p.date {
 	-webkit-box-shadow: 0 0 12px #333;
 }
 
-.modal-content h3 {
-	text-transform: uppercase;
-	font-size: 30px;
-	letter-spacing: -0.02em;
-	background: #2D3849;
-	padding: 16px 28px;
-	-webkit-border-top-left-radius: 6px;
-	-webkit-border-top-right-radius: 6px;
-	-moz-border-radius-topleft: 6px;
-	-moz-border-radius-topright: 6px;
-	border-top-left-radius: 6px;
-	border-top-right-radius: 6px;
-	text-align: center;
+.modal-content .recaptcha_area{
+    text-shadow: none;
+    color: red;
 }
+    .modal-content h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+        letter-spacing: -0.02em;
+        background: #2D3849;
+        padding: 16px 28px;
+        -webkit-border-top-left-radius: 6px;
+        -webkit-border-top-right-radius: 6px;
+        -moz-border-radius-topleft: 6px;
+        -moz-border-radius-topright: 6px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        text-align: center;
+    }
 
-.modal-content p{
-	padding: 16px 45px;
-	line-height: 20px;
-	text-align: center;
-}
+    .modal-content p{
+        padding: 16px 45px;
+        line-height: 20px;
+        text-align: center;
+    }
 
-.content-register{
-	text-shadow: none;
-	padding: 10px 30px;
-	text-align: center;
-}
+    .content-register{
+        text-shadow: none;
+        padding: 10px 30px;
+        text-align: center;
+    }
 
-.modal-content label{
-	text-shadow: none;
-}
+    .modal-content label{
+        text-shadow: none;
+    }
 
 	.modal-content .box{
 		border: 1px solid #a4b8d0;

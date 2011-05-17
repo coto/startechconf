@@ -194,6 +194,12 @@
     <div class="modal-content">
       <h3>{{lang.pre_register_popup_title}}</h3>
       <p>{{lang.pre_register_popup_desc}}</p>
+      <script type="text/javascript">
+        var RecaptchaOptions = {
+            theme : 'white',
+            lang: '{{lang.id}}'
+        };
+      </script>
       {{ captchahtml }}
       <div class="content-register">
         <div class="to-mail">
