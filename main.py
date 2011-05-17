@@ -182,8 +182,8 @@ class RegisterHandler(webapp.RequestHandler):
 				message_to_admin.sender = "contact@startechconf.com"
 				message_to_admin.subject = "StarTechConf - Preregister"
 				message_to_admin.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
-				message_to_admin.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s", \n\t"language": "%(language)s"\n},' % \
-						  {'email': email, "when": str(now), "remote_addr": ip, "language": lang["id"]}
+				message_to_admin.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s", \n\t"language": "%(language)s, \n\t"country": "%(country)s"\n},' % \
+						  {'email': email, "when": str(now), "remote_addr": ip, "language": lang["id"], "country": get_country(self)}
 				message_to_admin.send()
 
 
