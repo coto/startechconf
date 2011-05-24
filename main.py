@@ -226,11 +226,11 @@ class Counter(webapp.RequestHandler):
     def get(self):
         user = users.get_current_user()
         if user:
-            greeting = ("Welcome, %s! <a href=\"%s\">sign out</a><h1 style=\"font-size: 5em;\">we are: %s</h1>" %
-						(user.nickname(), users.create_logout_url(self.request.path), str(we_are().count())))
+            greeting = ("Welcome, %s from %s! <a href=\"%s\">sign out</a><h1 style=\"font-size: 5em;\">we are: %s</h1>" %
+						(user.nickname(), get_country(self), users.create_logout_url(self.request.path), str(we_are().count())))
         else:
-            greeting = ("<a href=\"%s\">Sign in or register</a>." %
-						users.create_login_url(self.request.path))
+            greeting = ("<a href=\"%s\">Sign in or register</a> from %s." %
+						(users.create_login_url(self.request.path), get_country(self)))
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
