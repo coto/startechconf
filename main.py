@@ -30,16 +30,16 @@ from string import *
 import logging
 
 def get_country(self):
-	try:
-		raw = urlfetch.fetch("http://api.hostip.info/get_html.php?ip="+self.request.remote_addr)
-	except:
-		return "XX"
-	country = ""
-	try:
-		country = raw.content.split('(')[1]
-		country = country.split(')')[0]
-	except:
-		country = "XX"
+    try:
+        raw = urlfetch.fetch("http://api.hostip.info/get_html.php?ip="+self.request.remote_addr)
+    except:
+        return "XX"
+    country = ""
+    try:
+        country = raw.content.split('(')[1]
+        country = country.split(')')[0]
+    except:
+        country = "XX"
     return country
 
 def isAddressValid(email):
