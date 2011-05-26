@@ -19,27 +19,17 @@ from google.appengine.dist import use_library
 use_library('django', '0.96')
 
 from google.appengine.api import mail
+from google.appengine.api import urlfetch
 from google.appengine.api import users
 from google.appengine.ext import webapp
 from google.appengine.ext import db
 from google.appengine.ext.webapp \
 	import util, template
 
-from string import *
-
 import logging
 
 def get_country(self):
-    try:
-        raw = urlfetch.fetch("http://api.hostip.info/get_html.php?ip="+self.request.remote_addr)
-    except:
-        return "XX"
-    country = ""
-    try:
-        country = raw.content.split('(')[1]
-        country = country.split(')')[0]
-    except:
-        country = "XX"
+    country = urlfetch.fetch("http://geoip.wtanaka.com/cc/"+self.request.remote_addr).content
     return country
 
 def isAddressValid(email):
@@ -53,7 +43,6 @@ def get_device(self):
     return "desktop"
 
 def set_lang_cookie_and_return_dict(request, response):
-    lang_cookie = "en"
     if request.get("hl") == "":
         # ask for cookie
         lang_cookie = request.cookies.get("hl")
