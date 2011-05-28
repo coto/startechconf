@@ -19,6 +19,7 @@ en["get_discount"] = "get 30% off"
 en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
+en["when"] = "November 4-5, 2011"
 
 en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best local and global technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
 en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
@@ -81,6 +82,7 @@ es["get_discount"] = "obt&eacute;n 30% de descuento"
 es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile"
 
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
+es["date"] = "4 y 5 de Noviembre de 2011"
 
 es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores locales y de nivel mundial hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
 es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
@@ -143,6 +145,7 @@ pt["get_discount"] = "Obtenha 30 % de desconto"
 pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
+pt["date"] = "4 e 5 de Novembro, 2011"
 
 pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores do pais e a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
