@@ -47,7 +47,7 @@ def set_lang_cookie_and_return_dict(request, response):
         # ask for cookie
         lang_cookie = request.cookies.get("hl")
         if not lang_cookie:
-            lang_cookie = "en"
+            lang_cookie = "es"
     else:
         # set cookie to en
 		lang_cookie = request.get("hl")
@@ -232,7 +232,6 @@ def main():
 		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
     util.run_wsgi_app(application)
-
 
 if __name__ == '__main__':
     main()
