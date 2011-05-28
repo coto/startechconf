@@ -16,7 +16,7 @@ en["portuguese"] = "Portuguese"
 en["we_are"] = "We are"
 en["pre_register_btn"] = "PREREGISTER"
 en["get_discount"] = "get 30% off"
-en["event_title"] = "48 hours and the <span>biggest tech conference </span>in Chile"
+en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
 
@@ -78,7 +78,7 @@ en["portuguese"] = "Portugues"
 es["we_are"] = "Ya somos"
 es["pre_register_btn"] = "PREINSCRIBETE"
 es["get_discount"] = "obt&eacute;n 30% de descuento"
-es["event_title"] = "48 horas y el mayor <span>evento de tecnolog&iacute;a </span>en Chile"
+es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile"
 
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
 
@@ -140,7 +140,7 @@ pt["portuguese"] = "PORTUGU&Ecirc;S"
 pt["we_are"] = "J&Aacute; SOMOS"
 pt["pre_register_btn"] = "preinscri&ccedil;&atilde;o"
 pt["get_discount"] = "Obtenha 30 % de desconto"
-pt["event_title"] = "48 horas e o <span>maior evento de tecnologia</span> no Chile"
+pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
 
