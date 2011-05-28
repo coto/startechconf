@@ -95,7 +95,7 @@ es["want_to_be_sponsor"] = "&iquest;Quieres ser auspiciador?"
 es["send_us_an_email_to"] = "Escr&iacute;benos un mail a "
 
 es["pre_register_popup_title"] = "Preregistro"
-es["pre_register_popup_desc"] = "Escribe las dos palabras Captcha y luego ingresa tu email para recibir informaci&oacute;n actualizada e indicaciones de como obtener el descuento"
+es["pre_register_popup_desc"] = "Escribe las dos palabras Captcha e ingresa tu email para recibir actualizaciones e indicaciones de como obtener el descuento"
 es["pre_register_popup_ok_btn"] = "Aceptar"
 es["pre_register_popup_cancel_btn"] = "Cancelar"
 es["message_title"] = "Mensaje"
@@ -159,7 +159,7 @@ pt["send_us_an_email_to"] = "Nos escreva um email a: "
 
 pt["rights"] = "Todos os direitos reservados"
 pt["pre_register_popup_title"] = "pre-inscri&ccedil;&atilde;o"
-pt["pre_register_popup_desc"] = "Escrever as duas palavras Captcha e ingresse seu email para receber informa&ccedil;&atilde;o atualizada e indica&ccedil;&ocirc;es de como obter o desconto"
+pt["pre_register_popup_desc"] = "Escrever as duas palavras Captcha e ingresse seu email para receber atualiza&ccedil;&ocirc;es e indica&ccedil;&ocirc;es de como obter o desconto"
 
 pt["pre_register_popup_ok_btn"] = "Aceitar"
 pt["pre_register_popup_cancel_btn"] = "Cancelar"
