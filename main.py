@@ -87,6 +87,8 @@ class MainHandler(webapp.RequestHandler):
 		}
         self.response.out.write(
 			template.render('index.html', params))
+    def post(self):
+        self.redirect("/")
 
 class RegisterHandler(webapp.RequestHandler):
 
@@ -136,7 +138,7 @@ class RegisterHandler(webapp.RequestHandler):
 				'count': we_are().count(),
 				'lang': lang,
 				'msg': lang["invalid_email_address"],
-				'is_error': False				
+				'is_error': False
 			}
             self.response.out.write(
 				template.render('index.html', params))

@@ -61,6 +61,9 @@ en["ticket_students"] = "Students"
 en["conf_price_details_1"] = "Includes the two-days conference."
 en["conf_price_details_2"] = "Students have discount too."
 
+en["social_title"] = "Great!, Let people know..."
+en["social_message"] = "I am going to the Biggest Tech Conference in Chile."
+
 ## spanish dict
 
 es = {}
@@ -123,6 +126,9 @@ es["ticket_general"] = "General"
 es["ticket_students"] = "Estudiantes"
 es["conf_price_details_1"] = "Incluye los dos d&iacute;as de conferencia."
 es["conf_price_details_2"] = "Estudiantes tambi&eacute;n tienen descuento."
+
+es["social_title"] = "Genial!, Hazle saber al mundo..."
+es["social_message"] = "Voy al mayor evento tecnologico en Chile."
 
 ## portuguese dict
 
@@ -190,4 +196,7 @@ pt["ticket_general"] = "Geral"
 pt["ticket_students"] = "Estudantes"
 pt["conf_price_details_1"] = "Inclui os dois dias da confer&ecirc;ncia."
 pt["conf_price_details_2"] = "Estudantes tamb&eacute;n tem desconto."
+
+pt["social_title"] = "&Oacute;timo!, deixar as pessoas sabem..."
+pt["social_message"] = "Estou indo para o maior evento de tecnologia no Chile."
 
