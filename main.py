@@ -138,7 +138,7 @@ class RegisterHandler(webapp.RequestHandler):
 				'count': we_are().count(),
 				'lang': lang,
 				'msg': lang["invalid_email_address"],
-				'is_error': False
+				'is_error': True
 			}
             self.response.out.write(
 				template.render('index.html', params))
@@ -155,7 +155,7 @@ class RegisterHandler(webapp.RequestHandler):
 					'count': we_are().count(),
 					'lang': lang,
 					'msg': lang["already_registered"],
-					'is_error': False
+					'is_error': True
 				}
                 self.response.out.write(
 					template.render('index.html', params))
