@@ -1,5 +1,7 @@
 $(document).ready(function(){
-	var id = "#msg";
+    twttr.anywhere(function (T) {
+        T("#follow-placeholder").followButton('startechconf');
+    });
 
 	function show(id) {
 		//Get the screen height and width
@@ -22,30 +24,26 @@ $(document).ready(function(){
 		//transition effect
 		$(id).fadeIn(100);
 	}
-	
-	$("#action-open-register").click(function(e){
-		//Cancel the link behavior
+    var id = "#msg";
+
+	$("#action-open").click(function(e){
 		e.preventDefault();
-		id = "#register";		
-		show(id);
+        id = $(this).attr("rel");
+        show(id);
 	});
 	
-	//if close button is clicked
-	$('.action-close-register').click(function (e) {
-		//Cancel the link behavior
+	$('.action-close').click(function (e) {
 		e.preventDefault();
 
 		$('#mask').hide();
-		$(id).hide();
+		$($(this).attr("rel")).hide();
 	});		
 
-	//if mask is clicked
 	$('#mask').click(function () {
 		$(this).hide();
 		$(id).hide();
 	});
 	
-	id = "#msg";
 	if ($(id).size()) show(id);
-	
+
 });
