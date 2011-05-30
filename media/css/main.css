@@ -850,9 +850,11 @@ p.date {
 	}
 
     #fb_comments{
-        background-color: #dcdcdc;
-        height: 120px;
+        background-color: white;
+        height: 80px;
         overflow: hidden;
+        width: 530px;
+        padding: 0 5px;
     }
 
 
