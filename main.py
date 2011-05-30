@@ -216,12 +216,13 @@ class OrganizersHandler(webapp.RequestHandler):
 class Counter(webapp.RequestHandler):
     def get(self):
         user = users.get_current_user()
+        test = "text test"
         if user:
-            greeting = ("Welcome, %s from %s! <a href=\"%s\">sign out</a><h1 style=\"font-size: 5em;\">we are: %s</h1>" %
-						(user.nickname(), get_country(self), users.create_logout_url(self.request.path), str(we_are().count())))
+            greeting = ("Welcome, %s from %s! <a href=\"%s\">sign out</a><h1 style=\"font-size: 5em;\">we are: %s</h1><hr><div>%s</div>" %
+						(user.nickname(), get_country(self), users.create_logout_url(self.request.path), str(we_are().count()), test))
         else:
-            greeting = ("<a href=\"%s\">Sign in or register</a> from %s." %
-						(users.create_login_url(self.request.path), get_country(self)))
+            greeting = ("<a href=\"%s\">Sign in or register</a> from %s. <hr><div>%s</div>" %
+						(users.create_login_url(self.request.path), get_country(self), test))
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
