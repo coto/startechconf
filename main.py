@@ -213,6 +213,29 @@ class OrganizersHandler(webapp.RequestHandler):
 		}		
         self.response.out.write(template.render('organizers.html', params))
 
+class Premio(webapp.RequestHandler):
+    def get(self):
+        params = {
+			'device': get_device(self),
+			'count': we_are().count(),
+			'path' : self.request.path,
+			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
+		}
+        self.response.out.write(template.render('premio.html', params))
+    def post(self):
+        if not isAddressValid(email):
+            params = {
+				'device': get_device(self),
+				'path' : self.request.path,
+				'count': we_are().count(),
+				'lang': lang,
+				'msg': lang["invalid_email_address"],
+				'is_error': True
+			}
+            self.response.out.write(
+				template.render('premio.html', params))
+        self.response.out.write(template.render(''))
+
 class Counter(webapp.RequestHandler):
     def get(self):
         user = users.get_current_user()
@@ -231,7 +254,8 @@ def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
 		('/[R|r]egister', RegisterHandler),
-		('/counter', Counter),
+        ('/counter', Counter),
+        ('/premio', Premio),
 		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
     util.run_wsgi_app(application)
