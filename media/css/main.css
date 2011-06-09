@@ -252,6 +252,10 @@ body {
 		font-size: 14px;
 		text-transform: uppercase;
 	}
+	#main-nav ul li.talk_proposal a{
+		padding: 14px 10px 9px 10px;
+		border-bottom: 6px solid #F29133;
+	}
 
 	#main-nav ul li a:hover,
 	#main-nav ul li.selected a{
