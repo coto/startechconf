@@ -427,7 +427,14 @@ p.date {
 	.keynoter h4{
 		font-size: 20px;
 		color: #F29133;
-		margin-bottom: 12px;
+		margin-bottom: 5px;
+	}
+
+	.keynoter a.sp_twitter{
+		font-size: 14px;
+        line-height: 20px;
+        vertical-align: top;
+        text-decoration: none;
 	}
 
 	.keynoter p{
