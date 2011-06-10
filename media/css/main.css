@@ -497,11 +497,12 @@ p.date {
 
 #sponsors h3 {
 	box-shadow: none;
+    margin-bottom: 20px;
 }
 
 .sponsor-block{
 	overflow: hidden;
-	padding: 40px 0 0 0;
+	padding: 20px 0 0 0;
 	padding-left: 4px;
 }
 
