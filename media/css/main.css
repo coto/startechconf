@@ -364,7 +364,8 @@ overflow: hidden;
 	}
         #price h3{
             display: block;
-            width: 210px;
+            width: 300px;
+            text-align: center;
         }
 
 	.content-section.bg-on {
@@ -441,17 +442,34 @@ p.date {
 }
 
 .keynoter{
-	float: left;
 	margin: 0 15px 25px 0;
 	color: #bfcfe1;
 	clear: both;
+    width: 620px;
+    margin-bottom: 40px;
 }
+    .keynoter img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 26px;
+        box-shadow: -4px 4px 0 #000000;
+        -moz-box-shadow: -4px 4px 0 #000000;
+        -webkit-box-shadow: -4px 4px 0 #000000;
+        background: #000;
+        margin-right: 18px;
+        float: left;
+    }
 
 	.keynoter h4{
 		font-size: 20px;
 		color: #F29133;
 		margin-bottom: 5px;
+        display: inline;
 	}
+
+    .keynoter .content_twiiter{
+        margin: 6px 0;
+    }
 
 	.keynoter a.sp_twitter{
 		font-size: 14px;
@@ -465,6 +483,7 @@ p.date {
         margin-top: 2px;
 		line-height: 20px;
 		font-size: 14px;
+        width: 100%;
 	}
     .keynoter a{
 		text-decoration: underline;
@@ -473,17 +492,7 @@ p.date {
     .keynoter a:hover{
 		text-decoration: none;
 	}
-.photo-keynoter{
-	width: 80px;
-	height: 80px;
-	margin-bottom: 26px;
-	box-shadow: -4px 4px 0 #000000;
-	-moz-box-shadow: -4px 4px 0 #000000;
-	-webkit-box-shadow: -4px 4px 0 #000000;
-	background: #000;
-	margin-right: 18px;
-	float: left;
-}
+
 
 .last-row{
 	margin-right: 0;
