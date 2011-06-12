@@ -1,69 +1,92 @@
 @charset "UTF-8";
-/* CSS Document */
-/* STARTECHCONF 2011 */
-/* Development by Continuum Chile*/
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0b1 | 201101
+   NOTE: WORK IN PROGRESS
+   USE WITH CAUTION AND TEST WITH ABANDON */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
-em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt,
-var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
-center, u, b, i {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	font-weight: normal;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 
-strong {
-	font-weight: normal;
+/* remember to define visible focus styles!
+:focus {
+	outline: ?????;
+} */
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**** Claerfix ******/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
 }
 
 .clearfix {
-	clear: both;
+	display: inline-block;
 }
 
-@font-face {
-	font-family: Condensada;
- 	src: url('condensed.otf');
+html[xmlns] .clearfix {
+	display: block;
 }
 
-@font-face {
-	font-family: CondensadaLight;
- 	src: url('condensed-light.otf');
+* html .clearfix {
+	height: 1%;
 }
 
-@font-face {
-	font-family: CondensadaBold;
- 	src: url('condensed-bold.otf');
-}
-
-@font-face {
-	font-family: CondensadaExtraBold;
- 	src: url('Compctab.ttf');
-}
-
-@font-face {
-	font-family: CondensadaComapcta;
- 	src: url('condensed-compact.otf');
-}
-
-@font-face {
-	font-family: Newsgoth;
- 	src: url('Newsgotn.ttf');
-}
-
-@font-face {
-	font-family: Newsgoth-bold;
- 	src: url('Newsgotb.ttf');
-}
-
-@font-face {
-	font-family: Newsgoth-light;
- 	src: url('Newsgotl.ttf');
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-weight: normal;
-}
+/* CSS Document */
+/* STARTECHCONF 2011 */
+/* Development by Continuum Chile*/
 
 .no-mostrar{
 	display: none;
@@ -72,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 body {
 	margin: 0;
 	padding: 0;
-	font-family: "Newsgoth", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 	font-weight: normal;
 	font-size: 12px;
 	background: url(../images/bg-texture.png) repeat;
@@ -105,7 +128,7 @@ body {
 	}
 
 	#header h1 a{
-		background: url(../images/main-logo.png) repeat-x 0 0;
+		background: url('../images/main-logo.png') repeat-x 0 0;
 		width: 363px;
 		height: 145px;
 		text-indent: -100000px;
@@ -121,7 +144,7 @@ body {
 #counter{
 	position: absolute;
 	overflow: hidden;
-	font-family: "Newsgoth", Arial, sans-serif;
+    font-weight: bold;
 	font-size: 16px;
 	z-index: 10;
 	text-align: right;
@@ -134,7 +157,7 @@ body {
 		color: #6a7787;
 		text-transform: uppercase;
 		font-size: 20px;
-		font-family: "Newsgoth-bold", Arial, sans-serif;
+        font-weight: bold;
 		line-height: 26px;
 		padding-right: 5px;
 	}
@@ -143,7 +166,7 @@ body {
 		color: #f29133;
 		text-transform: uppercase;
 		font-size: 140px;
-		font-family: "CondensadaExtraBold", Arial, sans-serif;
+        font-weight: bold;
 		text-shadow: 2px 2px 0px #999;
 		letter-spacing: -0.02em;
 		line-height: 146px;
@@ -154,7 +177,6 @@ body {
 	background: url(../images/block-button.png) no-repeat 0 0;
 	overflow: hidden;
 	z-index: 10;
-	text-align: right;
 	margin-left: 695px;
 	margin-top: -25px;
 	text-align: center;
@@ -167,14 +189,14 @@ body {
 		color: #FFF;
 		text-transform: uppercase;
 		font-size: 15px;
-		font-family: "Newsgoth-bold", Arial, sans-serif;
+        font-weight: bold;
 		line-height: 25px;
 		margin-top: 10px;
 		padding-left: 17px;
 	}
 
 	.preinscription-block button{
-		background: url(../images/bg-big-button.png) no-repeat;
+		background: url('../images/bg-big-button.png') no-repeat;
 		border: 0;
 		text-transform: uppercase;
 		color: #FFF;
@@ -200,7 +222,7 @@ body {
 		color: #FFF;
 		text-transform: uppercase;
 		font-size: 15px;
-		font-family: "Newsgoth-bold", Arial, sans-serif;
+        font-weight: bold;
 		line-height: 25px;
 		margin-top: 10px;
 		padding-left: 17px;
@@ -237,7 +259,6 @@ body {
 	#main-nav ul{
 		list-style: none;
 		float: left;
-		font-family: "Newsgoth", Arial, sans-serif;
 	}
 
 	#main-nav ul li{
@@ -281,7 +302,7 @@ body {
 		text-indent: -100000px;
 		margin-left: 4px;
 		margin-top: 2px;
-		background: url(../images/sprite-flags.png) no-repeat;
+		background: url('../images/sprite-flags.png') no-repeat;
 	}
 
 	#select-language span{
@@ -335,13 +356,16 @@ overflow: hidden;
 		letter-spacing: -0.01em;
 		text-shadow: -3px 2px 0 #000;
 		text-transform: uppercase;
-		display: block;
+        display: inline-block;
 		padding: 8px 22px;
 		box-shadow: 0 0 5px #131D28;
 		-moz-box-shadow: 0 0 5px #131D28;
 		-webkit-box-shadow: 0 0 5px #131D28;
-		float: left;
 	}
+        #price h3{
+            display: block;
+            width: 210px;
+        }
 
 	.content-section.bg-on {
 		background-color: #364455;
@@ -370,14 +394,13 @@ overflow: hidden;
 		line-height: 22px;
 		color: #fff;
 		letter-spacing: -0.01em;
-		font-family: "Newsgoth-light", Arial, sans-serif;
 		text-shadow: -3px 2px 0 #000;
 		width: 970px !important;
 	}
 
 p.date {
 	font-size: 30px;
-	font-family: "Newsgoth-bold", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .content-section#resume .block-content p{
@@ -385,13 +408,13 @@ p.date {
 }
 
 .content-section#resume .block-content strong{
-	font-family: "Newsgoth-bold", Arial, sans-serif;
+    font-weight: bold;
 }
 
 .content-section#keynoters,
 .content-section#follow,
 .content-section#register{
-	font-family: "Newsgoth-light", Arial, sans-serif;
+
 }
 
 .content-section#keynoters .block-content,
@@ -433,14 +456,15 @@ p.date {
 	.keynoter a.sp_twitter{
 		font-size: 14px;
         line-height: 20px;
-        vertical-align: top;
         text-decoration: none;
+        padding-left: 22px;
+        background: transparent url('../images/twitter_newbird_blue.png') left center no-repeat;
 	}
 
 	.keynoter p{
+        margin-top: 2px;
 		line-height: 20px;
 		font-size: 14px;
-		font-family: "Newsgoth-light", Arial, sans-serif;
 	}
     .keynoter a{
 		text-decoration: underline;
@@ -479,6 +503,10 @@ p.date {
 	width: 650px;
 }
 
+    .content-section .leftblock h3{
+        float: left;
+    }
+
 .content-section .rightblock {
 	float: right;
 	width: 280px;
@@ -510,8 +538,7 @@ p.date {
 	color: #FFF;
 	font-size: 16px;
 	padding-left: 10px;
-	letter-spacing: -0.02em;
-	
+	line-height: 20px;
 }
 .sponsor-content p a.contact{
 	text-decoration: none;
@@ -594,10 +621,8 @@ p.date {
 
     .price-numbers h4{
         font-size: 42px;
-        font-family: "CondensadaBold", Arial, sans-serif;
-        letter-spacing: -0.03em;
+        font-weight: bold;
         color: #FFF;
-        display: block;
         margin: 0;
         line-height: 32px;
         text-shadow: 0 0 6px #000;
@@ -605,8 +630,6 @@ p.date {
 
     .price-numbers p{
         font-size: 24px;
-        margin: 0;
-        font-family: "Newsgoth-light", Arial, sans-serif;
         display: block;
         margin: 5px 0;
     }
@@ -619,7 +642,7 @@ p.date {
         clear: both;
         color: #fff;
         font-size: 16px;
-        margin: 10px 0 50px 0;
+        margin: 30px 0 50px 0;
     }
 
 #footer {
