@@ -22,7 +22,7 @@ en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
 en["when"] = "November 4-5, 2011"
 
-en["where"] = "Location: <strong>Federico Santa Maria University, Campus San Joaquin</strong>, map:"
+en["where"] = "Place: <strong>Federico Santa Maria University, Campus San Joaquin</strong>, map:"
 
 en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best global and local technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
 en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
