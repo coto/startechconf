@@ -22,7 +22,7 @@ en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
 en["when"] = "November 4-5, 2011"
 
-en["where"] = "Where: <strong>Federico Santa Maria University, Campus San Joaquin</strong>, map:"
+en["where"] = "<strong>Federico Santa Maria University, Campus San Joaquin</strong>, map:"
 
 en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best global and local technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
 en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
@@ -91,7 +91,7 @@ es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande d
 
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
 
-es["where"] = "Donde: <strong>Universidad Federico Santa Maria, Campus San Joaquin</strong>, mapa:"
+es["where"] = "<strong>Universidad Federico Santa Maria, Campus San Joaquin</strong>, mapa:"
 
 es["date"] = "4 y 5 de Noviembre de 2011"
 
@@ -161,7 +161,7 @@ pt["get_discount"] = "Obtenha 30 % de desconto"
 pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
-pt["where"] = "Onde: <strong>Universidade Federico Santa Maria, Campus San Joaquin</strong>, mapa:"
+pt["where"] = "<strong>Universidade Federico Santa Maria, Campus San Joaquin</strong>, mapa:"
 
 pt["date"] = "4 e 5 de Novembro, 2011"
 
