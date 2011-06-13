@@ -399,10 +399,25 @@ overflow: hidden;
 		width: 970px !important;
 	}
 
-p.date {
+p.when {
 	font-size: 30px;
     font-weight: bold;
 }
+
+p.where {
+	font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    vertical-align: bottom;
+}
+    p.where a.map{
+        color: white;
+        display: inline-block;
+        width: 20px;
+        height: 34px;
+        background: transparent url("../images/marker_34_green.png") center center no-repeat;
+        text-indent: 9000px;
+    }
 
 .content-section#resume .block-content p{
 	margin-bottom: 22px;
