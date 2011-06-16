@@ -25,7 +25,7 @@ en["where"] = "Federico Santa Mar&iacute;a University, Campus San Joaquin <a cla
 en["date"] = "November 4-5, 2011"
 
 
-en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers and students</strong>, lets get together for two days and listen to some of the best global and local technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
+en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers, entrepreneurs and students</strong>, lets get together for two days and listen to some of the best global and local technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
 en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
 en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Eleven rock stars as keynoters"
@@ -94,7 +94,7 @@ es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
 es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/NBAu\" target=\"_blank\">(Mapa)</a>"
 es["date"] = "4 y 5 de Noviembre de 2011"
 
-es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores a nivel mundial y locales hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
+es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores, emprendedores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores a nivel mundial y locales hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
 es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Once estrellas mundiales como keynoters"
@@ -163,7 +163,7 @@ pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
 pt["where"] = "Universidade T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/NBAu\" target=\"_blank\">(Map)</a>"
 pt["date"] = "4 e 5 de Novembro, 2011"
 
-pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
+pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores, empresários e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
 pt["speakers_title"] = "Palestrantes"
 pt["speakers_desc"] = "Onze estrelas mundiais como palestrantes principais"
