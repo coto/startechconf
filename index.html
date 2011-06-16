@@ -33,10 +33,6 @@
         <p>{{lang.we_are}}</p>
         <p class="numbers">{{ count }}</p>
       </div>
-      <div class="preinscription-block">
-        <button id="action-open" rel="#register"> {{lang.pre_register_btn}} </button>
-        <p>{{lang.get_discount}}</p>
-      </div>
     </div>
   </div>
   <div class="subtitle-header">
@@ -236,71 +232,5 @@
     <div class="clearfix"></div>
   </div>
 </div>
-<!-- Modal Register -->
-<div class="modal" id="register">
-    <form action="/register" method="post" accept-charset="utf-8">
-        <div class="modal-border"></div>
-        <div class="modal-content">
-            <div class="modal-icon-close action-close" rel="#register">Close</div>
-            <h3>{{lang.pre_register_popup_title}}</h3>
-            <p>{{lang.pre_register_popup_desc}}</p>
-            <script type="text/javascript">
-                var RecaptchaOptions = {
-                    theme : 'white',
-                    lang: '{{lang.id}}'
-                };
-            </script>
-            {{ captchahtml }}
-            <div class="content-register">
-                <div class="to-mail">
-                    <input type="email" name="email" class="box" autofocus required placeholder="user@example.com">
-                    <br>
-                    <input type="submit" name="registrarme" value="{{lang.pre_register_popup_ok_btn}}" class="button">
-                    <a href="#" class="action-close" rel="#register">{{lang.pre_register_popup_cancel_btn}}</a>
-                </div>
-            </div>
-        </div>
-    </form>
-</div>
 
-        
-{% if msg %}
-<!--  Modal Message -->
-<div class="modal" id="msg">
-    <form action="/" method="post" accept-charset="utf-8">
-        <div class="modal-border-error"> </div>
-        <div class="modal-content">
-            <input type="submit" class="modal-icon-close"/>
-            <h3>{% if is_error %} ERROR {% else %} {{lang.message_title}} {% endif %}</h3>
-            <p>{{msg}}</p>
-            <div class="content-register">
-                {% if not is_error %}
-                <script type="text/javascript">
-                twttr.anywhere(function (T) {
-                    T("#tbox").tweetBox({
-                        height: 60,
-                        width: 535,
-                        label: "<span style='color: #FFF'>{{lang.social_title}}</span>",
-                        counter: true,
-                        defaultContent: "{{lang.social_message}} http://www.startechconf.com via @startechconf"
-                    });
-                });
-                </script>
-
-                <div class="reshare">
-                    <div id="tbox"></div>
-                 </div>
-                {% endif %}
-               <p>
-                   <input type="submit" name="Ok" value="Ok" class="button" />
-                   <input type="submit" name="Cancel" value="{{lang.pre_register_popup_cancel_btn}}" class="button cancel" />
-               </p>
-            </div>
-        </div>
-    </form>
-</div>
-{% endif %} 
-
-<!-- Mask to cover the whole screen -->
-<div id="mask"></div>
 {% endblock %}

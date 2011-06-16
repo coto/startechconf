@@ -90,119 +90,6 @@ class MainHandler(webapp.RequestHandler):
     def post(self):
         self.redirect("/")
 
-class RegisterHandler(webapp.RequestHandler):
-
-    def get(self):
-        self.redirect("/")
-
-    def post(self):
-        # ***** Damain Control *****
-        if self.request.referer.find("http://localhost") == -1 and self.request.referer.find("http://www.startechconf.com/") == -1:
-            self.redirect("/?error=fake")
-            return
-
-        # ***** Define some variables *****
-        lang = set_lang_cookie_and_return_dict(self.request, self.response)
-        ip = self.request.remote_addr
-        now = datetime.datetime.now()
-        email = self.request.get("email")
-        challenge = self.request.get('recaptcha_challenge_field')
-        response  = self.request.get('recaptcha_response_field')
-
-        cResponse = captcha.submit(
-						 challenge,
-						 response.encode('utf-8'),
-						 "6Lc_FsMSAAAAAEeoIjOaGU_M0obCkgDPbIevfUUV",
-						 ip)
-
-        logging.info(cResponse.error_code)
-        if not cResponse.is_valid:
-            params = {
-				'device': get_device(self),
-				'path' : self.request.path,
-				'count': we_are().count(),
-				'lang': lang,
-				'msg': lang["invalid_captcha"],
-				'is_error': True
-			}
-            self.response.out.write(
-				template.render('index.html', params))
-            return
-
-        logging.info(email)
-        # ***** Email Verification *****
-        if not isAddressValid(email):
-            params = {
-				'device': get_device(self),
-				'path' : self.request.path,
-				'count': we_are().count(),
-				'lang': lang,
-				'msg': lang["invalid_email_address"],
-				'is_error': True
-			}
-            self.response.out.write(
-				template.render('index.html', params))
-
-        else:
-            registers = db.GqlQuery(
-				"SELECT * FROM Register "
-				"WHERE email = :1", email)
-            bot = registers.count()
-            if bot >= 1:
-                params = {
-					'device': get_device(self),
-					'path' : self.request.path,
-					'count': we_are().count(),
-					'lang': lang,
-					'msg': lang["already_registered"],
-					'is_error': True
-				}
-                self.response.out.write(
-					template.render('index.html', params))
-            else:
-                register = Register(
-					email = email,
-					remote_addr = ip,
-					language = lang["id"],
-					country = get_country(self)
-				)
-                register.put()
-
-                # Internal
-                message_to_admin = mail.EmailMessage()
-                message_to_admin.sender = "contact@startechconf.com"
-                message_to_admin.subject = "StarTechConf - Preregister"
-                message_to_admin.to = "rodrigo.augosto@gmail.com, contact@startechconf.com"
-                message_to_admin.body = '{\n\t"email": "%(email)s", \n\t"when": "%(when)s", \n\t"remote_addr": "%(remote_addr)s", \n\t"language": "%(language)s", \n\t"country": "%(country)s"\n},' % \
-						  {'email': email, "when": str(now), "remote_addr": ip, "language": lang["id"], "country": get_country(self)}
-                message_to_admin.send()
-
-
-                #External
-                message_to_user = mail.EmailMessage()
-                message_to_user.sender = "contact@startechconf.com"
-                message_to_user.subject = lang["registered_email_subject"]
-
-                logging.info(message_to_user.subject)
-
-                message_to_user.to = email
-                message_to_user.body = lang["registered_email_body"]
-
-                logging.info(message_to_user.body)
-
-                message_to_user.send()
-
-                params = {
-					'device': get_device(self),
-					'path' : self.request.path,
-					'count': we_are().count(),
-					'lang': lang,
-					'msg': lang["successfuly_registered"],
-					'is_error': False
-				}
-                self.response.out.write(
-					template.render('index.html', params))
-
 class OrganizersHandler(webapp.RequestHandler):
     def get(self):
         params = {
@@ -230,7 +117,6 @@ class Counter(webapp.RequestHandler):
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
-		('/[R|r]egister', RegisterHandler),
         ('/counter', Counter),
 		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
