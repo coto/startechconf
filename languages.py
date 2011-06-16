@@ -19,7 +19,7 @@ en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
 en["when"] = "November 4-5, 2011"
-en["where"] = "Federico Santa Mar&iacute;a University, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/NBAu\" target=\"_blank\">(Map)</a>"
+en["where"] = "Federico Santa Mar&iacute;a University, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Map)</a>"
 en["date"] = "November 4-5, 2011"
 
 en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers, entrepreneurs and students</strong>, lets get together for two days and listen to some of the best global and local technology experts talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python,</strong> and more."
@@ -82,7 +82,7 @@ es["we_are"] = "Personas pre-inscritas"
 es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile"
 
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
-es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/NBAu\" target=\"_blank\">(Mapa)</a>"
+es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Mapa)</a>"
 es["date"] = "4 y 5 de Noviembre de 2011"
 
 es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adores, emprendedores y estudiantes</strong>, junt&eacute;monos por dos d&iacute;as para escuchar a algunos de los mejores expositores a nivel mundial y locales hablar de tecnolog&iacute;as tales como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
@@ -145,7 +145,7 @@ pt["we_are"] = "Pessoas pre-inscritas"
 pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
-pt["where"] = "Universidade T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/NBAu\" target=\"_blank\">(Map)</a>"
+pt["where"] = "Universidade T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaquin <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Map)</a>"
 pt["date"] = "4 e 5 de Novembro, 2011"
 
 pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores, empres&aacute;rios e estudantes</strong>, nos encontremos por dois dias e escutemos a alguns dos melhores expositores a n&iacute;vel mundial falar de tecnologias como <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
