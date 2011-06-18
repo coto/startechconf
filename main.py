@@ -26,8 +26,6 @@ from google.appengine.ext import db
 from google.appengine.ext.webapp \
 	import util, template
 
-import logging
-
 def get_country(self):
     country = urlfetch.fetch("http://geoip.wtanaka.com/cc/"+self.request.remote_addr).content
     return country
@@ -42,17 +40,24 @@ def get_device(self):
     uastring = self.request.user_agent
     return "desktop"
 
-def set_lang_cookie_and_return_dict(request, response):
-    if request.get("hl") == "":
+def set_lang_cookie_and_return_dict(self):
+    if self.request.get("hl") == "":
         # ask for cookie
-        lang_cookie = request.cookies.get("hl")
+        lang_cookie = self.request.cookies.get("hl")
+        c = get_country(self)
         if not lang_cookie:
-            lang_cookie = "es"
+            if c == "ca" or c == "uk" or c == "us" or c == "eu" or c == "de" \
+               or c == "gb" or c == "jp" or c == "cn" or c == "in" or c == "ru" \
+               or c == "no" or c == "au" or c == "nz" or c == "se" or c == "dk":
+                lang_cookie = "en"
+            elif c == "br" or c == "pt":
+                lang_cookie = "pt"
+            else:
+                lang_cookie = "es"
     else:
-        # set cookie to en
-		lang_cookie = request.get("hl")
+        lang_cookie = self.request.get("hl")
 
-    response.headers.add_header("Set-Cookie", "hl=" + lang_cookie + ";")
+    self.response.headers.add_header("Set-Cookie", "hl=" + lang_cookie + ";")
     lang = {
 	  'en': languages.en,
 	  'es': languages.es,
@@ -82,7 +87,7 @@ class MainHandler(webapp.RequestHandler):
 			'device': get_device(self),
 			'path' : self.request.path,
 			'count': we_are().count(),
-			'lang': set_lang_cookie_and_return_dict(self.request, self.response),
+			'lang': set_lang_cookie_and_return_dict(self),
 			'captchahtml': chtml,
 		}
         self.response.out.write(
@@ -96,7 +101,7 @@ class OrganizersHandler(webapp.RequestHandler):
 			'device': get_device(self),
 			'count': we_are().count(),
 			'path' : self.request.path,
-			'lang': set_lang_cookie_and_return_dict(self.request, self.response)
+			'lang': set_lang_cookie_and_return_dict(self)
 		}		
         self.response.out.write(template.render('organizers.html', params))
 
