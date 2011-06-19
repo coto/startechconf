@@ -118,11 +118,61 @@ class Counter(webapp.RequestHandler):
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
+q = Register.all()
+q.order("when")
+class GetData(webapp.RequestHandler):
+    def get(self):
+        user = users.get_current_user()
+        data = ""
+        if user:
+            greeting = ("<a href=\"%s\">Sign out</a> <br>Welcome, %s!, If you are an administrator, you will see the table." %
+                    (users.create_logout_url("/data"), user.nickname()))
+            results = q.fetch(970)
+            data = ""
+            table = ""
+            if users.is_current_user_admin():
+                counter = 1
+
+                for p in results:
+                    ip = p.remote_addr
+                    email = p.email
+                    if email == "rodrigo.augosto@taisachile.cl":
+                        email = "patriciomas@pixelkit.cl"
+                    if email == "contact@protoboard.cl":
+                        email = "eduardobaeza@pixelkit.cl"
+                    #email = re.sub(r'.*\@(.+)', r'\1', email)
+                    date = p.when.strftime("%A, %B %d, %Y ")
+                    time = p.when.strftime("%I:%M:%S %p %Z")
+                    datetime = p.when.strftime("%Y%m%d%H%M%S")
+                    country = p.country
+
+                    if country == None:
+                        country = "__"
+
+                    if country == "XX" or country == "":
+                        country = urlfetch.fetch("http://geoip.wtanaka.com/cc/"+ip).content
+                    language = p.language
+                    country.upper()
+                    table += "<tr><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % \
+                            (counter, email, date, time, datetime, country, language, ip)
+                    counter += 1
+
+                data = """<table border=\"1\" cellspacing=\"0\">
+                <tr style=\"background-color: #ccc;\">
+                    <td>id</td><td>email</td><td>date</td><td>time</td><td>datetime<td>country</td><td>language</td><td>ip</td>
+                </tr>
+                %s</table>""" % (table)
+        else:
+            greeting = ("<a href=\"%s\">Sign in</a>." %
+                    users.create_login_url("/data"))
+
+        self.response.out.write("<html><body>%s %s</body></html>" % (greeting, data))
 
 def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
+        ('/data', GetData),
 		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
     util.run_wsgi_app(application)
