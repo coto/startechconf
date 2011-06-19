@@ -118,10 +118,11 @@ class Counter(webapp.RequestHandler):
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
-q = Register.all()
-q.order("when")
+
 class GetData(webapp.RequestHandler):
     def get(self):
+        q = Register.all()
+        q.order("when")
         user = users.get_current_user()
         data = ""
         if user:
@@ -172,7 +173,6 @@ def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
-        ('/data', GetData),
 		#('/[O|o]rganizers', OrganizersHandler),
 	], debug=False)
     util.run_wsgi_app(application)
