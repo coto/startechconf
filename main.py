@@ -36,9 +36,41 @@ def isAddressValid(email):
             return 1
     return 0
 
-def get_device(self):
+def get_device(self, info):
     uastring = self.request.user_agent
-    return "desktop"
+    if "Mobile" in uastring and "Safari" in uastring:
+        kind = "mobile"
+    else:
+        kind = "desktop"
+
+    if "MSIE" in uastring:
+        browser = "Explorer"
+    elif "Firefox" in uastring:
+        browser = "Firefox"
+    elif "Presto" in uastring:
+        browser = "Opera"
+    elif "Android" in uastring and "AppleWebKit" in uastring:
+        browser = "Chrome for andriod"
+    elif "iPhone" in uastring and "AppleWebKit" in uastring:
+        browser = "Safari for iPhone"
+    elif "iPod" in uastring and "AppleWebKit" in uastring:
+        browser = "Safari for iPod"
+    elif "iPad" in uastring and "AppleWebKit" in uastring:
+        browser = "Safari for iPad"
+    elif "Chrome" in uastring:
+        browser = "Chrome"
+    elif "AppleWebKit" in uastring:
+        browser = "Safari"
+    else:
+        browser = "unknow"
+
+    device = {
+		"kind": kind,
+		"browser": browser,
+		"uastring": uastring
+	}[info]
+
+    return device
 
 def set_lang_cookie_and_return_dict(self):
     if self.request.get("hl") == "":
@@ -84,21 +116,24 @@ class MainHandler(webapp.RequestHandler):
 		  use_ssl = False,
 		  error = None)
         params = {
-			'device': get_device(self),
+			'device': get_device(self, 'kind'),
 			'path' : self.request.path,
 			'count': we_are().count(),
 			'lang': set_lang_cookie_and_return_dict(self),
 			'captchahtml': chtml,
 		}
-        self.response.out.write(
-			template.render('index.html', params))
+        if get_device(self, 'kind') == "mobile":
+            self.redirect("http://m.startechconf.com")
+        else:
+            self.response.out.write(
+		        template.render('index.html', params))
     def post(self):
         self.redirect("/")
 
 class OrganizersHandler(webapp.RequestHandler):
     def get(self):
         params = {
-			'device': get_device(self),
+			'device': get_device(self, 'kind'),
 			'count': we_are().count(),
 			'path' : self.request.path,
 			'lang': set_lang_cookie_and_return_dict(self)
@@ -174,7 +209,7 @@ def main():
 		('/', MainHandler),
         ('/counter', Counter),
 		#('/[O|o]rganizers', OrganizersHandler),
-	], debug=False)
+	], debug=True)
     util.run_wsgi_app(application)
 
 if __name__ == '__main__':
