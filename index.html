@@ -21,7 +21,12 @@
         <li class="talk_proposal"><a href="https://startechconf.wufoo.com/forms/startechconf-talk-proposal/" target="blank">{{ lang.menu_talkproposal }}</a></li>
         <li class="blog"><a href="http://startechconf.blogspot.com/" target="blank">Blog</a></li>
       </ul>
-      <div id="select-language"> <span>{{lang.choose_your_language}}</span> <a href="/?hl=es" class="spanish" title="{{lang.spanish}}">{{lang.spanish}}</a> <a href="/?hl=en" class="english" title="{{lang.english}}">{{lang.english}}</a> <a href="/?hl=pt" class="portuguese" title="{{lang.portuguese}}">{{lang.portuguese}}</a> </div>
+      <div id="select-language"> <span>{{lang.choose_your_language}}</span>
+          <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
+              <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
+              <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
+              <option value="pt" {% ifequal "pt" lang.id  %}selected="selected"{% endifequal %}>{{lang.portuguese}}</option>
+          </select>
     </div>
   </div>
   <div class="title-header">

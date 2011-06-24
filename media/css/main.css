@@ -837,5 +837,10 @@ p.where {
     width: 530px;
     padding: 0 5px;
 }
+/* Select language */
+.selectlanguage  {
+    margin: 0 5px;
+    border-width: 0;
+}
 
 
