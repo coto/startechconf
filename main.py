@@ -12,13 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import datetime, re, languages, captcha, os
+import re, languages, captcha, os
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
 from google.appengine.dist import use_library
 use_library('django', '0.96')
 
-from google.appengine.api import mail
 from google.appengine.api import urlfetch
 from google.appengine.api import users
 from google.appengine.ext import webapp
@@ -97,6 +96,19 @@ def set_lang_cookie_and_return_dict(self):
 	}[lang_cookie]
     return lang
 
+
+def set_version_device(self):
+    if self.request.get("device") == "":
+        version_device = self.request.cookies.get("device")
+        if not version_device:
+            version_device = get_device(self, 'kind') or "desktop"
+    else:
+        version_device = self.request.get("device")
+
+    self.response.headers.add_header("Set-Cookie", "device=" + version_device + ";")
+
+    return version_device
+
 class Register(db.Model):
     email = db.StringProperty(required=True)
     when = db.DateTimeProperty(auto_now_add=True)
@@ -112,17 +124,16 @@ def we_are():
 class MainHandler(webapp.RequestHandler):
     def get(self):
         chtml = captcha.displayhtml(
-		  public_key = "6Lc_FsMSAAAAAHTVnQXGrWvzdshrKixBJghOgl3O",
-		  use_ssl = False,
-		  error = None)
+            public_key = "6Lc_FsMSAAAAAHTVnQXGrWvzdshrKixBJghOgl3O",
+            use_ssl = False,
+            error = None)
         params = {
-			'device': get_device(self, 'kind'),
 			'path' : self.request.path,
 			'count': we_are().count(),
 			'lang': set_lang_cookie_and_return_dict(self),
 			'captchahtml': chtml,
 		}
-        if get_device(self, 'kind') == "mobile":
+        if set_version_device(self) == "mobile":
             self.redirect("http://m.startechconf.com")
         else:
             self.response.out.write(
@@ -133,7 +144,6 @@ class MainHandler(webapp.RequestHandler):
 class OrganizersHandler(webapp.RequestHandler):
     def get(self):
         params = {
-			'device': get_device(self, 'kind'),
 			'count': we_are().count(),
 			'path' : self.request.path,
 			'lang': set_lang_cookie_and_return_dict(self)
@@ -208,8 +218,7 @@ def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
-		#('/[O|o]rganizers', OrganizersHandler),
-	], debug=True)
+	], debug=False)
     util.run_wsgi_app(application)
 
 if __name__ == '__main__':

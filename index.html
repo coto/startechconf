@@ -11,231 +11,234 @@
 {% endblock %}
 {% block article %}
 <div id="header">
-  <div id="main-nav">
-    <div class="block-content">
-      <ul id="menu">
-        <li><a href="/">{{ lang.menu_home }}</a></li>
-        <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
-        <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
-        <li><a href="/#price">{{ lang.menu_price }}</a></li>
-        <li class="talk_proposal"><a href="https://startechconf.wufoo.com/forms/startechconf-talk-proposal/" target="blank">{{ lang.menu_talkproposal }}</a></li>
-        <li class="blog"><a href="http://startechconf.blogspot.com/" target="blank">Blog</a></li>
-      </ul>
-      <div id="select-language"> <span>{{lang.choose_your_language}}</span>
-          <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
-              <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
-              <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
-              <option value="pt" {% ifequal "pt" lang.id  %}selected="selected"{% endifequal %}>{{lang.portuguese}}</option>
-          </select>
-    </div>
-  </div>
-  <div class="title-header">
-    <div class="block-content">
-      <div class="logo"> <img src="media/images/main-logo.png" alt="STARTECHCONF Santiago Chile 2011" title="STARTECHCONF Santiago Chile 2011">
-        <h1>STARTECHCONF Santiago Chile 2011</h1>
-      </div>
-      <div id="counter">
-        <p class="numbers">{{ count }}</p>
-        <p>{{lang.we_are}}</p>
-      </div>
-    </div>
-  </div>
-  <div class="subtitle-header">
-    <div class="block-content">
-      <h2>{{lang.event_title}}</h2>
-    </div>
-  </div>
-</div>
-
-<div class="content-section" id="resume">
-  <div class="block-content">
-    <p class="when">{{lang.when}}</p>
-    <p class="where">{{lang.where}}</p>
-    <p>{{lang.event_desc_p1}}</p>
-    <p>{{lang.event_desc_p2}}</p>
-  </div>
-</div>
-<div class="content-section bg-on" id="keynoters">
-<div class="block-content">
-  <div class="leftblock">
-    <h3>{{lang.speakers_title}}</h3>
-    <p class="phrase">{{lang.speakers_desc}}</p>
-    <div class="allkeynoters">
-      <div class="keynoter">
-        <img src="media/images/keynoters/rey_bango.jpg" alt="Rey Bango">
-        <h4>Rey Bango </h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/reybango" class="sp_twitter" target="_blank">@reybango</a></p>
-        <p>{{ lang.speaker_ReyBango }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/charles_nutter.jpg" alt="Charles Nutter">
-        <h4>Charles Nutter</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/headius" class="sp_twitter" target="_blank">@headius</a></p>
-        <p>{{ lang.speaker_CharlesNutter }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/paul_irish.jpg" alt="Paul Irish">
-        <h4>Paul Irish</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/paul_irish" class="sp_twitter" target="_blank">@paul_irish</a></p>
-        <p>{{ lang.speaker_PaulIrish }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/stephanie_sullivan.jpg" alt="Stephanie Sullivan"/>
-        <h4>Stephanie (Sullivan) Rewis</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/stefsull" class="sp_twitter" target="_blank">@stefsull</a></p>
-        <p>{{ lang.speaker_StephanieSullivan }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/jonathan_snook.jpg" alt="Jonathan Snook"/>
-        <h4>Jonathan Snook</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/snookca" class="sp_twitter" target="_blank">@snookca</a></p>
-        <p>{{ lang.speaker_JonathanSnook }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/obie_fernandez.jpg" alt="Obie Fern&aacute;ndez"/>
-        <h4>Obie Fern&aacute;ndez</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/obie" class="sp_twitter" target="_blank">@obie</a></p>
-        <p>{{ lang.speaker_ObieFernandez }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/greg_rewis.jpg" alt="Greg Rewis"/>
-        <h4>Greg Rewis</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/garazi" class="sp_twitter" target="_blank">@garazi</a></p>
-        <p>{{ lang.speaker_GregRewis }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/mark_ramm.jpg" alt="Mark Ramm"/>
-        <h4>Mark Ramm</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/markramm" class="sp_twitter" target="_blank">@markramm</a></p>
-        <p>{{ lang.speaker_MarkRamm }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/caridy_patino.jpg" alt="Caridy Pati&ntilde;o"/>
-        <h4>Caridy Pati&ntilde;o</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/caridy" class="sp_twitter" target="_blank">@caridy</a></p>
-        <p>{{ lang.speaker_CaridyPatino }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/robert_nyman.jpg" alt="Caridy Pati&ntilde;o"/>
-        <h4>Robert Nyman</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/robertnyman" class="sp_twitter" target="_blank">@robertnyman</a></p>
-        <p>{{ lang.speaker_RobertNyman }}</p>
-      </div>
-      <div class="keynoter">
-        <img src="media/images/keynoters/mike_hostetler.jpg" alt="Mike Hostetler"/>
-        <h4>Mike Hostetler</h4>
-        <p class="content_twiiter"><a href="https://twitter.com/#!/mikehostetler" class="sp_twitter" target="_blank">@mikehostetler</a></p>
-        <p>{{ lang.speaker_MikeHostetler }}</p>
-      </div>
-    </div>
-  </div>
-  
-  <!--  NUEVO SPONSORS -->
-  <div class="rightblock" id="sponsors">
-    <h3>{{lang.sponsors_title}}</h3>
-    <div class="grupo-sponsors">
-      <div class="sponsor-content">
-          <p> <strong>{{lang.want_to_be_sponsor}}</strong> {{lang.send_us_an_email_to}}<strong><a href="mailto:contact@startechconf.com" class="contact">contact@startechconf.com</a></strong> </p>
-
-         <div class="sponsor-block platinum">
-          <h4>Platinum</h4>
-          <div class="sponsors-list">
-          	<ul>
-                  <li><a href="http://www.continuum.cl" target="_blank" title="Continuum Chile"> <img src="media/images/companies/continuum-logo.png" border="0" alt="Continuun Chile"> </a></li>
-                  <li><a href="http://www.utfsm.cl" target="_blank" title="Universidad Federico Santa Maria"> <img src="media/images/companies/utfsm-logo.jpg" border="0" alt="Universidad Federico Santa Maria"> </a></li>
+    <div id="main-nav">
+        <div class="block-content">
+            <ul id="menu">
+                <li><a href="/">{{ lang.menu_home }}</a></li>
+                <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
+                <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
+                <li><a href="/#price">{{ lang.menu_price }}</a></li>
+                <li class="talk_proposal"><a href="https://startechconf.wufoo.com/forms/startechconf-talk-proposal/" target="blank">{{ lang.menu_talkproposal }}</a></li>
+                <li class="blog"><a href="http://startechconf.blogspot.com/" target="blank">Blog</a></li>
             </ul>
+            <div id="select-language"> <span>{{lang.choose_your_language}}</span>
+                <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
+                    <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
+                    <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
+                    <option value="pt" {% ifequal "pt" lang.id  %}selected="selected"{% endifequal %}>{{lang.portuguese}}</option>
+                </select>
             </div>
         </div>
-          
-        <div class="sponsor-block golden">
-          <h4>Gold</h4>
-          <div class="sponsors-list">
-          <ul>
-            <li><a href="http://www.google.com" target="_blank" title="Google"> <img src="media/images/companies/google-logo.png" border="0" alt="Google"> </a></li>
-            <li><a href="http://www.mozilla.org" target="_blank" title="Mozilla Fundation"> <img src="media/images/companies/mozilla-logo.jpg" border="0" alt="Mozilla Fundation"> </a></li>
-            <li><a href="http://www.mediastream.cl" target="_blank" title="Mediastream"> <img src="media/images/companies/mediastream-logo.png" border="0" alt="Mediastream" style="margin: 5px 0;"> </a></li>
-            <li><a href="http://appendto.com" target="_blank" title="appendTo"> <img src="media/images/companies/appendTo.png" border="0" alt="appendTo" style="margin-bottom: 20px"> </a></li>
-          </ul>
-          </div>
+        <div class="title-header">
+            <div class="block-content">
+                <div class="logo"> <img src="media/images/main-logo.png" alt="STARTECHCONF Santiago Chile 2011" title="STARTECHCONF Santiago Chile 2011">
+                    <h1>STARTECHCONF Santiago Chile 2011</h1>
+                </div>
+                <div id="counter">
+                    <p class="numbers">{{ count }}</p>
+                    <p>{{lang.we_are}}</p>
+                </div>
+            </div>
         </div>
-        
-        <div class="sponsor-block silver">
-          <h4>Silver</h4>
-          <div class="sponsors-list">
-          	<ul>
-            	<li><a href="http://www.nic.cl" target="_blank" title="NIC Chile"> <img src="media/images/companies/nic-logo.png" border="0" alt="NIC Chile"> </a></li>
-                <li><a href="http://www.eventioz.com" target="_blank" title="Eventioz"> <img src="media/images/companies/eventioz-logo.png" border="0" alt="Eventioz"> </a></li>
-            </ul>
-          </div>
+        <div class="subtitle-header">
+            <div class="block-content">
+                <h2>{{lang.event_title}}</h2>
+            </div>
         </div>
-        
-        <div class="sponsor-block endorsements">
-          <h4>{{lang.endorsement_title}}</h4>
-          <div class="sponsors-list">
-          	<ul>
-                <li><a id="endorsement-startup-chile" href="http://www.startupchile.org" target="_blank" title="Start-Up Chile"> <img src="media/images/companies/startupchile-logo.png" border="0" alt="Start-Up Chile"> </a></li>
-                <li><a id="endorsement-corfo" href="http://www.corfo.cl" target="_blank" title="Corfo"> <img src="media/images/companies/corfo-logo.jpg" border="0" alt="Corfo"> </a></li>
-                <li><a id="endorsement-digitalesxchile" href="http://www.digitalesporchile.org/" target="_blank" title="Digitales por Chile"> <img src="media/images/companies/digitalesxchile.png" border="0" alt="Digitales por Chile"> </a></li>
-            </ul>
-          </div>
-        </div>
-        
-        <p> <strong>{{lang.want_to_be_sponsor}}</strong> {{lang.send_us_an_email_to}}<strong><a href="mailto:contact@startechconf.com" class="contact">contact@startechconf.com</a></strong> </p>
-      </div>
+    </div> <!-- end of #main-nav -->
+</div> <!-- end of #header -->
+
+<div class="content-section" id="resume">
+    <div class="block-content">
+        <p class="when">{{lang.when}}</p>
+        <p class="where">{{lang.where}}</p>
+        <p>{{lang.event_desc_p1}}</p>
+        <p>{{lang.event_desc_p2}}</p>
     </div>
-     </div>
-  </div>
 </div>
+<div class="content-section bg-on">
+    <div class="block-content">
+        <div class="leftblock" id="keynoters">
+            <h3>{{lang.speakers_title}}</h3>
+            <p class="phrase">{{lang.speakers_desc}}</p>
+            <div class="allkeynoters">
+                <div class="keynoter">
+                    <img src="media/images/keynoters/rey_bango.jpg" alt="Rey Bango">
+                    <h4>Rey Bango </h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/reybango" class="sp_twitter" target="_blank">@reybango</a></p>
+                    <p>{{ lang.speaker_ReyBango }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/charles_nutter.jpg" alt="Charles Nutter">
+                    <h4>Charles Nutter</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/headius" class="sp_twitter" target="_blank">@headius</a></p>
+                    <p>{{ lang.speaker_CharlesNutter }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/paul_irish.jpg" alt="Paul Irish">
+                    <h4>Paul Irish</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/paul_irish" class="sp_twitter" target="_blank">@paul_irish</a></p>
+                    <p>{{ lang.speaker_PaulIrish }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/stephanie_sullivan.jpg" alt="Stephanie Sullivan"/>
+                    <h4>Stephanie (Sullivan) Rewis</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/stefsull" class="sp_twitter" target="_blank">@stefsull</a></p>
+                    <p>{{ lang.speaker_StephanieSullivan }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/jonathan_snook.jpg" alt="Jonathan Snook"/>
+                    <h4>Jonathan Snook</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/snookca" class="sp_twitter" target="_blank">@snookca</a></p>
+                    <p>{{ lang.speaker_JonathanSnook }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/obie_fernandez.jpg" alt="Obie Fern&aacute;ndez"/>
+                    <h4>Obie Fern&aacute;ndez</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/obie" class="sp_twitter" target="_blank">@obie</a></p>
+                    <p>{{ lang.speaker_ObieFernandez }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/greg_rewis.jpg" alt="Greg Rewis"/>
+                    <h4>Greg Rewis</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/garazi" class="sp_twitter" target="_blank">@garazi</a></p>
+                    <p>{{ lang.speaker_GregRewis }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/mark_ramm.jpg" alt="Mark Ramm"/>
+                    <h4>Mark Ramm</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/markramm" class="sp_twitter" target="_blank">@markramm</a></p>
+                    <p>{{ lang.speaker_MarkRamm }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/caridy_patino.jpg" alt="Caridy Pati&ntilde;o"/>
+                    <h4>Caridy Pati&ntilde;o</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/caridy" class="sp_twitter" target="_blank">@caridy</a></p>
+                    <p>{{ lang.speaker_CaridyPatino }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/robert_nyman.jpg" alt="Caridy Pati&ntilde;o"/>
+                    <h4>Robert Nyman</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/robertnyman" class="sp_twitter" target="_blank">@robertnyman</a></p>
+                    <p>{{ lang.speaker_RobertNyman }}</p>
+                </div>
+                <div class="keynoter">
+                    <img src="media/images/keynoters/mike_hostetler.jpg" alt="Mike Hostetler"/>
+                    <h4>Mike Hostetler</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/mikehostetler" class="sp_twitter" target="_blank">@mikehostetler</a></p>
+                    <p>{{ lang.speaker_MikeHostetler }}</p>
+                </div>
+            </div>
+        </div> <!-- .lefblock #keynoters -->
+
+        <!--  NUEVO SPONSORS -->
+        <div class="rightblock" id="sponsors">
+            <h3>{{lang.sponsors_title}}</h3>
+            <div class="grupo-sponsors">
+                <div class="sponsor-content">
+                    <p> <strong>{{lang.want_to_be_sponsor}}</strong> {{lang.send_us_an_email_to}}<strong><a href="mailto:contact@startechconf.com" class="contact">contact@startechconf.com</a></strong> </p>
+
+                    <div class="sponsor-block platinum">
+                        <h4>Platinum</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li><a href="http://www.continuum.cl" target="_blank" title="Continuum Chile"> <img src="media/images/companies/continuum-logo.png" border="0" alt="Continuun Chile"> </a></li>
+                                <li><a href="http://www.utfsm.cl" target="_blank" title="Universidad Federico Santa Maria"> <img src="media/images/companies/utfsm-logo.jpg" border="0" alt="Universidad Federico Santa Maria"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-block golden">
+                        <h4>Gold</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li><a href="http://www.google.com" target="_blank" title="Google"> <img src="media/images/companies/google-logo.png" border="0" alt="Google"> </a></li>
+                                <li><a href="http://www.mozilla.org" target="_blank" title="Mozilla Fundation"> <img src="media/images/companies/mozilla-logo.jpg" border="0" alt="Mozilla Fundation"> </a></li>
+                                <li><a href="http://www.mediastream.cl" target="_blank" title="Mediastream"> <img src="media/images/companies/mediastream-logo.png" border="0" alt="Mediastream" style="margin: 5px 0;"> </a></li>
+                                <li><a href="http://appendto.com" target="_blank" title="appendTo"> <img src="media/images/companies/appendTo.png" border="0" alt="appendTo" style="margin-bottom: 20px"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-block silver">
+                        <h4>Silver</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li><a href="http://www.nic.cl" target="_blank" title="NIC Chile"> <img src="media/images/companies/nic-logo.png" border="0" alt="NIC Chile"> </a></li>
+                                <li><a href="http://www.eventioz.com" target="_blank" title="Eventioz"> <img src="media/images/companies/eventioz-logo.png" border="0" alt="Eventioz"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-block endorsements">
+                        <h4>{{lang.endorsement_title}}</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li><a id="endorsement-startup-chile" href="http://www.startupchile.org" target="_blank" title="Start-Up Chile"> <img src="media/images/companies/startupchile-logo.png" border="0" alt="Start-Up Chile"> </a></li>
+                                <li><a id="endorsement-corfo" href="http://www.corfo.cl" target="_blank" title="Corfo"> <img src="media/images/companies/corfo-logo.jpg" border="0" alt="Corfo"> </a></li>
+                                <li><a id="endorsement-digitalesxchile" href="http://www.digitalesporchile.org/" target="_blank" title="Digitales por Chile"> <img src="media/images/companies/digitalesxchile.png" border="0" alt="Digitales por Chile"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p> <strong>{{lang.want_to_be_sponsor}}</strong> {{lang.send_us_an_email_to}}<strong><a href="mailto:contact@startechconf.com" class="contact">contact@startechconf.com</a></strong> </p>
+                </div>
+            </div>
+        </div> <!-- end  .rightblock #sponsors -->
+    </div> <!-- end  .block-content -->
+</div> <!-- end  .content-section -->
+
 <div class="content-section bg-off last" id="price">
-  <div class="block-content">
-    <h3>{{lang.conf_price}}</h3>
-    <div class="price-numbers">
-      <h4>USD 120.00</h4>
-      <p>{{lang.ticket_general}}</p>
+    <div class="block-content">
+        <h3>{{lang.conf_price}}</h3>
+        <div class="price-numbers">
+            <h4>USD 120.00</h4>
+            <p>{{lang.ticket_general}}</p>
+        </div>
+        <div class="price-numbers">
+            <h4>USD 50.00</h4>
+            <p>{{lang.ticket_students}}</p>
+        </div>
+        <div class="price-desc">
+            <p>* {{lang.conf_price_details_1}} <br>
+                * {{lang.conf_price_details_2}} </p>
+        </div>
     </div>
-    <div class="price-numbers">
-      <h4>USD 50.00</h4>
-      <p>{{lang.ticket_students}}</p>
-    </div>
-    <div class="price-desc">
-      <p>* {{lang.conf_price_details_1}} <br>
-        * {{lang.conf_price_details_2}} </p>
-    </div>
-  </div>
+    <div id="device_version">{{ lang.links_version_device }} </div>
 </div>
 <div id="footer">
-  <div class="block-content">
-    <p class="copyright"> &copy; 2011 All rights reserved.<br/> Powered by Google App Engine.</p>
-    <div class="twitter_followus"><a href="http://twitter.com/startechconf" title="follow us on twitter"> <img src="media/images/follow_us.png" alt="follow us on twitter"/></a></div>
-    <div class="social_bar">
+    <div class="block-content">
+        <p class="copyright">&copy; 2011 All rights reserved.<br/>Powered by Google App Engine.</p>
+        <div class="twitter_followus"><a href="http://twitter.com/startechconf" title="follow us on twitter"><img src="media/images/follow_us.png" alt="follow us on twitter"/></a></div>
+        <div class="social_bar">
 
-        <div class="c_buzz">
-            <a title="Post to Google Buzz" data-button-style="small-count" data-imageurl="http://www.startechconf.com/media/images/main-logo.png" data-locale="{{lang.id}}" data-url="www.startechconf.com" data-message="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com" class="google-buzz-button" href="http://www.google.com/buzz/post">Buzz</a>
-            <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+            <div class="c_buzz">
+                <a title="Post to Google Buzz" data-button-style="small-count" data-imageurl="http://www.startechconf.com/media/images/main-logo.png" data-locale="{{lang.id}}" data-url="www.startechconf.com" data-message="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com" class="google-buzz-button" href="http://www.google.com/buzz/post">Buzz</a>
+                <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+            </div>
+            <div class="c_facebook">
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.startechconf.com&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=116&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="width:116px; height:21px;" class="facebook-share-button" allowTransparency="true"></iframe>
+            </div>
+            <div class="c_twitter">
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="startechconf"
+                   data-related="startechconf"
+                   data-url="www.startechconf.com"
+                   data-counturl="www.startechconf.com"
+                   data-text="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com"
+                   data-via="#"
+                   data-lang="{{lang.id}}"
+                        >Tweet</a>
+            </div>
+            <div class="c_plusone">
+                <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+                <g:plusone size="medium"></g:plusone>
+            </div>
         </div>
-        <div class="c_facebook">
-            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.startechconf.com&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=116&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="width:116px; height:21px;" class="facebook-share-button" allowTransparency="true"></iframe>
-        </div>
-        <div class="c_twitter">
-            <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-            <a href="http://twitter.com/share" class="twitter-share-button"
-           data-count="horizontal"
-           data-via="startechconf"
-           data-related="startechconf"
-           data-url="www.startechconf.com"
-           data-counturl="www.startechconf.com"
-           data-text="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com"
-           data-via="#"
-           data-lang="{{lang.id}}"
-            >Tweet</a>
-        </div>
-        <div class="c_plusone">
-            <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
-            <g:plusone size="medium"></g:plusone>
-        </div>
+        <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
-  </div>
 </div>
 
 {% endblock %}

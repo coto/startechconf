@@ -143,7 +143,6 @@ body {
 
 #counter{
 	position: absolute;
-	overflow: hidden;
     font-weight: bold;
 	font-size: 16px;
 	z-index: 10;
@@ -306,11 +305,10 @@ overflow: hidden;
 	}
 
 	.content-section.last{
-		padding-top: 35px;
 		margin-bottom: 60px;
 	}
 
-	.content-section#resume .block-content{
+	.content-section .block-content{
 		padding: 45px 0 34px 10px;
 		font-size: 18px;
 		line-height: 22px;
@@ -348,19 +346,7 @@ p.where {
     font-weight: bold;
 }
 
-.content-section#keynoters,
-.content-section#follow,
-.content-section#register{
-
-}
-
-.content-section#keynoters .block-content,
-.content-section#follow .block-content{
-	padding: 35px 5px 35px 5px;
-	width: 960px !important;
-}
-
-.phrase{
+#keynoters .phrase{
 	float: left;
 	font-size: 24px;
 	color: #a4b8d0;
@@ -369,7 +355,7 @@ p.where {
 	padding-top: 12px;
 }
 
-.content-section#keynoters .allkeynoters{
+#keynoters .allkeynoters{
 	clear: both;
 	margin: 50px 0 0 0;
 	overflow: hidden;
@@ -377,57 +363,57 @@ p.where {
 	padding-left: 4px;
 }
 
-.keynoter{
-	margin: 0 15px 25px 0;
-	color: #bfcfe1;
-	clear: both;
-    width: 620px;
-    margin-bottom: 40px;
-}
-    .keynoter img{
-        width: 80px;
-        height: 80px;
-        margin-bottom: 26px;
-        box-shadow: -4px 4px 0 #000000;
-        -moz-box-shadow: -4px 4px 0 #000000;
-        -webkit-box-shadow: -4px 4px 0 #000000;
-        background: #000;
-        margin-right: 18px;
-        float: left;
+    .keynoter{
+        margin: 0 15px 25px 0;
+        color: #bfcfe1;
+        clear: both;
+        width: 620px;
+        margin-bottom: 40px;
     }
+        .keynoter img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 26px;
+            box-shadow: -4px 4px 0 #000000;
+            -moz-box-shadow: -4px 4px 0 #000000;
+            -webkit-box-shadow: -4px 4px 0 #000000;
+            background: #000;
+            margin-right: 18px;
+            float: left;
+        }
 
-	.keynoter h4{
-		font-size: 20px;
-		color: #F29133;
-		margin-bottom: 5px;
-        display: inline;
-	}
+        .keynoter h4{
+            font-size: 20px;
+            color: #F29133;
+            margin-bottom: 5px;
+            display: inline;
+        }
 
-    .keynoter .content_twiiter{
-        margin: 6px 0;
-    }
+        .keynoter .content_twiiter{
+            margin: 6px 0;
+        }
 
-	.keynoter a.sp_twitter{
-		font-size: 14px;
-        line-height: 20px;
-        text-decoration: none;
-        padding-left: 22px;
-        background: transparent url('../images/twitter_newbird_blue.png') left center no-repeat;
-	}
+        .keynoter a.sp_twitter{
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: none;
+            padding-left: 22px;
+            background: transparent url('../images/twitter_newbird_blue.png') left center no-repeat;
+        }
 
-	.keynoter p{
-        margin-top: 2px;
-		line-height: 20px;
-		font-size: 14px;
-        width: 100%;
-	}
-    .keynoter a{
-		text-decoration: underline;
-        color: white;
-	}
-    .keynoter a:hover{
-		text-decoration: none;
-	}
+        .keynoter p{
+            margin-top: 2px;
+            line-height: 20px;
+            font-size: 14px;
+            width: 100%;
+        }
+        .keynoter a{
+            text-decoration: underline;
+            color: white;
+        }
+        .keynoter a:hover{
+            text-decoration: none;
+        }
 
 
 .last-row{
@@ -451,6 +437,7 @@ p.where {
     .content-section .leftblock h3{
         float: left;
     }
+/*  ********* Sponsors **********  */
 
 .content-section .rightblock {
 	float: right;
@@ -541,19 +528,7 @@ p.where {
         padding-top: 20px;
     }
 
-.content-section#follow .content-follow{
-	clear: both;
-	overflow: hidden;
-	margin: 14px 0 0 0;
-	padding: 12px 0 5px 5px;
-	float: left;
-	width: 100%;
-}
-
-
-.content-section#register{
-	padding: 30px;
-}
+/*  ********* Price **********  */
 
 .price-numbers{
 	text-align: left;
@@ -587,8 +562,21 @@ p.where {
         clear: both;
         color: #fff;
         font-size: 16px;
-        margin: 30px 0 50px 0;
+        margin-top: 30px;
     }
+
+/*  ********* Device version **********  */
+
+#device_version {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+}
+    #device_version a {
+        color: white;
+    }
+
+/*  ********* Footer **********  */
 
 #footer {
 	background: #2e3b4b;	
@@ -597,6 +585,7 @@ p.where {
 	-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorStr='#2e3b4b', EndColorStr='#495666')";
 	padding: 6px 0 4px 0;
 	bottom: 0;
+    z-index: 11;
 	display: block;
 	overflow: hidden;
 	position: fixed;
@@ -629,19 +618,19 @@ p.where {
             float: right;
         }
         #footer .social_bar .c_plusone{
-            height: 25px;
+            height: 20px;
+            width: 70px;
         }
         #footer .social_bar .c_twitter{
-            height: 25px;
-            width: 125px;
-
+            height: 20px;
+            width: 115px;
         }
         #footer .social_bar .c_facebook{
             width: 95px;
             height: 20px;
         }
         #footer .social_bar .c_buzz{
-            width: 115px;
+            width: 105px;
             height: 20px;
         }
 
