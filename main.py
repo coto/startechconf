@@ -119,7 +119,12 @@ class Register(db.Model):
 def we_are():
     return db.GqlQuery(
 		'SELECT * FROM Register '
-		'ORDER BY when DESC')		
+		'ORDER BY when DESC')
+
+class MobileHandler(webapp.RequestHandler):
+    def get(self):
+        self.response.headers.add_header("Set-Cookie", "device=mobile;")
+        self.redirect("http://m.startechconf.com")
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
@@ -134,7 +139,7 @@ class MainHandler(webapp.RequestHandler):
 			'captchahtml': chtml,
 		}
         if set_version_device(self) == "mobile":
-            self.redirect("http://m.startechconf.com")
+            self.redirect("/m")
         else:
             self.response.out.write(
 		        template.render('index.html', params))
@@ -218,6 +223,7 @@ def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
+        ('/m', MobileHandler),
 	], debug=False)
     util.run_wsgi_app(application)
 

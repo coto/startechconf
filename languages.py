@@ -59,7 +59,7 @@ en["ticket_students"] = "Students"
 en["conf_price_details_1"] = "Includes the two-days conference."
 en["conf_price_details_2"] = "Preregistered Students have discount too."
 
-en["links_version_device"] = "View in version: <a href=\"http://m.startechconf.com\">Mobile</a> | <strong>Classic</strong>"
+en["links_version_device"] = "View in version: <a href=\"/m\">Mobile</a> | <strong>Classic</strong>"
 
 en["social_title"] = "Great!, Let people know..."
 en["social_message"] = "I am going to the Biggest Tech Conference in Chile."
@@ -124,7 +124,7 @@ es["ticket_students"] = "Estudiantes"
 es["conf_price_details_1"] = "Incluye los dos d&iacute;as de conferencia."
 es["conf_price_details_2"] = "Estudiantes Preregistrados tambi&eacute;n tienen 30% de descuento."
 
-es["links_version_device"] = "Ver en versi&oacute;n: <a href=\"http://m.startechconf.com\">M&oacute;viles</a> | <strong>Cl&aacute;sico</strong>"
+es["links_version_device"] = "Ver en versi&oacute;n: <a href=\"/m\">M&oacute;viles</a> | <strong>Cl&aacute;sico</strong>"
 
 es["social_title"] = "Genial!, Hazle saber al mundo..."
 es["social_message"] = "Voy al mayor evento tecnologico en Chile."
@@ -191,7 +191,7 @@ pt["ticket_students"] = "Estudantes"
 pt["conf_price_details_1"] = "Inclui os dois dias da confer&ecirc;ncia."
 pt["conf_price_details_2"] = "Estudantes pre-registrados tamb&eacute;n tem desconto."
 
-pt["links_version_device"] = "Vista em vers&atilde;o: <a href=\"http://m.startechconf.com\">M&oacute;vel</a> | <strong>Cl&aacute;ssica</strong>"
+pt["links_version_device"] = "Vista em vers&atilde;o: <a href=\"/m\">M&oacute;vel</a> | <strong>Cl&aacute;ssica</strong>"
 
 pt["social_title"] = "&Oacute;timo!, deixar as pessoas sabem..."
 pt["social_message"] = "Estou indo para o maior evento de tecnologia no Chile."
