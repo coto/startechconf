@@ -158,7 +158,7 @@ class OrganizersHandler(webapp.RequestHandler):
 class Counter(webapp.RequestHandler):
     def get(self):
         user = users.get_current_user()
-        test = "text test"
+        test = self.request.headers["Accept-Language"]
         if user:
             greeting = ("Welcome, %s from %s! <a href=\"%s\">sign out</a><h1 style=\"font-size: 5em;\">we are: %s</h1><hr><div>%s</div>" %
 						(user.nickname(), get_country(self), users.create_logout_url(self.request.path), str(we_are().count()), test))
