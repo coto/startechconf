@@ -3,3 +3,4 @@ index.yaml
 *.pyc
 .idea/*
 .idea/*.xml
+.idea/startechconf.iml
