@@ -21,7 +21,7 @@ public class StarTechConfActivity extends Activity {
         mWebView.setVisibility(WebView.INVISIBLE);
         mWebView.getSettings().setJavaScriptEnabled(true);
         mWebView.setWebViewClient(new StarTechConfClient(this));
-        mWebView.loadUrl("http://m.startechconf.cl");
+        mWebView.loadUrl("http://www.bice.cl");
         
         back = (ImageButton) findViewById(R.id.btnBack);
         back.setOnClickListener(new View.OnClickListener() {
