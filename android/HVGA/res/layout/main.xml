@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    android:orientation="vertical">
+    <LinearLayout android:background="#FFFFFFFF" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="bottom" android:id="@+id/linearLayout1">
+        <TableLayout android:layout_height="fill_parent" android:id="@+id/tableLayout1" android:layout_width="wrap_content" android:layout_weight="1">
+            <TableRow android:id="@+id/tableRow1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:baselineAligned="false">
+                <ImageButton android:id="@+id/btnBack" android:src="@drawable/arrow_left" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageButton>
+                <ImageButton android:id="@+id/btnForward" android:src="@drawable/arrow_right" android:layout_weight="1" android:layout_height="wrap_content" android:layout_width="wrap_content"></ImageButton>
+                <ImageButton android:id="@+id/btnRefresh" android:src="@drawable/refresh" android:layout_weight="1" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
+                <ImageView android:id="@+id/imageView1" android:src="@drawable/logo_bancobice" android:layout_height="fill_parent" android:layout_width="fill_parent" android:scaleType="centerInside" android:layout_weight="1"></ImageView>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="#FFFFFFFF" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center">
+    	<ProgressBar style="@android:style/Widget.ProgressBar.Large.Inverse" android:layout_width="wrap_content" android:id="@+id/progressBar1" android:layout_height="wrap_content" android:layout_alignParentTop="true"></ProgressBar>
+    </RelativeLayout>
+	<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/webview"
+	    android:background="#FFFFFFFF"
+	    android:layout_width="fill_parent" android:layout_height="fill_parent"/>
 </LinearLayout>
