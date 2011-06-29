@@ -1,4 +1,4 @@
-package cl.taisachile.ejemplo;
+package cl.protoboard.startechconf;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,8 +23,8 @@ public class SplashActivity extends Activity {
 				} finally {
 					finish();
 					Intent i = new Intent();
-					i.setClassName("cl.taisachile.ejemplo",
-							"cl.taisachile.ejemplo.EjemploWebViewActivity");
+					i.setClassName("cl.protoboard.startechconf",
+							"cl.protoboard.startechconf.EjemploWebViewActivity");
 					startActivity(i);
 				}
 			}

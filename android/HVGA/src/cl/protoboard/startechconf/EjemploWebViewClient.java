@@ -1,4 +1,4 @@
-package cl.taisachile.ejemplo;
+package cl.protoboard.startechconf;
 
 import android.content.Intent;
 import android.net.Uri;

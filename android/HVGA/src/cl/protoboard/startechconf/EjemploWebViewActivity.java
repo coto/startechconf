@@ -1,4 +1,4 @@
-package cl.taisachile.ejemplo;
+package cl.protoboard.startechconf;
 
 import android.app.Activity;
 import android.os.Bundle;

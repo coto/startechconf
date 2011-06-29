@@ -5,7 +5,7 @@
  * should not be modified by hand.
  */
 
-package cl.taisachile.ejemplo;
+package cl.protoboard.startechconf;
 
 public final class R {
     public static final class attr {
