@@ -14,7 +14,7 @@
         </TableLayout>
     </LinearLayout>
     <RelativeLayout android:background="#FFFFFFFF" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center">
-    	<ProgressBar style="@android:style/Widget.ProgressBar.Large" android:layout_width="wrap_content" android:id="@+id/progressBar1" android:layout_height="wrap_content" android:layout_alignParentTop="true"></ProgressBar>
+    	<ProgressBar style="@android:style/Widget.ProgressBar.Large.Inverse" android:layout_width="wrap_content" android:id="@+id/progressBar1" android:layout_height="wrap_content" android:layout_alignParentTop="true"></ProgressBar>
     </RelativeLayout>
 	<WebView  xmlns:android="http://schemas.android.com/apk/res/android"
 	    android:id="@+id/webview"

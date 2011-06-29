@@ -1,4 +1,4 @@
-package cl.protoboard.startechconf;
+package cl.taisachile.ejemplo;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,10 +6,10 @@ import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
-public class StarTechConfClient extends WebViewClient {
-	StarTechConfActivity viewActivity;
-	public StarTechConfClient(StarTechConfActivity starTechConfActivity) {
-		viewActivity = starTechConfActivity;
+public class EjemploWebViewClient extends WebViewClient {
+	EjemploWebViewActivity viewActivity;
+	public EjemploWebViewClient(EjemploWebViewActivity ejemploWebViewActivity) {
+		viewActivity = ejemploWebViewActivity;
 	}
 
 	@Override

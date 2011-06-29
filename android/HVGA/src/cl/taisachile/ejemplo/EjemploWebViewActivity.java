@@ -1,4 +1,4 @@
-package cl.protoboard.startechconf;
+package cl.taisachile.ejemplo;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.ImageButton;
 
-public class StarTechConfActivity extends Activity {
+public class EjemploWebViewActivity extends Activity {
 	private WebView mWebView;
 	private ImageButton back;
 	private ImageButton forward;
@@ -20,8 +20,8 @@ public class StarTechConfActivity extends Activity {
     	mWebView = (WebView) findViewById(R.id.webview);
         mWebView.setVisibility(WebView.INVISIBLE);
         mWebView.getSettings().setJavaScriptEnabled(true);
-        mWebView.setWebViewClient(new StarTechConfClient(this));
-        mWebView.loadUrl("http://www.bice.cl");
+        mWebView.setWebViewClient(new EjemploWebViewClient(this));
+        mWebView.loadUrl("http://www.startechconf.com");
         
         back = (ImageButton) findViewById(R.id.btnBack);
         back.setOnClickListener(new View.OnClickListener() {
