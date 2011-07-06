@@ -1,9 +1,7 @@
-.DS_Store
-index.yaml
 *.pyc
+.DS_Store
 .idea/*
-.idea/*.xml
-.idea/startechconf.iml
 .idea
+bin/*
+index.yaml
 android/HVGA/bin/
-bin/
