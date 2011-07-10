@@ -12,6 +12,14 @@ handlers:
   static_files: media/favicon.png
   upload: media/favicon.png
 
+- url: /robots.txt
+  static_files: media/robots.txt
+  upload: media/robots.txt
+
+- url: /sitemap.xml
+  static_files: media/sitemap.xml
+  upload: media/sitemap.xml
+
 - url: /presentation.pdf
   static_files: media/docs/startechconf-presentation.pdf
   upload: media/docs/startechconf-presentation.pdf
