@@ -8,4 +8,15 @@ $(document).ready(function(){
             return;
         location.href = "/?hl="+newLang;
     });
+    
+    $('.abstract-link').toggle(
+      function (e) {
+        e.preventDefault();
+        $("#abstract-" + this.id).show();
+      }, 
+      function (e) {
+        e.preventDefault();
+        $("#abstract-" + this.id).hide();
+      }
+    );
 });

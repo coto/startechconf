@@ -314,7 +314,7 @@ overflow: hidden;
 		line-height: 22px;
 		color: #fff;
 		letter-spacing: -0.01em;
-		text-shadow: -3px 2px 0 #000;
+		/*text-shadow: -3px 2px 0 #000;*/
 		width: 970px !important;
 	}
 
@@ -337,6 +337,10 @@ p.where {
         background: transparent url("../images/marker_34_green.png") center center no-repeat;
         text-indent: 9000px;
     }
+
+.content-section#resume {
+ text-shadow: -3px 2px 0 #000; 
+}
 
 .content-section#resume .block-content p{
 	margin-bottom: 22px;
@@ -832,4 +836,18 @@ p.where {
     border-width: 0;
 }
 
+.abstract-link-container {
+  color: #fff;
+  margin:10px 0 0 100px;
+}
+.abstract-content {
+  display:none;
+  margin-top: 5px;
+  color: #fff;
+  text-shadow:none;
+  margin: 10px 0 0 100px;
+}
 
+.talk-title {
+  text-decoration:underline;
+} 

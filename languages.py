@@ -26,6 +26,7 @@ en["event_desc_p1"] = "Hey, <strong>programmers, engineers, designers, entrepren
 en["event_desc_p2"] = "It will be two days of intense learning and knowledge sharing which you won't want to miss."
 en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Eleven rock stars as keynoters"
+en["talk_title"] = "Talk"
 
 en["sponsors_title"] = "Sponsors"
 en["endorsement_title"] = "Endorsement"
@@ -91,6 +92,7 @@ es["event_desc_p1"] = "Hey, <strong>programadores, ingenieros, dise&ntilde;adore
 es["event_desc_p2"] = "Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte."
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Once estrellas mundiales como keynoters"
+es["talk_title"] = "Charla"
 
 es["sponsors_title"] = "Auspiciadores"
 es["endorsement_title"] = "Patrocinadores"
@@ -142,7 +144,7 @@ pt["menu_talkproposal"] = "SER UM ORADOR!"
 
 pt["choose_your_language"] = "Selecione seu idioma"
 pt["spanish"] = "Espanhol"
-pt["english"] = "Ingle&ecirc;s"
+pt["english"] = "Ingl&ecirc;s"
 pt["portuguese"] = "Portugu&ecirc;s"
 
 pt["we_are"] = "Pessoas pre-inscritas"
@@ -156,6 +158,7 @@ pt["event_desc_p1"] = "<strong>Programadores, engenheiros, desenhadores, empres&
 pt["event_desc_p2"] = " Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder."
 pt["speakers_title"] = "Palestrantes"
 pt["speakers_desc"] = "Onze estrelas mundiais como palestrantes principais"
+pt["talk_title"] = "Palestra"
 
 pt["sponsors_title"] = "Patrocinadores"
 pt["endorsement_title"] = "Apoio"
