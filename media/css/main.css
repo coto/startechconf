@@ -118,6 +118,35 @@ body {
 	-webkit-box-shadow: -5px 1px 2px #000;
 }
 
+.bloqueInfo {
+	padding:16px;
+	position:absolute;
+	background-color:#2D3849;
+	text-align:center;
+	font-size:1.3em;
+	color:#fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	z-index:10;
+	margin-left:534px;
+	border:2px solid #B0B0B0;
+	border-top:none;
+	top:48px;
+	opacity:0;
+}
+
+.bloqueInfo p {
+	margin:0;
+	color:#fff;
+}
+
+.bloqueInfo a {
+	color:#fff;
+}
+
+
 	#header h1{
 		position: absolute;
 		z-index: -1;

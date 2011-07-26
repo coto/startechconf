@@ -19,4 +19,12 @@ $(document).ready(function(){
         $("#abstract-" + this.id).hide();
       }
     );
+    
+    // important news block
+    var _div = jQuery('#important-new');
+    if (_div) {
+      _div.animate({
+        "opacity": "1"
+      }, 1500);
+    }    
 });
