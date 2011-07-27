@@ -12,6 +12,18 @@ handlers:
   static_files: media/favicon.png
   upload: media/favicon.png
 
+- url: /icon_57x57.png
+  static_files: media/icon_57x57.png
+  upload: media/icon_57x57.png
+
+- url: /icon_72x72_hdpi.png
+  static_files: media/icon_72x72_hdpi.png
+  upload: media/icon_72x72_hdpi.png
+
+- url: /icon_114x114.png
+  static_files: media/icon_114x114.png
+  upload: media/icon_114x114.png
+
 - url: /robots.txt
   static_files: media/robots.txt
   upload: media/robots.txt
