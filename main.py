@@ -162,7 +162,7 @@ class Counter(webapp.RequestHandler):
             result = q.fetch(5)
             preregistered = emailQuery + ' <span style="color: green">is pre-registered</span><ul>'
             for p in result:
-                preregistered += "<li><b>When:</b> " + p.when.strftime("%A, %B %d, %Y - %I:%M:%S %p %Z") + " | <b>Country:</b> " + p.country + "</li>"
+                preregistered += "<li><b>When:</b> " + p.when.strftime("%A, %B %d, %Y - %I:%M:%S %p %Z") + " | <b>Country:</b> " + str(p.country) + "</li>"
             preregistered += "</ul>"
 
         else:
