@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-import re, languages, captcha, os
+import re, languages, os
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
 from google.appengine.dist import use_library
@@ -128,15 +128,10 @@ class MobileHandler(webapp.RequestHandler):
 
 class MainHandler(webapp.RequestHandler):
     def get(self):
-        chtml = captcha.displayhtml(
-            public_key = "6Lc_FsMSAAAAAHTVnQXGrWvzdshrKixBJghOgl3O",
-            use_ssl = False,
-            error = None)
         params = {
 			'path' : self.request.path,
 			'count': we_are().count(),
 			'lang': set_lang_cookie_and_return_dict(self),
-			'captchahtml': chtml,
 		}
         if set_version_device(self) == "mobile":
             self.redirect("/m")
@@ -158,13 +153,31 @@ class OrganizersHandler(webapp.RequestHandler):
 class Counter(webapp.RequestHandler):
     def get(self):
         user = users.get_current_user()
-        test = self.request.headers["Accept-Language"]
-        if user:
-            greeting = ("Welcome, %s from %s! <a href=\"%s\">sign out</a><h1 style=\"font-size: 5em;\">we are: %s</h1><hr><div>%s</div>" %
-						(user.nickname(), get_country(self), users.create_logout_url(self.request.path), str(we_are().count()), test))
+        language = self.request.headers["Accept-Language"]
+
+        emailQuery = self.request.get("email")
+        q = db.Query(Register).filter('email =', emailQuery)
+
+        if q.count() >= 1:
+            result = q.fetch(5)
+            preregistered = emailQuery + ' <span style="color: green">is pre-registered</span><ul>'
+            for p in result:
+                preregistered += "<li><b>When:</b> " + p.when.strftime("%A, %B %d, %Y - %I:%M:%S %p %Z") + " | <b>Country:</b> " + p.country + "</li>"
+            preregistered += "</ul>"
+
         else:
-            greeting = ("<a href=\"%s\">Sign in or register</a> from %s. <hr><div>%s</div>" %
-						(users.create_login_url(self.request.path), get_country(self), test))
+            if emailQuery <> "":
+                preregistered = emailQuery + ' <span style="color: red">is not pre-registered</span>'
+            else:
+                preregistered = ""
+        
+
+        if user:
+            greeting = ("Welcome, %s <a href=\"%s\">sign out</a><h1 style=\"font-size: 2em;\">There are %s people pre-registered</h1><hr>Your country:  %s<hr>Your language: %s <hr><h1>Validator</h1>%s" %
+						(user.nickname(), users.create_logout_url(self.request.path), str(we_are().count()), get_country(self), language, preregistered))
+        else:
+            greeting = ("<a href=\"%s\">Sign in or register</a> to see the Counter <hr>Your country:  %s <hr>Your language: %s <hr><h1>Validator</h1>%s" %
+						(users.create_login_url(self.request.path), get_country(self), language, preregistered))
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
@@ -224,7 +237,7 @@ def main():
 		('/', MainHandler),
         ('/counter', Counter),
         ('/m', MobileHandler),
-	], debug=False)
+	], debug=True)
     util.run_wsgi_app(application)
 
 if __name__ == '__main__':
