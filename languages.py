@@ -24,7 +24,7 @@ en["where"] = "Federico Santa Mar&iacute;a University, Campus San Joaqu&iacute;n
 en["date"] = "November 4-5, 2011"
 
 en["event_desc_p1"] = "<strong>StarTechConf</strong> is a large conference that brings together worldwide stars in software development and local experts in technologies to talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, and more."
-en["event_desc_p2"] = "<strong>Engineers from Google, Yahoo!, Microsoft, Mozilla, Adobe</strong> and other web experts will complete two days of talks and deep working sessions.<p></p><strong>1000 developers, designers, investors and entrepreneurs</strong> from around the world will show their demos and exchange some ideas.</p><p>It will be two days of intense learning and knowledge sharing which you won't want to miss.</p>"
+en["event_desc_p2"] = "<strong>Engineers from Google, Yahoo!, Microsoft, Mozilla, Adobe</strong> and other web experts will complete two days of talks and deep working sessions. About <strong>1000 developers, designers, investors and entrepreneurs</strong> from around the world will show their demos and exchange some ideas.</p><p>It will be two days of intense learning and knowledge sharing which you won't want to miss.</p>"
 en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Eleven rock stars as speakers"
 en["talk_title"] = "Talk"
@@ -91,7 +91,7 @@ es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus Sa
 es["date"] = "4 y 5 de Noviembre de 2011"
 
 es["event_desc_p1"] = "<strong>StarTechConf</strong> es una gran conferencia que junta a estrellas mundiales en desarrollo de software y a expertos locales en tecnolog&iacute;a para hablar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
-es["event_desc_p2"] = "<strong>Ingenieros de Google, Yahoo!, Microsoft, Mozilla, Adobe</strong> y otros expertos en desarrollo web completar&aacute;n dos d&iacute;as de charlas y sesiones profundas de trabajo.</p><p><strong>1000 desarrolladores, dise&ntilde;adores, inversionistas y emprendedores</strong> de todo el mundo mostrar&aacute;n sus aplicaciones e intercambiar&aacute;n ideas. <p>Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte.</p>"
+es["event_desc_p2"] = "<strong>Ingenieros de Google, Yahoo!, Microsoft, Mozilla, Adobe</strong> y otros expertos en desarrollo web completar&aacute;n dos d&iacute;as de charlas y sesiones profundas de trabajo. Unos <strong>1000 desarrolladores, dise&ntilde;adores, inversionistas y emprendedores</strong> de todo el mundo mostrar&aacute;n sus aplicaciones e debatir&aacute;n ideas. <p>Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte.</p>"
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Once estrellas mundiales como conferencistas"
 es["talk_title"] = "Charla"
@@ -159,7 +159,7 @@ pt["where"] = "Universidade T&eacute;cnica Federico Santa Mar&iacute;a, Campus S
 pt["date"] = "4 e 5 de Novembro, 2011"
 
 pt["event_desc_p1"] = "<strong>StarTechConf</strong> &eacute; uma grande confer&ecirc;ncia que re&uacute;ne as melhores estrelas do mundo em desenvolvimento de software e especialistas locais em tecnologias pra falar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
-pt["event_desc_p2"] = "<strong>Engenheiros do Google, Yahoo, Microsoft, Mozilla, Adobe</strong> e outros especialistas de desenvolvimento web v&atilde;o completar dois dias de palestras e sess&otilde;es profundas de trabalho.</p><p><strong>1000 desenvolvedores, designers, estudantes, investidores e empres&aacute;rios</strong> de todo o mundo v&atilde;o mostrar suas aplica&ccedil;&otilde;es   e trocar id&eacute;ias. <p>Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder.</p>"
+pt["event_desc_p2"] = "<strong>Engenheiros do Google, Yahoo, Microsoft, Mozilla, Adobe</strong> e outros especialistas de desenvolvimento web v&atilde;o completar dois dias de palestras e sess&otilde;es profundas de trabalho. Cerca de <strong>1000 desenvolvedores, designers, estudantes, investidores e empres&aacute;rios</strong> de todo o mundo v&atilde;o mostrar suas aplica&ccedil;&otilde;es e trocar id&eacute;ias. <p>Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder.</p>"
 
 pt["speakers_title"] = "Palestrantes"
 pt["speakers_desc"] = "Onze estrelas mundiais como palestrantes principais"
