@@ -532,7 +532,13 @@ p.where {
 .sponsor-content li{
 	margin: 8px 4px;
     text-align: center;
+    border-top: 1px dashed #ddd;
+    padding: 15px 0 0 0;
 }
+
+    .sponsor-content li.first{
+        border-top: none;
+    }
 
 .sponsor-content li a{
 	display: block;
