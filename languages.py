@@ -91,7 +91,7 @@ es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus Sa
 es["date"] = "4 y 5 de Noviembre de 2011"
 
 es["event_desc_p1"] = "<strong>StarTechConf</strong> es una gran conferencia que junta a estrellas mundiales en desarrollo de software y a expertos locales en tecnolog&iacute;a para hablar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
-es["event_desc_p2"] = "<strong>Ingenieros de Google, Yahoo!, Microsoft, Mozilla y Adobe</strong>, juntos a otros expertos en desarrollo web, completar&aacute;n dos d&iacute;as de charlas y sesiones profundas de trabajo. Unos <strong>1000 desarrolladores, dise&ntilde;adores, inversionistas y emprendedores</strong> de todo el mundo mostrar&aacute;n sus aplicaciones e debatir&aacute;n ideas. <p>Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte.</p>"
+es["event_desc_p2"] = "<strong>Ingenieros de Google, Yahoo!, Microsoft, Mozilla y Adobe</strong>, juntos a otros expertos en desarrollo web, completar&aacute;n dos d&iacute;as de charlas y sesiones profundas de trabajo. Unos <strong>1000 desarrolladores, dise&ntilde;adores, inversionistas y emprendedores</strong> de todo el mundo mostrar&aacute;n sus aplicaciones y debatir&aacute;n ideas.<p>Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte.</p>"
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Once estrellas mundiales como conferencistas"
 es["talk_title"] = "Charla"
