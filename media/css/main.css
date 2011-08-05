@@ -214,22 +214,28 @@ body {
 		float: left;
 	}
 
-	#main-nav ul li a{
-		color: #FFF;
-		padding: 14px 10px;
-		text-decoration: none;
-		display: block;
-		font-size: 14px;
-		text-transform: uppercase;
-	}
+        #main-nav ul li a{
+            color: #FFF;
+            padding: 14px 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
 
-	#main-nav ul li a:hover,
-	#main-nav ul li.selected a{
-		background: #495666;
-		text-shadow: 1px -1px 10px #333;
-		outline: 0px;
-		text-shadow: 1px 2px 0px #000;
-	}
+        #main-nav ul li a:hover,
+        #main-nav ul li.selected a{
+            background: #495666;
+            text-shadow: 1px -1px 10px #333;
+            outline: 0px;
+            text-shadow: 1px 2px 0px #000;
+        }
+
+        #main-nav ul li.rss a{
+            background: transparent url('../images/rss_icon.png') center center no-repeat;
+            text-indent: -9999px;
+            padding: 14px 0;
+        }
 
 #select-language{
 	display: block;

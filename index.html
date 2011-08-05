@@ -2,12 +2,11 @@
 
 {% block title %}StarTechConf{% endblock %}
 {% block media %}
-<link href="media/css/main.css" type="text/css" rel="stylesheet" />
-<script src="media/js/jquery-1.6.1.min.js"></script>
-<!--<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>-->
-<script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"> </script>
-
-<script src="media/js/main.js"></script>
+    <link href="media/css/main.css" type="text/css" rel="stylesheet" />
+    <script src="media/js/jquery-1.6.1.min.js"></script>
+    <!--<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>-->
+    <script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
+    <script src="media/js/main.js"></script>
 {% endblock %}
 {% block article %}
 <div id="header">
@@ -18,7 +17,8 @@
                 <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
                 <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
                 <li><a href="/#price">{{ lang.menu_price }}</a></li>
-                <li class="blog"><a href="http://blog.startechconf.com/">Blog</a></li>
+                <li><a href="http://blog.startechconf.com/">Blog</a></li>
+                <li class="rss"><a href="http://blog.startechconf.com/feeds/posts/default?alt=rss">Feed RSS</a></li>
             </ul>
             <div id="select-language"> <span>{{lang.choose_your_language}}</span>
                 <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
