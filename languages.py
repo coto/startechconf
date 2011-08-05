@@ -9,13 +9,14 @@ en["menu_organizers"] = "ORGANIZERS"
 en["menu_price"] = "PRICE"
 en["menu_talkproposal"] = "BE A SPEAKER!"
 en["announce"] = "Sale to pre-registers opened"
+en["news"] = "August 21, General Ticket Sale"
 
 en["choose_your_language"] = "Choose your Language"
 en["spanish"] = "Spanish"
 en["english"] = "English"
 en["portuguese"] = "Portuguese"
 
-en["we_are"] = "Pre-registered people"
+en["we_are"] = "Pre-registered"
 en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
@@ -77,13 +78,14 @@ es["menu_organizers"] = "ORGANIZADORES"
 es["menu_price"] = "PRECIO"
 es["menu_talkproposal"] = "S&Eacute; UN CHARLISTA!"
 es["announce"] = "Comenz&oacute; la venta para los pre-registrados"
+es["news"] = "21 Agosto, Venta Entradas General"
 
 es["choose_your_language"] = "Selecciona tu idioma"
 es["spanish"] = "Espa&ntilde;ol"
 es["english"] = "Ingl&eacute;s"
 es["portuguese"] = "Portugues"
 
-es["we_are"] = "Personas pre-registradas"
+es["we_are"] = "Pre-registrados"
 es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile"
 
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
@@ -143,15 +145,15 @@ pt["menu_sponsors"] = "PATROCINADORES"
 pt["menu_organizers"] = "ORGANIZADORES"
 pt["menu_price"] = "PRE&Ccedil;O"
 pt["menu_talkproposal"] = "SER UM ORADOR!"
-pt["announce"] = "Come&ccedil;ou a venda para os pr&eacute;-inscritos"
-
+pt["announce"] = "Come&ccedil;ou a venda para os pr&eacute;-cadastrados"
+pt["news"] = "21 Agosto, Venda Bilhetes Geral"
 
 pt["choose_your_language"] = "Selecione seu idioma"
 pt["spanish"] = "Espanhol"
 pt["english"] = "Ingl&ecirc;s"
 pt["portuguese"] = "Portugu&ecirc;s"
 
-pt["we_are"] = "Pessoas pre-inscritas"
+pt["we_are"] = "Pre-cadastrados"
 pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
