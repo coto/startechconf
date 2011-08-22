@@ -450,6 +450,65 @@ p.where {
             text-decoration: none;
         }
 
+#crew .allkeynoters{
+	clear: both;
+	margin: 50px 0 0 0;
+	overflow: hidden;
+	float: left;
+	padding-left: 4px;
+}
+
+    .organizer{
+        margin: 0 15px 25px 0;
+        color: #bfcfe1;
+        clear: both;
+        width: 620px;
+        margin-bottom: 40px;
+    }
+        .organizer img{
+            width: 80px;
+            height: 80px;
+            margin-bottom: 26px;
+            box-shadow: -4px 4px 0 #000000;
+            -moz-box-shadow: -4px 4px 0 #000000;
+            -webkit-box-shadow: -4px 4px 0 #000000;
+            background: #000;
+            margin-right: 18px;
+            float: left;
+        }
+
+        .organizer h4{
+            font-size: 20px;
+            color: #F29133;
+            margin-bottom: 5px;
+            display: inline;
+        }
+
+        .organizer .content_twiiter{
+            margin: 6px 0;
+        }
+
+        .organizer a.sp_twitter{
+            font-size: 14px;
+            line-height: 20px;
+            text-decoration: none;
+            padding-left: 22px;
+            background: transparent url('../images/twitter_newbird_blue.png') left center no-repeat;
+        }
+
+        .organizer p{
+            margin-top: 2px;
+            line-height: 20px;
+            font-size: 14px;
+            width: 100%;
+        }
+        .organizer a{
+            text-decoration: underline;
+            color: white;
+        }
+        .organizer a:hover{
+            text-decoration: none;
+        }
 
 .last-row{
 	margin-right: 0;
@@ -625,11 +684,8 @@ p.where {
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2e3b4b), color-stop(1, #495666));
 	-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorStr='#2e3b4b', EndColorStr='#495666')";
 	padding: 6px 0 4px 0;
-	bottom: 0;
     z-index: 11;
 	display: block;
-	overflow: hidden;
-	position: fixed;
 	width: 100%;
 	color: #fff;
 	border-top: 1px solid #495666;
