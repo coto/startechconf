@@ -449,6 +449,9 @@ p.where {
         .keynoter a:hover{
             text-decoration: none;
         }
+.crew #header img {
+    margin: 10px 0;
+}
 
 #crew .allkeynoters{
 	clear: both;

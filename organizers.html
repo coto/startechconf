@@ -1,0 +1,182 @@
+{% extends "templates/base.html" %}
+
+{% block title %}StarTechConf{% endblock %}
+{% block media %}
+    <link href="media/css/main.css" type="text/css" rel="stylesheet" />
+    <script src="media/js/jquery-1.6.1.min.js"></script>
+    <script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
+    <script src="media/js/main.js"></script>
+{% endblock %}
+{% block bodyClass %}crew{% endblock %}
+{% block article %}
+<div id="header">
+    <div id="main-nav">
+        <div class="block-content">
+            <ul id="menu">
+                <li><a href="/">{{ lang.menu_home }}</a></li>
+                <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
+                <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
+                <li><a href="/#price">{{ lang.menu_price }}</a></li>
+                <li><a href="http://blog.startechconf.com/">Blog</a></li>
+                <li class="rss"><a href="http://blog.startechconf.com/feeds/posts/default?alt=rss">Feed RSS</a></li>
+            </ul>
+            <div id="select-language"> <span>{{lang.choose_your_language}}</span>
+                <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
+                    <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
+                    <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
+                    <option value="pt" {% ifequal "pt" lang.id  %}selected="selected"{% endifequal %}>{{lang.portuguese}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="title-header">
+            <div class="block-content">
+                <div class="logo"> <img src="media/images/main-logo.png" alt="STARTECHCONF Santiago Chile 2011" title="STARTECHCONF Santiago Chile 2011" />
+                    <h1>STARTECHCONF Santiago Chile 2011</h1>
+                </div>
+            </div>
+        </div>
+        <div class="subtitle-header">
+            <div class="block-content">
+                <h2>La tripulación detrás de la Conferencia</h2>
+            </div>
+        </div>
+    </div> <!-- end of #main-nav -->
+</div> <!-- end of #header -->
+
+<div class="content-section bg-on">
+    <div class="block-content">
+        <div class="leftblock" id="crew">
+            <h3>Organizadores</h3>
+            <div class="allkeynoters">
+                <div class="organizer">
+                    <img src="media/images/team/mauricio.jpg" alt="Mauricio Solar"/>
+                    <h4>Mauricio Solar</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/snookca" class="sp_twitter" target="_blank">@snookca</a></p>
+                    <p class="desc">Prestigioso académico de la Universidad Federico Santa María, Ex Presidente (tres períodos) Sociedad Chilena de Ciencia de la Computación, miembro de diversas comunidades científicas internacionales, organizador del Congreso Mundial de Computación en el año 2006.</p>
+                </div>
+                <div class="organizer">
+                    <img src="media/images/team/jorge.jpg" alt="Jorge Rodriguez">
+                    <h4>Jorge Rodriguez</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/j4rs" class="sp_twitter" target="_blank">@j4rs</a></p>
+                    <p class="desc">CEO de <a href="http://www.continuum.cl" target="_blank">Continuum</a>, Ingeniero en Computación e Informática, organizador del meetup Chileno de lenguajes dinámicos.</p>
+                </div>
+                <div class="organizer">
+                    <img src="media/images/team/coto.jpg" alt="Rodrigo Augosto">
+                    <h4>Rodrigo Augosto</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/coto" class="sp_twitter" target="_blank">@coto</a></p>
+                    <p class="desc">Ingeniero en Computación e Informática <a href="http://www.usach.cl" target="_blank">USACH</a>, Técnico en Electrónica <a href="http://www.usm.cl" target="_blank">UTFSM</a>, experto en desarrollo web con énfasis en dispositivos móviles.</p>
+                </div>
+                <div class="organizer">
+                    <img src="media/images/team/rey.jpg" alt="Rey Bango">
+                    <h4>Rey Bango </h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/reybango" class="sp_twitter" target="_blank">@reybango</a></p>
+                    <p class="desc">{{ lang.speaker_ReyBango }}</p>
+                </div>
+                <div class="organizer">
+                    <img src="media/images/team/leo.jpg" alt="Leo Soto"/>
+                    <h4>Leo Soto</h4>
+                    <p class="content_twiiter"><a href="https://twitter.com/#!/leosoto" class="sp_twitter" target="_blank">@leosoto</a></p>
+                    <p class="desc">Ingeniero en Computación e Informática <a href="http://www.usach.cl" target="_blank">USACH</a>, ex participante de Google Summer of Code, socio de Continuum, y frecuente charlista en eventos de desarrollo de software en Chile y el extranjero.</p>
+                </div>
+            </div>
+        </div> <!-- .lefblock #keynoters -->
+
+        <!--  NUEVO SPONSORS -->
+        <div class="rightblock" id="sponsors">
+            <h3>{{lang.sponsors_title}}</h3>
+            <div class="grupo-sponsors">
+                <div class="sponsor-content">
+                    <p> <strong>{{lang.want_to_be_sponsor}}</strong> {{lang.send_us_an_email_to}}<strong><a href="mailto:contact@startechconf.com" class="contact">contact@startechconf.com</a></strong> </p>
+
+                    <div class="sponsor-block platinum">
+                        <h4>Platinum</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li class="first"><a href="http://www.continuum.cl" target="_blank" title="Continuum Chile"> <img src="media/images/companies/continuum-logo.png" border="0" alt="Continuun Chile"> </a></li>
+                                <li><a href="http://www.utfsm.cl" target="_blank" title="Universidad Federico Santa Maria"> <img src="media/images/companies/utfsm-logo.jpg" border="0" alt="Universidad Federico Santa Maria"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-block golden">
+                        <h4>Gold</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li class="first"><a href="http://www.google.com" target="_blank" title="Google"> <img src="media/images/companies/google-logo.png" border="0" alt="Google"> </a></li>
+                                <li><a href="http://www.mozilla.org" target="_blank" title="Mozilla Fundation"> <img src="media/images/companies/mozilla-logo.jpg" border="0" alt="Mozilla Fundation"> </a></li>
+                                <li><a href="http://www.mediastream.cl" target="_blank" title="Mediastream"> <img src="media/images/companies/mediastream-logo.png" border="0" alt="Mediastream" style="margin: 5px 0;"> </a></li>
+                                <li><a href="http://appendto.com" target="_blank" title="appendTo"> <img src="media/images/companies/appendTo.png" border="0" alt="appendTo"> </a></li>
+                                <li><a href="http://www.microsoft.com" target="_blank" title="Microsoft"> <img src="media/images/companies/microsoft-logo.png" border="0" alt="microsoft"> </a></li>
+                                <li><a href="http://www.betazeta.com" target="_blank" title="Betazeta"> <img src="media/images/companies/betazeta-logo.png" border="0" alt="betazeta"> </a></li>
+                                <li><a href="http://www.almaobservatory.org/es" target="_blank" title="ALMA Observatory"> <img src="media/images/companies/alma-logo.png" border="0" alt="ALMA Observatory"> </a></li>
+                                <li><a href="http://gonowtech.cl" target="_blank" title="Gonow Tech"> <img src="media/images/companies/logo_gonow_white.png" border="0" alt="Gonow Tech"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-block silver">
+                        <h4>Silver</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li class="first"><a href="http://www.nic.cl" target="_blank" title="NIC Chile"> <img src="media/images/companies/nic-logo.png" border="0" alt="NIC Chile"> </a></li>
+                                <li><a href="http://www.eventioz.com" target="_blank" title="Eventioz"> <img src="media/images/companies/eventioz-logo.png" border="0" alt="Eventioz"> </a></li>
+                                <li><a href="http://www.github.com" target="_blank" title="GitHub"> <img src="media/images/companies/github-logo.png" border="0" alt="GitHub"> </a></li>
+                                <li><a href="http://www.strchile.cl" target="_blank" title="STR Chile"> <img src="media/images/companies/str-logo.png" border="0" alt="STR Chile"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="sponsor-block endorsements">
+                        <h4>{{lang.endorsement_title}}</h4>
+                        <div class="sponsors-list">
+                            <ul>
+                                <li class="first"><a id="endorsement-startup-chile" href="http://www.startupchile.org" target="_blank" title="Start-Up Chile"> <img src="media/images/companies/startupchile-logo.png" border="0" alt="Start-Up Chile"> </a></li>
+                                <li><a id="endorsement-corfo" href="http://www.corfo.cl" target="_blank" title="Corfo"> <img src="media/images/companies/corfo-logo.jpg" border="0" alt="Corfo"> </a></li>
+                                <li><a id="endorsement-digitalesxchile" href="http://www.digitalesporchile.org/" target="_blank" title="Digitales por Chile"> <img src="media/images/companies/digitalesxchile.png" border="0" alt="Digitales por Chile"> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p> <strong>{{lang.want_to_be_sponsor}}</strong> {{lang.send_us_an_email_to}}<strong><a href="mailto:contact@startechconf.com" class="contact">contact@startechconf.com</a></strong> </p>
+                </div>
+            </div>
+        </div> <!-- end  .rightblock #sponsors -->
+    </div> <!-- end  .block-content -->
+</div> <!-- end  .content-section -->
+
+<div id="footer">
+    <div class="block-content">
+        <p class="copyright">&copy; 2011 All rights reserved.<br/>Powered by Google App Engine.</p>
+        <div class="twitter_followus"><a href="http://twitter.com/startechconf" title="follow us on twitter"><img src="media/images/follow_us.png" alt="follow us on twitter"/></a></div>
+        <div class="social_bar">
+
+            <div class="c_buzz">
+                <a title="Post to Google Buzz" data-button-style="small-count" data-imageurl="http://www.startechconf.com/media/images/main-logo.png" data-locale="{{lang.id}}" data-url="www.startechconf.com" data-message="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com" class="google-buzz-button" href="http://www.google.com/buzz/post">Buzz</a>
+                <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+            </div>
+            <div class="c_facebook">
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.startechconf.com&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=116&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="width:116px; height:21px;" class="facebook-share-button" allowTransparency="true"></iframe>
+            </div>
+            <div class="c_twitter">
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="startechconf"
+                   data-related="startechconf"
+                   data-url="www.startechconf.com"
+                   data-counturl="www.startechconf.com"
+                   data-text="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com"
+                   data-via="#"
+                   data-lang="{{lang.id}}"
+                        >Tweet</a>
+            </div>
+            <div class="c_plusone">
+                <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+                <g:plusone size="medium"></g:plusone>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+{% endblock %}

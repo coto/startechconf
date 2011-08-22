@@ -236,6 +236,7 @@ def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
+        ('/team', OrganizersHandler),
         ('/m', MobileHandler),
 	], debug=True)
     util.run_wsgi_app(application)
