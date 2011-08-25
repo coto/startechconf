@@ -6,7 +6,7 @@ $(document).ready(function(){
         newLang = $(this).val();
         if ($(this).attr("current") == newLang)
             return;
-        location.href = "/?hl="+newLang;
+        location.href = location.pathname + "?hl="+newLang;
     });
     
     $('.abstract-link').toggle(

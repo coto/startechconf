@@ -24,7 +24,7 @@ en["when"] = "November 4-5, 2011"
 en["where"] = "Federico Santa Mar&iacute;a University, Campus San Joaqu&iacute;n <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Map)</a>"
 en["date"] = "November 4-5, 2011"
 
-en["event_desc_p1"] = "<strong>StarTechConf</strong> is a large conference that brings together worldwide stars in software development and local experts in technologies to talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, and more."
+en["event_desc_p1"] = "<strong>StarTechConf</strong> is a large conference that brings together worldwide stars in software development and local experts in technologies to talk about <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python, Open Data</strong>, and more."
 en["event_desc_p2"] = "<strong>Engineers from Google, Yahoo!, Microsoft, Mozilla and Adobe</strong>, together with other web experts will complete two days of talks and deep working sessions. About <strong>1000 developers, designers, investors and entrepreneurs</strong> from around the world will show their demos and exchange some ideas.</p><p>It will be two days of intense learning and knowledge sharing which you won't want to miss.</p>"
 en["speakers_title"] = "Speakers"
 en["speakers_desc"] = "Eleven rock stars as speakers"
@@ -44,9 +44,9 @@ en["invalid_captcha"] = "Invalid Captcha"
 en["registered_email_subject"] = "You are Signed up for StarTechConf Conference Event Notifications"
 en["registered_email_body"] = "Thank you for your interest in StarTechConf being hosted in Santiago, Chile!.\n\nWe're finalizing all the conference details and will contact you as soon as we're ready to take early bird registrations. In the meantime, be sure to follow us on Twitter for the latest information on the conference: http://twitter.com/startechconf. \n\nThis also gives you time to ensure that a 30% discount is viable once you've put together your final budget. \n\nStarTechConf Team."
 
-en["speaker_ReyBango"] = "Member of the <a href=\"http://jquery.org/team/\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>"
-en["speaker_CharlesNutter"] = "Creator of <a href=\"http://www.jruby.org/\">JRuby language</a>. Recognized Java developer. JRuby developer at Engine Yard."
-en["speaker_PaulIrish"] = "Google Chrome developer and <a href=\"http://jquery.org/team/\">jQuery Team</a> member. He maintains the HTML5 <a href=\"http://html5boilerplate.com/\">Boilerplate</a>, the feature detection library <a href=\"http://www.modernizr.com/\">Modernizr</a>, and other bits and bobs of open source code. Big fan of gelato."
+en["speaker_ReyBango"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>"
+en["speaker_CharlesNutter"] = "Creator of <a href=\"http://www.jruby.org\" target=\"_blank\">JRuby language</a>. Recognized Java developer. JRuby developer at Engine Yard."
+en["speaker_PaulIrish"] = "Google Chrome developer and <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> member. He maintains the HTML5 <a href=\"http://html5boilerplate.com/\">Boilerplate</a>, the feature detection library <a href=\"http://www.modernizr.com/\">Modernizr</a>, and other bits and bobs of open source code. Big fan of gelato."
 en["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of <a href=\"http://www.amazon.com/Mastering-CSS-Dreamweaver-Stephanie-Sullivan/dp/0321605039\">Mastering CSS with Dreamweaver CS4</a>. Founder of <a href=\"http://www.w3conversions.com\">W3Conversions</a>."
 en["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;<a href=\"http://www.amazon.com/Accelerated-Scripting-Libraries-Experts-Voice/dp/1590597648\">Accelerated DOM Scripting with AJAX, APIS and Libraries</a>&quot; and &quot;<a href=\"http://www.amazon.com/Art-Science-CSS-Jonathan-Snook/dp/0975841971\">The Art and Science of CSS</a>&quot;."
 en["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;<a href=\"http://www.amazon.com/Rails-Way-Obie-Fernandez/dp/0321445619\">The Rails Way</a>&quot;. Founder of <a href=\"http://hashrocket.com/\">Hashrocket</a>, one of the world&rsquo;s leading Rails-based web development consultancies."
@@ -66,6 +66,16 @@ en["links_version_device"] = "View in version: <a href=\"/m\">Mobile</a> | <stro
 
 en["social_title"] = "Great!, Let people know..."
 en["social_message"] = "I am going to the Biggest Tech Conference in Chile."
+
+en["crew_title"] = "The crew behind the scenes"
+en["crew_menu"] = "Organizers"
+en["crew_mauricio"] = "Prestigioso acad&eacute;mico de la <a href=\"http://www.usm.cl\" target=\"_blank\">Universidad T&eacute;cnica Federico Santa Mar&iacute;a</a>, Ex Presidente (tres periodos) de la Sociedad Chilena de Ciencia de la Computaci&oacute;n, miembro de diversas comunidades cient&iacute;ficas internacionales y organizador del Congreso Mundial de Computaci&oacute;n en el a&ntilde;o 2006."
+en["crew_leo"] = "Ingeniero en Computaci&oacute;n e Inform&aacute;tica <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, ex participante de <a href=\"http://code.google.com/soc/\" target=\"_blank\">Google Summer of Code</a>, socio de <a href=\"http://www.continuum.cl\">Continuum</a>, y frecuente charlista en eventos de desarrollo de software en Chile y el extranjero. Se considera afortunado que le paguen por programar, sino igual lo har&iacute;a por hobby. Co-autor de un libro de <a href=\"http://www.apress.com/9781430225270\">Jython</a>."
+en["crew_j4rs"] = "Passionated about technology, programming languages, the web, deliver value and do things following his instincts and common sense. Loves to have fun while it seems he's working. Believes there shouldn't be secrets on the knowledge area, and that, what's the point in hiring smart people and then tell them what they have to do. Founds <a href=\"http://www.continuum.cl\" target=\"_blank\">Continuum</a> whereas he was dreaming about the best place to work on, and at the end he found it, today is the CEO of that place. There's something he doesn't believes nor care about, competitors."
+en["crew_coto"] = "Computer Science and Information Engineer <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licentiate in Applied Engineering, Electronic Technician <a href=\"http://www.usm.cl\" target=\"_blank\">UTFSM</a>. Some liars say that he is an expert in Front web development, but even he believes it. A night he has a dream in which he meets a <a href=\"http://www.imdb.com/title/tt0105793/\">weird naked Indian</a> in which The Indian tells Coto that his destiny is to create the biggest Tech Conf ever in Chile."
+en["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
+
+
 
 ## spanish dict
 
@@ -92,7 +102,7 @@ es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
 es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaqu&iacute;n <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Mapa)</a>"
 es["date"] = "4 y 5 de Noviembre de 2011"
 
-es["event_desc_p1"] = "<strong>StarTechConf</strong> es una gran conferencia que junta a estrellas mundiales en desarrollo de software y a expertos locales en tecnolog&iacute;a para hablar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, y m&aacute;s."
+es["event_desc_p1"] = "<strong>StarTechConf</strong> es una gran conferencia que junta a estrellas mundiales en desarrollo de software y a expertos locales en tecnolog&iacute;a para hablar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python, Open Data</strong>, y m&aacute;s."
 es["event_desc_p2"] = "<strong>Ingenieros de Google, Yahoo!, Microsoft, Mozilla y Adobe</strong>, juntos a otros expertos en desarrollo web, completar&aacute;n dos d&iacute;as de charlas y sesiones profundas de trabajo. Unos <strong>1000 desarrolladores, dise&ntilde;adores, inversionistas y emprendedores</strong> de todo el mundo mostrar&aacute;n sus aplicaciones y debatir&aacute;n ideas.<p>Ser&aacute;n dos d&iacute;as intensos de aprendizaje e intercambio de conocimientos que no querr&aacute;s perderte.</p>"
 es["speakers_title"] = "Charlistas"
 es["speakers_desc"] = "Once estrellas mundiales como conferencistas"
@@ -112,9 +122,9 @@ es["invalid_captcha"] = "Captcha inv&aacute;lido"
 es["registered_email_subject"] = "Te has registrado para la Conferencia StarTechConf"
 es["registered_email_body"] = "Gracias por querer participar de la conferencia StarTechConf a celebrarse en Chile!.\n\nEstamos finalizando todos los detalles y te contactaremos tan pronto como tengamos listo el proceso para inscribirte. Mientras tanto siguenos en twitter para mantenerte actualizado: http://twitter.com/startechconf. \n\nEl estar pre-registrado te asegura tener acceso a un 30% de descuento una vez que tengamos listo los detalles del precio final. \n\nEquipo de StarTechConf."
 
-es["speaker_ReyBango"] = "Miembro del <a href=\"http://jquery.org/team/\">equipo jQuery</a> y Administrador del Programa Web-Cliente en Microsoft. Editor de <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>"
-es["speaker_CharlesNutter"] = "Creador del lenguaje <a href=\"http://www.jruby.org/\">JRuby</a>. Reconocido desarrollador Java. Desarrollador JRuby en Engine Yard."
-es["speaker_PaulIrish"] = "Desarrollador de Google Chrome y miembro del <a href=\"http://jquery.org/team/\">equipo jQuery</a>. L&iacute;der de algunas bibliotecas HTML5 y CSS3 tales como <a href=\"http://html5boilerplate.com/\">Boilerplate</a> y  <a href=\"http://www.modernizr.com/\">Modernizr</a>. Gran fan del helado."
+es["speaker_ReyBango"] = "Miembro del <a href=\"http://jquery.org/team/\" target=\"_blank\">equipo jQuery</a> y Administrador del Programa Web-Cliente en Microsoft. Editor de <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>"
+es["speaker_CharlesNutter"] = "Creador del lenguaje <a href=\"http://www.jruby.org\" target=\"_blank\">JRuby</a>. Reconocido desarrollador Java. Desarrollador JRuby en Engine Yard."
+es["speaker_PaulIrish"] = "Desarrollador de Google Chrome y miembro del <a href=\"http://jquery.org/team/\" target=\"_blank\">equipo jQuery</a>. L&iacute;der de algunas bibliotecas HTML5 y CSS3 tales como <a href=\"http://html5boilerplate.com/\">Boilerplate</a> y  <a href=\"http://www.modernizr.com/\">Modernizr</a>. Gran fan del helado."
 es["speaker_StephanieSullivan"] = "Experta de alto nivel en CSS y Prominente desarrolladora de aplicaciones Front-End. Co-Autora de &quot;<a href=\"http://www.amazon.com/Mastering-CSS-Dreamweaver-Stephanie-Sullivan/dp/0321605039\">Mastering CSS with Dreamweaver CS4</a>&quot;. Fundadora de <a href=\"http://www.w3conversions.com\">W3Conversions</a>."
 es["speaker_JonathanSnook"] = "Ingeniero Front en Yahoo!. Co-Autor del best seller &quot;<a href=\"http://www.amazon.com/Accelerated-Scripting-Libraries-Experts-Voice/dp/1590597648\">Accelerated DOM Scripting with AJAX, APIS and Libraries</a>&quot; y &quot;<a href=\"http://www.amazon.com/Art-Science-CSS-Jonathan-Snook/dp/0975841971\">The Art and Science of CSS</a>&quot;"
 es["speaker_ObieFernandez"] = "L&iacute;der tecnol&oacute;gico mundialmente reconocido. Autor del best seller &quot;<a href=\"http://www.amazon.com/Rails-Way-Obie-Fernandez/dp/0321445619\">The Rails Way</a>&quot;. Fundador de <a href=\"http://hashrocket.com/\">Hashrocket</a>, una de las consultoras de desarrollo web basado en Rails l&iacute;deres en el mundo."
@@ -134,6 +144,16 @@ es["links_version_device"] = "Ver en versi&oacute;n: <a href=\"/m\">M&oacute;vil
 
 es["social_title"] = "Genial!, Hazle saber al mundo..."
 es["social_message"] = "Voy al mayor evento tecnologico en Chile."
+
+es["crew_title"] = "La tripulaci&oacute;n detr&aacute;s de escena"
+es["crew_menu"] = "Organizadores"
+es["crew_mauricio"] = "Prestigioso acad&eacute;mico de la <a href=\"http://www.usm.cl\" target=\"_blank\">Universidad T&eacute;cnica Federico Santa Mar&iacute;a</a>, Ex Presidente (tres periodos) de la Sociedad Chilena de Ciencia de la Computaci&oacute;n, miembro de diversas comunidades cient&iacute;ficas internacionales y organizador del Congreso Mundial de Computaci&oacute;n en el a&ntilde;o 2006."
+es["crew_leo"] = "Ingeniero en Computaci&oacute;n e Inform&aacute;tica <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, ex participante de <a href=\"http://code.google.com/soc/\" target=\"_blank\">Google Summer of Code</a>, socio de <a href=\"http://www.continuum.cl\">Continuum</a>, y frecuente charlista en eventos de desarrollo de software en Chile y el extranjero. Se considera afortunado que le paguen por programar, sino igual lo har&iacute;a por hobby. Co-autor de un libro de <a href=\"http://www.apress.com/9781430225270\">Jython</a>."
+es["crew_j4rs"] = "Apasionado por la tecnolog&iacute;a, los lenguajes de programaci&oacute;n, la web, generar valor y hacer las cosas guiado por su instinto y el sentido com&uacute;n. Le gusta divertirse mientras a veces tambi&eacute;n trabaja. Cree que en el &aacute;rea del conocimiento no deber&iacute;a haber secretos, y que no tienen sentido contratar personas inteligentes para decirles luego que tienen que hacer. Fund&oacute; <a href=\"http://www.continuum.cl\" target=\"_blank\">Continuum</a> mientras so&ntilde;aba con el mejor lugar donde trabajar, y termin&oacute; encontr&aacute;ndolo, hoy es CEO all&iacute;. Hay algo en lo que no cree o al menos no le importa, la competencia."
+es["crew_coto"] = "Ingeniero en Computaci&oacute;n e Inform&aacute;tica <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licenciado en Ingenier&iacute;a aplicada, T&eacute;cnico en Electr&oacute;nica <a href=\"http://www.usm.cl\" target=\"_blank\">UTFSM</a>. Algunos mentirosos dicen que es un experto en desarrollo web front, pero ni el mismo se lo cree. Un d&iacute;a so&ntilde;&oacute; que un <a href=\"http://www.imdb.com/title/tt0105793/\">Indio desnudo</a> le dec&iacute;a que deb&iacute;a hacer la mayor Conferencia de Tecnolog&iacute;a en Chile."
+es["crew_rey"] = "Miembro del equipo jQuery y Administrador del Programa Web-Cliente en Microsoft. Editor de <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
+
+
 
 ## portuguese dict
 
@@ -160,7 +180,7 @@ pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"
 pt["where"] = "Universidade T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaqu&iacute;n <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Map)</a>"
 pt["date"] = "4 e 5 de Novembro, 2011"
 
-pt["event_desc_p1"] = "<strong>StarTechConf</strong> &eacute; uma grande confer&ecirc;ncia que re&uacute;ne as melhores estrelas do mundo em desenvolvimento de software e especialistas locais em tecnologias pra falar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python</strong>, e mais."
+pt["event_desc_p1"] = "<strong>StarTechConf</strong> &eacute; uma grande confer&ecirc;ncia que re&uacute;ne as melhores estrelas do mundo em desenvolvimento de software e especialistas locais em tecnologias pra falar de <strong>HTML5, CSS3, JavaScript, Ruby, Java, Python, Open Data</strong>, e mais."
 pt["event_desc_p2"] = "<strong>Engenheiros do Google, Yahoo, Microsoft, Mozilla e Adobe</strong>, juntos a outros especialistas de desenvolvimento web, v&atilde;o completar dois dias de palestras e sess&otilde;es profundas de trabalho. Cerca de <strong>1000 desenvolvedores, designers, estudantes, investidores e empres&aacute;rios</strong> de todo o mundo v&atilde;o mostrar suas aplica&ccedil;&otilde;es e trocar id&eacute;ias. <p>Ser&atilde;o dois dias de intensa aprendizagem e intercambio de conhecimentos que voc&ecirc; n&atilde;o pode perder.</p>"
 
 pt["speakers_title"] = "Palestrantes"
@@ -183,9 +203,9 @@ pt["invalid_captcha"] = "Captcha invalido"
 pt["registered_email_subject"] = "Voce se cadastro na conferencia StarTechConf"
 pt["registered_email_body"] = "Obrigado por querer participar da conferencia StarTechConf a ser realizada em Chile!.\n\nEstamos finalizando todos os detalhes e vamos a entrar em contacto com voce assim que estejam prontas a inscricao.Por enquanto siga nos em twitter para se manter atualizado: http://twitter.com/startechconf.\n\nEstar pre-inscrito lhe garante ter acesso a um 30% de desconto toda vez que os detalhes do preco final estejam prontos.\n\nEquipo da StarTechConf."
 
-pt["speaker_ReyBango"] = "Member of the <a href=\"http://jquery.org/team/\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>"
-pt["speaker_CharlesNutter"] = "Creator of <a href=\"http://www.jruby.org/\">JRuby language</a>. Recognized Java developer. JRuby developer at Engine Yard."
-pt["speaker_PaulIrish"] = "Google Chrome developer and <a href=\"http://jquery.org/team/\">jQuery Team</a> member. He maintains the HTML5 <a href=\"http://html5boilerplate.com/\">Boilerplate</a>, the feature detection library <a href=\"http://www.modernizr.com/\">Modernizr</a>, and other bits and bobs of open source code. Big fan of gelato."
+pt["speaker_ReyBango"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>"
+pt["speaker_CharlesNutter"] = "Creator of <a href=\"http://www.jruby.org\" target=\"_blank\">JRuby language</a>. Recognized Java developer. JRuby developer at Engine Yard."
+pt["speaker_PaulIrish"] = "Google Chrome developer and <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> member. He maintains the HTML5 <a href=\"http://html5boilerplate.com/\">Boilerplate</a>, the feature detection library <a href=\"http://www.modernizr.com/\">Modernizr</a>, and other bits and bobs of open source code. Big fan of gelato."
 pt["speaker_StephanieSullivan"] = "Very high-ranking expert in CSS and Prominent front-end developer and co-author of <a href=\"http://www.amazon.com/Mastering-CSS-Dreamweaver-Stephanie-Sullivan/dp/0321605039\">Mastering CSS with Dreamweaver CS4</a>. Founder of <a href=\"http://www.w3conversions.com\">W3Conversions</a>."
 pt["speaker_JonathanSnook"] = "Front engineer at Yahoo!. Co-author of the best seller &quot;<a href=\"http://www.amazon.com/Accelerated-Scripting-Libraries-Experts-Voice/dp/1590597648\">Accelerated DOM Scripting with AJAX, APIS and Libraries</a>&quot; and &quot;<a href=\"http://www.amazon.com/Art-Science-CSS-Jonathan-Snook/dp/0975841971\">The Art and Science of CSS</a>&quot;."
 pt["speaker_ObieFernandez"] = "Widely recognized technology leader. Author of the bestsellers &quot;<a href=\"http://www.amazon.com/Rails-Way-Obie-Fernandez/dp/0321445619\">The Rails Way</a>&quot;. Founder of <a href=\"http://hashrocket.com/\">Hashrocket</a>, one of the world&rsquo;s leading Rails-based web development consultancies."
@@ -205,4 +225,12 @@ pt["links_version_device"] = "Vista em vers&atilde;o: <a href=\"/m\">M&oacute;ve
 
 pt["social_title"] = "&Oacute;timo!, deixar as pessoas sabem..."
 pt["social_message"] = "Estou indo para o maior evento de tecnologia no Chile."
+
+pt["crew_title"] = "A tripula&ccedil;&atilde;o por tr&aacute;s do evento"
+pt["crew_menu"] = "Organizadores"
+pt["crew_mauricio"] = "Prestigioso acad&eacute;mico de la <a href=\"http://www.usm.cl\" target=\"_blank\">Universidad T&eacute;cnica Federico Santa Mar&iacute;a</a>, Ex Presidente (tres periodos) de la Sociedad Chilena de Ciencia de la Computaci&oacute;n, miembro de diversas comunidades cient&iacute;ficas internacionales y organizador del Congreso Mundial de Computaci&oacute;n en el a&ntilde;o 2006."
+pt["crew_leo"] = "Ingeniero en Computaci&oacute;n e Inform&aacute;tica <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, ex participante de <a href=\"http://code.google.com/soc/\" target=\"_blank\">Google Summer of Code</a>, socio de <a href=\"http://www.continuum.cl\">Continuum</a>, y frecuente charlista en eventos de desarrollo de software en Chile y el extranjero. Se considera afortunado que le paguen por programar, sino igual lo har&iacute;a por hobby. Co-autor de un libro de <a href=\"http://www.apress.com/9781430225270\">Jython</a>."
+pt["crew_j4rs"] = "Passionated about technology, programming languages, the web, deliver value and do things following his instincts and common sense. Loves to have fun while it seems he's working. Believes there shouldn't be secrets on the knowledge area, and that, what's the point in hiring smart people and then tell them what they have to do. Founds <a href=\"http://www.continuum.cl\" target=\"_blank\">Continuum</a> whereas he was dreaming about the best place to work on, and at the end he found it, today is the CEO of that place. There's something he doesn't believes nor care about, competitors."
+pt["crew_coto"] = "Ingeniero en Computaci&oacute;n e Inform&aacute;tica <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licenciado en Ingenier&iacute;a aplicada, T&eacute;cnico en Electr&oacute;nica <a href=\"http://www.usm.cl\" target=\"_blank\">UTFSM</a>. Algunos mentirosos dicen que es un experto en desarrollo web front, pero ni el mismo se lo cree. Un d&iacute;a so&ntilde;&oacute; que un <a href=\"http://www.imdb.com/title/tt0105793/\">Indio desnudo</a> le dec&iacute;a que deb&iacute;a hacer la mayor Conferencia de Tecnolog&iacute;a en Chile."
+pt["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
 
