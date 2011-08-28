@@ -16,7 +16,6 @@ en["spanish"] = "Spanish"
 en["english"] = "English"
 en["portuguese"] = "Portuguese"
 
-en["we_are"] = "Pre-registered"
 en["event_title"] = "48 hours and the Biggest Tech Conference in Chile"
 
 en["when"] = "November 4-5, 2011 / Santiago of Chile"
@@ -95,7 +94,6 @@ es["spanish"] = "Espa&ntilde;ol"
 es["english"] = "Ingl&eacute;s"
 es["portuguese"] = "Portugues"
 
-es["we_are"] = "Pre-registrados"
 es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile"
 
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
@@ -173,7 +171,6 @@ pt["spanish"] = "Espanhol"
 pt["english"] = "Ingl&ecirc;s"
 pt["portuguese"] = "Portugu&ecirc;s"
 
-pt["we_are"] = "Pre-cadastrados"
 pt["event_title"] = "48 horas e o maior evento de tecnologia no Chile"
 
 pt["when"] = "4 e 5 de Novembro, 2011 / Santiago do Chile"

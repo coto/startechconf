@@ -130,7 +130,6 @@ class MainHandler(webapp.RequestHandler):
     def get(self):
         params = {
 			'path' : self.request.path,
-			'count': we_are().count(),
 			'lang': set_lang_cookie_and_return_dict(self),
 		}
         if set_version_device(self) == "mobile":
@@ -144,7 +143,6 @@ class MainHandler(webapp.RequestHandler):
 class OrganizersHandler(webapp.RequestHandler):
     def get(self):
         params = {
-			'count': we_are().count(),
 			'path' : self.request.path,
 			'lang': set_lang_cookie_and_return_dict(self)
 		}		
@@ -238,7 +236,7 @@ def main():
         ('/counter', Counter),
         ('/team', OrganizersHandler),
         ('/m', MobileHandler),
-	], debug=True)
+	], debug=False)
     util.run_wsgi_app(application)
 
 if __name__ == '__main__':

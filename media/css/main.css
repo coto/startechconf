@@ -146,59 +146,63 @@ body {
 	color:#fff;
 }
 
-
-	#header h1{
-		position: absolute;
-		z-index: -1;
-	}
-
-	#header img{
-		margin: 50px 0;
-	}
-
-	#header h1 a{
-		background: url('../images/main-logo.png') repeat-x 0 0;
-		width: 363px;
-		height: 145px;
-		text-indent: -100000px;
-		display: block;
-		outline: 0px;
-	}
-
 .title-header{
 	background: #fff;
-	overflow: hidden;
 }
 
-#counter{
-	position: absolute;
+.title-header h1{
+    background: transparent url('../images/main-logo.png') center center no-repeat;
+    width: 370px;
+    height: 150px;
+    text-indent: -100000px;
+    display: block;
+    outline: 0px;
+    margin:  1em 0;
+    float: left;
+}
+
+
+.title-header a.button{
+    float: right;
+    background: #a52a2a;
+}
+
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+.ui-button{
+	text-transform: uppercase;
     font-weight: bold;
-	font-size: 16px;
-	z-index: 10;
-	text-align: right;
-	margin-top: -195px;
-	margin-left: 665px;
-	width: 335px;
+	color: white;
+    font-size: 0.8em;
+	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.7);
+	-webkit-box-shadow: 0px 1px 1px 0px #ccc;
+    -moz-box-shadow: 0px 1px 1px 0px #ccc;
+    -o-box-shadow: 0px 1px 1px 0px #ccc;
+	box-shadow: 0px 1px 1px 0px #ccc;
+    -webkit-border-radius: 1px;
+    -khtml-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
 }
+    /*  ********* Buttons sizes, it also defines size by default **********  */
+    .ui-button{
+        width: auto;
+        padding: 0.2em 1em;
+        font-size: 1.2em;
 
-	#counter p{
-		color: #6a7787;
-		text-transform: uppercase;
-		font-size: 20px;
-        font-weight: bold;
-		line-height: 26px;
-		padding-right: 5px;
-	}
+        color: white;
+        background: #d89a0e; /* Old browsers */
+        background: -moz-linear-gradient(top, #d89a0e 0%, #ffb619 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d89a0e), color-stop(100%,#ffb619)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #d89a0e 0%,#ffb619 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #d89a0e 0%,#ffb619 100%); /* Opera11.10+ */
+        background: -ms-linear-gradient(top, #d89a0e 0%,#ffb619 100%); /* IE10+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d89a0e', endColorstr='#ffb619',GradientType=0 ); /* IE6-9 */
+        background: linear-gradient(top, #d89a0e 0%,#ffb619 100%); /* W3C */
+    }
 
-	#counter p.numbers{
-		color: #f29133;
-		text-transform: uppercase;
-		font-size: 140px;
-        font-weight: bold;
-		text-shadow: 2px 2px 0px #999;
-		letter-spacing: -0.02em;
-		line-height: 146px;
-	}
 
 #main-nav{
 	border-bottom: 4px solid #8f99a5;
