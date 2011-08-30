@@ -55,7 +55,7 @@ en["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. <a href=\"http://
 en["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. <a href=\"http://developer.yahoo.com/yui/\">YUI</a> contributor focus on SSJS and <a href=\"http://nodejs.org/\">NodeJS</a>."
 en["speaker_RobertNyman"] = "Technical Evangelist for <a href=\"http://www.mozilla-europe.org/en/\">Mozilla</a> and a strong believer in HTML5 and the Open Web. He has been doing web development since 1998, and regularly blogs at <a href=\"http://robertnyman.com\">http://robertnyman.com</a>."
 en["speaker_MikeHostetler"] = "Founder and CEO of <a href=\"http://appendto.com\">appendTo</a>, the Company Dedicated to jQuery.  jQuery Cookbook Co-Author, JavaScript expert and Former jQuery Team Member. Blogs at <a href=\"http://mike-hostetler.com\">http://mike-hostetler.com</a>"
-en["speaker_TomPrestonWerner"] = "<a href='http://github.com' target='_blank'>GitHub Social Coding</a> Co-founder and CTO. Before that he wrote and ran <a href='http://gravatar.com' target='_blank'>Gravatar</a>. Bootstraps Github in 2008 with no external fund. Write frequently on <a href='http://tom.preston-werner.com/' target='_blank'>http://tom.preston-werner.com/</a>"
+en["speaker_TomPrestonWerner"] = "<a href='http://github.com' target='_blank'>GitHub Social Coding</a> Co-founder and CTO. Before that he wrote and ran <a href='http://gravatar.com' target='_blank'>Gravatar</a>. Bootstraps Github in 2008 with no external funds. Writes frequently on <a href='http://tom.preston-werner.com/' target='_blank'>http://tom.preston-werner.com/</a>"
 
 
 en["conf_price"] = "Ticket price"
@@ -217,7 +217,7 @@ pt["speaker_MarkRamm"] = "Technical leader at Sourceforge.net. <a href=\"http://
 pt["speaker_CaridyPatino"] = "Senior Front-end Engineer at Yahoo!. <a href=\"http://developer.yahoo.com/yui/\">YUI</a> contributor focus on SSJS and <a href=\"http://nodejs.org/\">NodeJS</a>."
 pt["speaker_RobertNyman"] = "Technical Evangelist for <a href=\"http://www.mozilla-europe.org/pt/\">Mozilla</a> and a strong believer in HTML5 and the Open Web. He has been doing web development since 1998, and regularly blogs at <a href=\"http://robertnyman.com\">http://robertnyman.com</a>."
 pt["speaker_MikeHostetler"] = "Founder and CEO of <a href=\"http://appendto.com\">appendTo</a>, the Company Dedicated to jQuery.  jQuery Cookbook Co-Author, JavaScript expert and Former jQuery Team Member. Blogs at <a href=\"http://mike-hostetler.com\">http://mike-hostetler.com</a>."
-pt["speaker_TomPrestonWerner"] = "<a href='http://github.com' target='_blank'>GitHub Social Coding</a> Co-founder and CTO. Before that he wrote and ran <a href='http://gravatar.com' target='_blank'>Gravatar</a>. Bootstraps Github in 2008 with no external fund. Write frequently on <a href='http://tom.preston-werner.com/' target='_blank'>http://tom.preston-werner.com/</a>"
+pt["speaker_TomPrestonWerner"] = "<a href='http://github.com' target='_blank'>GitHub Social Coding</a> Co-founder and CTO. Before that he wrote and ran <a href='http://gravatar.com' target='_blank'>Gravatar</a>. Bootstraps Github in 2008 with no external funds. Writes frequently on <a href='http://tom.preston-werner.com/' target='_blank'>http://tom.preston-werner.com/</a>"
 
 pt["conf_price"] = "Pre&ccedil;o do bilhete"
 pt["ticket_general"] = "Geral"
