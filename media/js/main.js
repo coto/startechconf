@@ -26,5 +26,5 @@ $(document).ready(function(){
       _div.animate({
         "opacity": "1"
       }, 1500);
-    }    
+    }
 });

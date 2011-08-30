@@ -121,29 +121,53 @@ body {
 .bloqueInfo {
 	padding:16px;
 	position:absolute;
-	background-color:#2D3849;
 	text-align:center;
-	font-size:1.3em;
-	color:#fff;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	font-size:1.4em;
+	font-weight:bold;
+	color:#2D3849;
 	z-index:10;
 	margin-left:534px;
-	border:2px solid #B0B0B0;
-	border-top:none;
 	top:48px;
 	opacity:0;
 }
 
 .bloqueInfo p {
 	margin:0;
-	color:#fff;
+	color:#2D3849;
 }
 
 .bloqueInfo a {
+	color:#2D3849;
+}
+
+
+.registration-button {
+	padding:16px;
+	position:absolute;
+	background-color:#2D3849;
+	text-align:center;
+	font-size:2.2em;
 	color:#fff;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+	z-index:10;
+	border:2px solid #B0B0B0;
+	border-top:none;
+	border-left:none;
+	top:130px;
+	left:998px;
+}
+
+.registration-button p {
+	margin:0;
+	color:#fff;
+}
+
+.registration-button a {
+	color:#fff;
+	text-decoration: none;
 }
 
 .title-header{
@@ -926,7 +950,7 @@ p.where {
 #fb_comments{
     background-color: white;
     height: 80px;
-    overflow: hidden;
+    overflow:  en;
     width: 530px;
     padding: 0 5px;
 }
@@ -951,3 +975,7 @@ p.where {
 .talk-title {
   text-decoration:underline;
 } 
+
+.hidden {
+  display:none;
+}
