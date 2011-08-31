@@ -139,12 +139,17 @@ body {
 .bloqueInfo a {
 	color:#2D3849;
 }
+.bloqueInfo a:hover {
+	color: #F29133;
+    text-decoration: none;
+}
 
 
 .registration-button {
 	padding:16px;
 	position:absolute;
-	background-color:#2D3849;
+    cursor: pointer;
+	background-color: #F29133;
 	text-align:center;
 	font-size:2.2em;
 	color:#fff;
@@ -156,9 +161,13 @@ body {
 	border:2px solid #B0B0B0;
 	border-top:none;
 	border-left:none;
-	top:130px;
-	left:998px;
+	top: 130px;
+	left: 950px;
 }
+
+    .registration-button:hover {
+        background-color: #ef9128;
+    }
 
 .registration-button p {
 	margin:0;
