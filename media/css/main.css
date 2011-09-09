@@ -661,7 +661,7 @@ p.where {
     .sponsor-content .silver img,
     .sponsor-content .endorsements img
     {
-        width: 220px;
+        /*width: 220px;*/
     }
 
     .sponsor-content .endorsements{
