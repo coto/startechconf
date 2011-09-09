@@ -40,8 +40,20 @@ handlers:
   static_files: media/docs/startechconf-presentacion.pdf
   upload: media/docs/startechconf-presentacion.pdf
 
+- url: /fb
+  static_dir: fb
+
 - url: /media
   static_dir: media
-  
+
+- url: /oauth/
+  script: participa.py
+
+- url: /salir/
+  script: participa.py
+
+- url: /participa
+  script: participa.py
+
 - url: .*
   script: main.py

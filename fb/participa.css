@@ -1,0 +1,59 @@
+body {
+	background: #fff;
+	color: #485565;
+}
+
+body, div, h1, h2, h3, h4, h5, h6, li, ul, p {
+	position: relative;
+}
+
+a:link, a:hover, a:visited {
+	text-decoration: none;
+	color: #1c87d2;
+}
+
+a:hover {
+	color: #f69829;
+	text-decoration: underline;
+}
+
+div, img {
+	float: left;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+div#info {
+	margin: 5px 0 0 0;
+	padding: 5px;
+	width: 490px;
+	text-align: justify;
+	font-size: 14px;
+}
+
+span.small {
+	font-size: 14px;
+}
+
+span.smaller {
+	font-size: 13px;
+}
+
+.top_space {
+	margin-top: 10px;
+}
+
+.bottom_space {
+	margin-bottom: 10px;
+}
+
+.right_space {
+	margin-right: 5px;
+}
+
+div.full {
+	width: 100%;
+}
+
+
