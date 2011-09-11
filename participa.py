@@ -233,7 +233,7 @@ class HomeHandler(BaseHandler):
                         q_count = q_uid.count()
         # Get last 12 posts
         q = db.GqlQuery("SELECT * FROM Posts ORDER BY fecha DESC")
-        last_posts = q.fetch(12)
+        last_posts = q.fetch(50)
         for post in last_posts:
             if post.id_autor.isdigit():
                 post.profile_img = 'http://graph.facebook.com/%s/picture' % (post.id_autor)
