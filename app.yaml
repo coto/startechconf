@@ -40,6 +40,10 @@ handlers:
   static_files: media/docs/startechconf-presentacion.pdf
   upload: media/docs/startechconf-presentacion.pdf
 
+- url: /terminos-condiciones-participa.pdf
+  static_files: media/docs/terminos-condiciones-participa.pdf
+  upload: media/docs/terminos-condiciones-participa.pdf
+
 - url: /fb
   static_dir: fb
 
