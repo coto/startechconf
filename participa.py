@@ -283,7 +283,7 @@ class HomeHandler(BaseHandler):
                 msg = self.request.str_POST["content"]
                 msg = unicode(msg, 'utf-8')
                 # Check length restrictions
-                if len(msg) > 140:
+                if len(msg) > 125:
                     self.redirect('/participa')
                     return
                 elif len(msg) < 5:
