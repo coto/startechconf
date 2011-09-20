@@ -51,7 +51,6 @@ en["conf_price"] = "Ticket price"
 en["ticket_general"] = "General"
 en["ticket_students"] = "Students"
 en["conf_price_details_1"] = "Includes the two-days conference."
-en["conf_price_details_2"] = "Preregistered Students have discount too."
 
 en["links_version_device"] = "View in version: <a href=\"/m\">Mobile</a> | <strong>Classic</strong>"
 
@@ -119,7 +118,6 @@ es["conf_price"] = "Precio del ticket"
 es["ticket_general"] = "General"
 es["ticket_students"] = "Estudiantes"
 es["conf_price_details_1"] = "Incluye los dos d&iacute;as de conferencia."
-es["conf_price_details_2"] = "Estudiantes Preregistrados tambi&eacute;n tienen 30% de descuento."
 
 es["links_version_device"] = "Ver en versi&oacute;n: <a href=\"/m\">M&oacute;viles</a> | <strong>Cl&aacute;sico</strong>"
 
@@ -190,7 +188,6 @@ pt["conf_price"] = "Pre&ccedil;o do bilhete"
 pt["ticket_general"] = "Geral"
 pt["ticket_students"] = "Estudantes"
 pt["conf_price_details_1"] = "Inclui os dois dias da confer&ecirc;ncia."
-pt["conf_price_details_2"] = "Estudantes pre-registrados tamb&eacute;n tem desconto."
 
 pt["links_version_device"] = "Vista em vers&atilde;o: <a href=\"/m\">M&oacute;vel</a> | <strong>Cl&aacute;ssica</strong>"
 
