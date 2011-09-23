@@ -51,13 +51,13 @@ handlers:
   static_dir: media
 
 - url: /oauth/
-  script: participa.py
+  script: main.py
 
 - url: /salir/
-  script: participa.py
+  script: main.py
 
 - url: /participa
-  script: participa.py
+  script: main.py
 
 - url: .*
   script: main.py

@@ -126,6 +126,10 @@ class MobileHandler(webapp.RequestHandler):
         self.response.headers.add_header("Set-Cookie", "device=mobile;")
         self.redirect("http://m.startechconf.com")
 
+class RedirectHandler(webapp.RequestHandler):
+    def get(self):
+        self.redirect("/")
+
 class MainHandler(webapp.RequestHandler):
     def get(self):
         params = {
@@ -231,11 +235,17 @@ class GetData(webapp.RequestHandler):
         self.response.out.write("<html><body>%s %s</body></html>" % (greeting, data))
 
 def main():
+    """
+    Main
+    """
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
         ('/team', OrganizersHandler),
         ('/m', MobileHandler),
+        (r'/oauth/', RedirectHandler),
+        (r'/salir/', RedirectHandler),
+        (r"/participa", RedirectHandler),
 	], debug=False)
     util.run_wsgi_app(application)
 
