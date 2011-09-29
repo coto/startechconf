@@ -152,6 +152,14 @@ class OrganizersHandler(webapp.RequestHandler):
 		}		
         self.response.out.write(template.render('organizers.html', params))
 
+class SponsorsHandler(webapp.RequestHandler):
+    def get(self):
+        params = {
+			'path' : self.request.path,
+			'lang': set_lang_cookie_and_return_dict(self)
+		}
+        self.response.out.write(template.render('sponsors.html', params))
+
 class Counter(webapp.RequestHandler):
     def get(self):
         user = users.get_current_user()
@@ -183,11 +191,18 @@ class Counter(webapp.RequestHandler):
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
+class Posts(db.Model):
+    id_autor = db.StringProperty(required=True)
+    nombre = db.StringProperty(required=True)
+    msj = db.TextProperty(required=True)
+    fecha = db.DateTimeProperty(auto_now_add=True)
+    network = db.StringProperty(required=True, default="null")
+    enabled = db.BooleanProperty(default=True)
 
 class GetData(webapp.RequestHandler):
     def get(self):
-        q = Register.all()
-        q.order("when")
+        q = Posts.all()
+        q.order("fecha")
         user = users.get_current_user()
         data = ""
         if user:
@@ -200,32 +215,19 @@ class GetData(webapp.RequestHandler):
                 counter = 1
 
                 for p in results:
-                    ip = p.remote_addr
-                    email = p.email
-                    if email == "rodrigo.augosto@taisachile.cl":
-                        email = "patriciomas@pixelkit.cl"
-                    if email == "contact@protoboard.cl":
-                        email = "eduardobaeza@pixelkit.cl"
-                    #email = re.sub(r'.*\@(.+)', r'\1', email)
-                    date = p.when.strftime("%A, %B %d, %Y ")
-                    time = p.when.strftime("%I:%M:%S %p %Z")
-                    datetime = p.when.strftime("%Y%m%d%H%M%S")
-                    country = p.country
+                    id_autor = p.id_autor
+                    nombre = p.nombre
+                    network = p.network
+                    date = p.fecha.strftime("%A, %B %d, %Y ")
+                    time = p.fecha.strftime("%I:%M:%S %p %Z")
 
-                    if country == None:
-                        country = "__"
-
-                    if country == "XX" or country == "":
-                        country = urlfetch.fetch("http://geoip.wtanaka.com/cc/"+ip).content
-                    language = p.language
-                    country.upper()
-                    table += "<tr><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % \
-                            (counter, email, date, time, datetime, country, language, ip)
+                    table += "<tr><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % \
+                            (counter, id_autor, nombre, network, date, time)
                     counter += 1
 
                 data = """<table border=\"1\" cellspacing=\"0\">
                 <tr style=\"background-color: #ccc;\">
-                    <td>id</td><td>email</td><td>date</td><td>time</td><td>datetime<td>country</td><td>language</td><td>ip</td>
+                    <td>id</td><td>email</td><td>date</td><td>time</td><td>datetime<td>country</td>
                 </tr>
                 %s</table>""" % (table)
         else:
@@ -241,12 +243,14 @@ def main():
     application = webapp.WSGIApplication([
 		('/', MainHandler),
         ('/counter', Counter),
+        ('/data', GetData),
         ('/team', OrganizersHandler),
+        ('/sponsors', SponsorsHandler),
         ('/m', MobileHandler),
         (r'/oauth/', RedirectHandler),
         (r'/salir/', RedirectHandler),
         (r"/participa", RedirectHandler),
-	], debug=False)
+	], debug=True)
     util.run_wsgi_app(application)
 
 if __name__ == '__main__':
