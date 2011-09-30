@@ -56,6 +56,7 @@ def get_device(self, info):
         browser = "Safari for iPod"
     elif "iPad" in uastring and "AppleWebKit" in uastring:
         browser = "Safari for iPad"
+        kind = "desktop"
     elif "Chrome" in uastring:
         browser = "Chrome"
     elif "AppleWebKit" in uastring:

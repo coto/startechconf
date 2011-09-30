@@ -1,0 +1,130 @@
+{% extends "templates/base.html" %}
+
+{% block title %}StarTechConf{% endblock %}
+{% block media %}
+    <link href="media/css/main.css" type="text/css" rel="stylesheet" />
+    <script src="media/js/jquery-1.6.1.min.js"></script>
+    <script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
+    <script src="media/js/main.js"></script>
+    <style type="text/css">
+        .block-content h3 {
+            display: none;
+        }
+        .content-section .rightblock {
+            float: none;
+            width: auto;
+        }
+
+        .sponsor-content h4 {
+            box-shadow: none;
+            margin-bottom: 20px;
+            background-color: #2D3849;
+            font-size: 30px;
+            line-height: 38px;
+            color: white;
+            letter-spacing: -0.01em;
+            text-shadow: -3px 2px 0 black;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 8px 22px;
+            -moz-box-shadow: 0 0 5px #131D28;
+            -webkit-box-shadow: 0 0 5px #131D28;
+        }
+        .endorsements li {
+            padding: 15px 1% 0 1.5%;
+            float: left;
+            width: 30%;
+            border-style: hidden;
+        }
+        .sponsor-block {
+            clear: both;
+        }
+    </style>
+{% endblock %}
+{% block bodyClass %}crew{% endblock %}
+{% block article %}
+<div id="header">
+    <div id="main-nav">
+        <div class="block-content">
+            <ul id="menu">
+                <li><a href="/">{{ lang.menu_home }}</a></li>
+                <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
+                <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
+                <li><a href="/#price">{{ lang.menu_price }}</a></li>
+                <li><a href="/team">{{ lang.crew_menu }}</a></li>
+                <li><a href="http://blog.startechconf.com/">Blog</a></li>
+                <li class="rss"><a href="http://blog.startechconf.com/feeds/posts/default?alt=rss">Feed RSS</a></li>
+            </ul>
+            <div id="select-language"> <span>{{lang.choose_your_language}}</span>
+                <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
+                    <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
+                    <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
+                    <option value="pt" {% ifequal "pt" lang.id  %}selected="selected"{% endifequal %}>{{lang.portuguese}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="title-header">
+            <div class="block-content">
+                <div class="logo">
+                    <h1>STARTECHCONF Santiago Chile 2011</h1>
+                </div>
+            </div>
+        </div>
+        <div class="subtitle-header">
+            <div class="block-content">
+                <h2>{{ lang.menu_sponsors }}</h2>
+            </div>
+        </div>
+    </div> <!-- end of #main-nav -->
+</div> <!-- end of #header -->
+<div class="content-section bg-on">
+
+
+    <div class="block-content">
+
+            <!--  SPONSORS -->
+        {% include "templates/sponsors.html" %}
+
+
+
+
+
+    </div> <!-- end  .block-content -->
+</div> <!-- end  .content-section -->
+
+<div id="footer">
+    <div class="block-content">
+        <p class="copyright">&copy; 2011 All rights reserved.<br/>Powered by Google App Engine.</p>
+        <div class="twitter_followus"><a href="http://twitter.com/startechconf" title="follow us on twitter"><img src="media/images/follow_us.png" alt="follow us on twitter"/></a></div>
+        <div class="social_bar">
+
+            <div class="c_buzz">
+                <a title="Post to Google Buzz" data-button-style="small-count" data-imageurl="http://www.startechconf.com/media/images/main-logo.png" data-locale="{{lang.id}}" data-url="www.startechconf.com" data-message="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com" class="google-buzz-button" href="http://www.google.com/buzz/post">Buzz</a>
+                <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+            </div>
+            <div class="c_facebook">
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.startechconf.com&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=116&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="width:116px; height:21px;" class="facebook-share-button" allowTransparency="true"></iframe>
+            </div>
+            <div class="c_twitter">
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="startechconf"
+                   data-related="startechconf"
+                   data-url="www.startechconf.com"
+                   data-counturl="www.startechconf.com"
+                   data-text="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com"
+                   data-via="#"
+                   data-lang="{{lang.id}}"
+                        >Tweet</a>
+            </div>
+            <div class="c_plusone">
+                <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+                <g:plusone size="medium"></g:plusone>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+
+{% endblock %}

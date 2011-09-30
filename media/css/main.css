@@ -154,39 +154,44 @@ body {
 
 
 .registration-button {
-	padding:16px;
-	position:absolute;
+	padding: 16px;
+	position: absolute;
     cursor: pointer;
-	background-color: #F29133;
-	text-align:center;
-	font-size:2.2em;
-	color:#fff;
-	-moz-border-radius:10px;
-	-webkit-border-radius:10px;
-	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-	z-index:10;
-	border:2px solid #B0B0B0;
-	border-top:none;
-	border-left:none;
-	top: 130px;
-	left: 950px;
-}
+    top: 120px;
+	right: 10%;
 
-    .registration-button:hover {
-        background-color: #ef9128;
+
+}
+    .registration-button a {
+        color:#fff;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        background-color: #F29133;
+        text-align: center;
+        font-size: 2.2em;
+        border-radius: 10px;
+        -o-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        -o-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        -moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        border: 2px solid #B0B0B0;
+        border-top:none;
+        border-left:none;
+        padding: 15px 10px;
     }
-
-.registration-button p {
-	margin:0;
-	color:#fff;
-}
-
-.registration-button a {
-	color:#fff;
-	text-decoration: none;
-}
-
+    .registration-button a:hover {
+        color: #fff;
+        background-color: #F59438;
+    }
+    .registration-button a:active {
+        color: #fff;
+        background-color: #AAA;
+    }
 .title-header{
 	background: #fff;
 }
