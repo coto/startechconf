@@ -639,6 +639,7 @@ p.where {
 }
 
 .sponsors-list ul{
+    width: 100%;
 	list-style: none;
 	margin: 14px 0;
 }
@@ -650,13 +651,16 @@ p.where {
     padding: 15px 0 0 0;
 }
 
-    .sponsor-content li.first{
+    .sponsor-content li.first {
         border-top: none;
     }
 
-.sponsor-content li a{
-	display: block;
-}
+    .sponsor-content li a {
+        display: block;
+    }
+    .sponsor-content li p {
+        display: none;
+    }
 
     .sponsor-content .platinum img,
     .sponsor-content .golden img{
