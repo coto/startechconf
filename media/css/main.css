@@ -266,7 +266,7 @@ body {
 
         #main-nav ul li a{
             color: #FFF;
-            padding: 14px 10px;
+            padding: 14px 8px;
             text-decoration: none;
             display: block;
             font-size: 14px;
@@ -277,10 +277,18 @@ body {
         #main-nav ul li.selected a{
             background: #495666;
             text-shadow: 1px -1px 10px #333;
-            outline: 0px;
-            text-shadow: 1px 2px 0px #000;
+            outline: 0;
+            text-shadow: 1px 2px 0 #000;
         }
 
+        #main-nav ul li.home a {
+            text-indent: -8000px;
+            background: transparent url("../images/ico_home.png") center 4px no-repeat;
+            padding: 14px 18px;
+        }
+        #main-nav ul li.home a:hover {
+            background: #495666 url("../images/ico_home.png") center -32px no-repeat;
+        }
         #main-nav ul li.rss a{
             background: transparent url('../images/rss_icon.png') center center no-repeat;
             text-indent: -9999px;
