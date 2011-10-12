@@ -67,9 +67,9 @@ en["crew_leo"] = "Computer Science and Information Engineer <a href=\"http://www
 en["crew_j4rs"] = "Passionate about technology, programming languages and the web. He delivers value and do things following his instincts and common sense. He Loves to have fun while it seems he's working. There is one thing he doesn't believe in nor care about - competition. He also believes there shouldn't be any secrets in the area of knowledge.  His management mantra... \"What\'s the point of hiring smart people and then telling them what to do?\". While dreaming about the best place to work he created <a href=\"http://www.continuum.cl\" target=\"_blank\">Continuum</a> and is the current CEO."
 en["crew_coto"] = "Co-Founder of a venture that aims to revolutionize Global Finances. Senior Engineer at <a href=\"http://www.betazeta.com\" target=\"_blank\">Betazeta</a>. Graduated with Computer Science and Information Engineer at <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licentiate in Applied Engineering from the same institution, Electronic Technician from <a href=\"http://www.utfsm.cl\" target=\"_blank\">UTFSM</a>. A night he has a dream in which he meets a <a href=\"http://www.imdb.com/title/tt0105793/\">weird naked Indian</a> in which The Indian tells that his destiny is to create the biggest Tech Conf ever in Chile."
 en["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"http://www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
-
-
-
+en["schedule"] = "Schedule"
+en["november_4"] = "November 4th"
+en["november_5"] = "November 5th"
 ## spanish dict
 
 es = {}
@@ -138,7 +138,9 @@ es["crew_j4rs"] = "Apasionado por la tecnolog&iacute;a, los lenguajes de program
 es["crew_coto"] = "Co-Fundador de un emprendimiento que pretende revolucionar las finanzas mundiales. Ingeniero senior en <a href=\"http://www.betazeta.com\" target=\"_blank\">Betazeta</a>. Ingeniero en Computaci&oacute;n e Inform&aacute;tica de la <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licenciado en Ingenier&iacute;a aplicada de la misma instituci&oacute;n, T&eacute;cnico en Electr&oacute;nica <a href=\"http://www.utfsm.cl\" target=\"_blank\">UTFSM</a>. Una noche tuvo un sue&ntilde;o en el cual conoce a un <a href=\"http://www.imdb.com/title/tt0105793/\">extra&ntilde;o indio desnudo</a> en el que el Indio le dice que su destino es crear la mayor conferencia tecnol&oacute;gica en Chile."
 es["crew_rey"] = "Miembro del equipo jQuery y Administrador del Programa Web-Cliente en Microsoft. Editor de <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Recientemente fue nominado por <a href=\"http://www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> como uno de los Top desarrolladores web a seguir en Twitter. Eso lo marea un poco."
 
-
+es["schedule"] = "Programa"
+es["november_4"] = "4 de Noviembre"
+es["november_5"] = "5 de Noviembre"
 
 ## portuguese dict
 
@@ -211,4 +213,6 @@ pt["crew_leo"] = "Computer Science and Information Engineer <a href=\"http://www
 pt["crew_j4rs"] = "Passionate about technology, programming languages and the web. He delivers value and do things following his instincts and common sense. He Loves to have fun while it seems he's working. There is one thing he doesn't believe in nor care about - competition. He also believes there shouldn't be any secrets in the area of knowledge.  His management mantra... \"What\'s the point of hiring smart people and then telling them what to do?\". While dreaming about the best place to work he created <a href=\"http://www.continuum.cl\" target=\"_blank\">Continuum</a> and is the current CEO."
 pt["crew_coto"] = "Co-Founder of a venture that aims to revolutionize Global Finances. Senior Engineer at <a href=\"http://www.betazeta.com\" target=\"_blank\">Betazeta</a>. Graduated with Computer Science and Information Engineer at <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licentiate in Applied Engineering from the same institution, Electronic Technician from <a href=\"http://www.utfsm.cl\" target=\"_blank\">UTFSM</a>. A night he has a dream in which he meets a <a href=\"http://www.imdb.com/title/tt0105793/\">weird naked Indian</a> in which The Indian tells that his destiny is to create the biggest Tech Conf ever in Chile."
 pt["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"http://www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
-
+pt["schedule"] = "Schedule"
+pt["november_4"] = "4 de Noviembre"
+pt["november_5"] = "5 de Noviembre"

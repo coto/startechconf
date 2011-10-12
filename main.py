@@ -150,7 +150,7 @@ class OrganizersHandler(webapp.RequestHandler):
         params = {
 			'path' : self.request.path,
 			'lang': set_lang_cookie_and_return_dict(self)
-		}		
+		}
         self.response.out.write(template.render('organizers.html', params))
 
 class SponsorsHandler(webapp.RequestHandler):
@@ -160,6 +160,15 @@ class SponsorsHandler(webapp.RequestHandler):
 			'lang': set_lang_cookie_and_return_dict(self)
 		}
         self.response.out.write(template.render('sponsors.html', params))
+
+class ScheduleHandler(webapp.RequestHandler):
+    def get(self):
+        params = {
+			'path' : self.request.path,
+			'lang': set_lang_cookie_and_return_dict(self)
+		}
+        self.response.out.write(template.render('schedule.html', params))
+
 
 class Counter(webapp.RequestHandler):
     def get(self):
@@ -181,7 +190,7 @@ class Counter(webapp.RequestHandler):
                 preregistered = emailQuery + ' <span style="color: red">is not pre-registered</span>'
             else:
                 preregistered = ""
-        
+
 
         if user:
             greeting = ("Welcome, %s <a href=\"%s\">sign out</a><h1 style=\"font-size: 2em;\">There are %s people pre-registered</h1><hr>Your country:  %s<hr>Your language: %s <hr><h1>Validator</h1>%s" %
@@ -247,6 +256,7 @@ def main():
         ('/data', GetData),
         ('/team', OrganizersHandler),
         ('/sponsors', SponsorsHandler),
+        ('/schedule', ScheduleHandler),
         ('/m', MobileHandler),
         (r'/oauth/', RedirectHandler),
         (r'/salir/', RedirectHandler),

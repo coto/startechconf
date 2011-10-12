@@ -428,7 +428,7 @@ p.where {
     }
 
 .content-section#resume {
- text-shadow: -3px 2px 0 #000; 
+ text-shadow: -3px 2px 0 #000;
 }
 
 .content-section#resume .block-content p{
@@ -510,6 +510,7 @@ p.where {
 .crew #header img {
     margin: 10px 0;
 }
+
 
 #crew .allkeynoters{
 	clear: both;
@@ -743,7 +744,7 @@ p.where {
 /*  ********* Footer **********  */
 
 #footer {
-	background: #2e3b4b;	
+	background: #2e3b4b;
 	background-image: -moz-linear-gradient(top, #2e3b4b, #495666);
 	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2e3b4b), color-stop(1, #495666));
 	-ms-filter: "progid: DXImageTransform.Microsoft.gradient(startColorStr='#2e3b4b', EndColorStr='#495666')";
@@ -1007,8 +1008,18 @@ p.where {
 
 .talk-title {
   text-decoration:underline;
-} 
+}
 
 .hidden {
   display:none;
+}
+
+#schedule table {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body.schedule .block-content {
+  width: 1020px !important;
+}
 }
