@@ -153,6 +153,14 @@ class OrganizersHandler(webapp.RequestHandler):
 		}
         self.response.out.write(template.render('organizers.html', params))
 
+class AssistantsHandler(webapp.RequestHandler):
+    def get(self):
+        params = {
+			'path' : self.request.path,
+			'lang': set_lang_cookie_and_return_dict(self)
+		}
+        self.response.out.write(template.render('assistants.html', params))
+
 class SponsorsHandler(webapp.RequestHandler):
     def get(self):
         params = {
@@ -201,64 +209,20 @@ class Counter(webapp.RequestHandler):
 
         self.response.out.write("<html><body>%s</body></html>" %
 								(greeting))
-class Posts(db.Model):
-    id_autor = db.StringProperty(required=True)
-    nombre = db.StringProperty(required=True)
-    msj = db.TextProperty(required=True)
-    fecha = db.DateTimeProperty(auto_now_add=True)
-    network = db.StringProperty(required=True, default="null")
-    enabled = db.BooleanProperty(default=True)
 
-class GetData(webapp.RequestHandler):
-    def get(self):
-        q = Posts.all()
-        q.order("fecha")
-        user = users.get_current_user()
-        data = ""
-        if user:
-            greeting = ("<a href=\"%s\">Sign out</a> <br>Welcome, %s!, If you are an administrator, you will see the table." %
-                    (users.create_logout_url("/data"), user.nickname()))
-            results = q.fetch(970)
-            data = ""
-            table = ""
-            if users.is_current_user_admin():
-                counter = 1
-
-                for p in results:
-                    id_autor = p.id_autor
-                    nombre = p.nombre
-                    network = p.network
-                    date = p.fecha.strftime("%A, %B %d, %Y ")
-                    time = p.fecha.strftime("%I:%M:%S %p %Z")
-
-                    table += "<tr><td>%d</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>" % \
-                            (counter, id_autor, nombre, network, date, time)
-                    counter += 1
-
-                data = """<table border=\"1\" cellspacing=\"0\">
-                <tr style=\"background-color: #ccc;\">
-                    <td>id</td><td>email</td><td>date</td><td>time</td><td>datetime<td>country</td>
-                </tr>
-                %s</table>""" % (table)
-        else:
-            greeting = ("<a href=\"%s\">Sign in</a>." %
-                    users.create_login_url("/data"))
-
-        self.response.out.write("<html><body>%s %s</body></html>" % (greeting, data))
 
 def main():
     """
     Main
     """
     application = webapp.WSGIApplication([
-		('/', MainHandler),
+        ('/', MainHandler),
         ('/counter', Counter),
-        ('/data', GetData),
         ('/team', OrganizersHandler),
+        ('/assistants', AssistantsHandler),
         ('/sponsors', SponsorsHandler),
         ('/schedule', ScheduleHandler),
         ('/m', MobileHandler),
-        (r'/oauth/', RedirectHandler),
         (r'/salir/', RedirectHandler),
         (r"/participa", RedirectHandler),
 	], debug=True)

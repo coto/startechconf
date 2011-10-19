@@ -1,0 +1,555 @@
+﻿{% extends "templates/base.html" %}
+
+{% block title %}StarTechConf - Assistants{% endblock %}
+{% block media %}
+    <link href="media/css/main.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="media/css/assistants.css" media="screen" />
+    <script src="media/js/jquery-1.6.1.min.js"></script>
+    <script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
+    <script src="media/js/main.js"></script>
+{% endblock %}
+{% block bodyClass %}assistants{% endblock %}
+{% block article %}
+<div id="header">
+    <div id="main-nav">
+        <div class="block-content">
+            <ul id="menu">
+                <li><a href="/">{{ lang.menu_home }}</a></li>
+                <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
+                <li><a href="/schedule">{{ lang.schedule }}</a></li>
+                <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
+                <li><a href="/#price">{{ lang.menu_price }}</a></li>
+                <li><a href="/team">{{ lang.crew_menu }}</a></li>
+                <li><a href="/assistants">{{ lang.assistants }}</a></li>
+                <li><a href="http://blog.startechconf.com/">Blog</a></li>
+                <li class="rss"><a href="http://blog.startechconf.com/feeds/posts/default?alt=rss">Feed RSS</a></li>
+            </ul>
+            <div id="select-language">
+                <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
+                    <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
+                    <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
+                    <option value="pt" {% ifequal "pt" lang.id  %}selected="selected"{% endifequal %}>{{lang.portuguese}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="title-header">
+            <div class="block-content">
+                <div class="logo">
+                    <h1>STARTECHCONF Santiago Chile 2011</h1>
+                </div>
+            </div>
+        </div>
+        <div class="subtitle-header">
+            <div class="block-content">
+                <h2>{{ lang.assist_title }}</h2>
+            </div>
+        </div>
+    </div> <!-- end of #main-nav -->
+</div> <!-- end of #header -->
+<div class="content-section bg-on">
+    <div class="block-content">
+		<div id="stc-borde">
+            <div style="text-align: center;">
+			<a href="http://www.ceeinf.cl/"><img src="media/images/ceeinf_logo.png" class="ceeinf-logo" /></a>
+            </div>
+			<div class="stc-apoyo">{{ lang.assist_coordinacion }}</div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/rafik.masad_small.jpg" class="stc-foto"><br/>
+				<b>Rafik Mas'ad</b><br/>
+				Coordinador General
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/586287_2isaias.contreras_200x.jpg" class="stc-foto"><br/>
+				<b>Isaias Contreras</b><br/>
+				Coordinador de Seguridad
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/867172_5diego.salazar_200x.jpg" class="stc-foto"><br/>
+				<b>Diego Salazar</b><br/>
+				Coordinador de Ayudantes Personales
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/105245_6jeva_200x.jpg" class="stc-foto"><br/>
+				<b>Joaquín Velásquez</b><br/>
+				Coordinador de Validación
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/alex.arenasf_small.jpg" class="stc-foto"><br/>
+				<b>Alex Arenas</b><br/>
+				Coordinador de Acreditación
+			</div>
+						
+			<div class="stc-apoyo"></div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/cristopher.arenas_small.jpg" class="stc-foto"><br/>
+				<b>Cristopher Arenas</b><br/>
+				Ayudante de Coordinación
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/diego.cajales_small.jpg" class="stc-foto"><br/>
+				<b>Diego Cajales</b><br/>
+				Ayudante de Coordinación
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/consuelo.rebolledo_small.png" class="stc-foto"><br/>
+				<b>Consuelo Rebolledo</b><br/>
+				Ayudante de Coordinación
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/roberto.silvaf_small.jpg" class="stc-foto"><br/>
+				<b>Roberto Silva</b><br/>
+				Ayudante de Coordinación
+			</div>
+            <div style="clear:both"></div>
+
+						
+			<div class="stc-apoyo morespace">{{ lang.assist_acreditacion }}</div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/ricardo.alvarez_small.jpg" class="stc-foto"><br/>
+				<b>Ricardo Alvarez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/nicolas.bravo_small.jpg" class="stc-foto"><br/>
+				<b>Nicolas Bravo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/francisco.castillod_small.jpg" class="stc-foto"><br/>
+				<b>Francisco Castillo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/catalina.espinosa_small.jpg" class="stc-foto"><br/>
+				<b>Catalina Espinosa</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/claudio.galaz_small.jpg" class="stc-foto"><br/>
+				<b>Claudio Galaz</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/alvaro.hernandezi_small.jpg" class="stc-foto"><br/>
+				<b>Alvaro Hernandez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/pablo.herreraj_small.jpg" class="stc-foto"><br/>
+				<b>Pablo Herrera</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/diego.jacome_small.jpg" class="stc-foto"><br/>
+				<b>Diego Jacome</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/luis.paillan_small.jpg" class="stc-foto"><br/>
+				<b>Luis Paillan</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/carlos.pulgar_small.jpg" class="stc-foto"><br/>
+				<b>Carlos Pulgar</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/hugo.saavedram_small.jpg" class="stc-foto"><br/>
+				<b>Hugo Saavedra</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/miguel.torresd_small.png" class="stc-foto"><br/>
+				<b>Miguel Torres</b><br/>
+			</div>
+            <div style="clear:both"></div>
+
+						
+			<div class="stc-apoyo">{{ lang.assist_inter }}</div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/francisco.arevalod_small.jpg" class="stc-foto"><br/>
+				<b>Francisco Arevalo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/celeste.bertin_small.jpg" class="stc-foto"><br/>
+				<b>Celeste Bertin</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/joe.cabezas_small.jpg" class="stc-foto"><br/>
+				<b>Joe Cabezas</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/juan.escalonag_small.jpg" class="stc-foto"><br/>
+				<b>Juan Pablo Escalona</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/isabella.espinoza_small.jpg" class="stc-foto"><br/>
+				<b>Isabella Espinoza</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/rene.mujica_small.jpg" class="stc-foto"><br/>
+				<b>Rene Mujica</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/denise.rivera_small.jpg" class="stc-foto"><br/>
+				<b>Denise Rivera</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/javier.robledo_small.jpg" class="stc-foto"><br/>
+				<b>Javier Robledo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/mauricio.salinas_small.jpg" class="stc-foto"><br/>
+				<b>Mauricio Salinas</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/daniel.tapiar_small.jpg" class="stc-foto"><br/>
+				<b>Daniel Tapia</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/emilio.valdes_small.png" class="stc-foto"><br/>
+				<b>Emilio Valdes</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/ivan.valdes_small.jpg" class="stc-foto"><br/>
+				<b>Ivan Valdes</b><br/>
+			</div>
+            <div style="clear:both"></div>
+
+						
+			<div class="stc-apoyo">{{ lang.assist_local }}</div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/arturo.argandona_small.jpg" class="stc-foto"><br/>
+				<b>Arturo Argandoña</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/michael.cardenas_small.png" class="stc-foto"><br/>
+				<b>Michael Cardenas</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/hugo.carrascod_small.jpg" class="stc-foto"><br/>
+				<b>Hugo Carrasco</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/benjamin.cordero_small.jpg" class="stc-foto"><br/>
+				<b>Benjamin Cordero</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/jean.fuentes_small.jpg" class="stc-foto"><br/>
+				<b>Jean Paul Fuentes</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/julio.hurtado_small.jpg" class="stc-foto"><br/>
+				<b>Julio Hurtado</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/damian.osses_small.jpg" class="stc-foto"><br/>
+				<b>Damian Osses</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/cristobal.pesce_small.jpg" class="stc-foto"><br/>
+				<b>Cristobal Pesce</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/marco.torresm_small.jpg" class="stc-foto"><br/>
+				<b>Marco Torres</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/elian.vallejos_small.jpg" class="stc-foto"><br/>
+				<b>Elian Vallejos</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/carlos.velizt_small.jpg" class="stc-foto"><br/>
+				<b>Carlos Veliz</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/esteban.villalobos_small.jpg" class="stc-foto"><br/>
+				<b>Esteban Villalobos</b><br/>
+			</div>
+            <div style="clear:both"></div>
+
+						
+			<div class="stc-apoyo">{{ lang.assist_security }}</div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/lenny.andreu_small.jpg" class="stc-foto"><br/>
+				<b>Lenny Andreu</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/carlos.asenssi_small.jpg" class="stc-foto"><br/>
+				<b>Carlos Asenssi</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/maximiliano.campos_small.png" class="stc-foto"><br/>
+				<b>Maximiliano Campos</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/rodrigo.monroy_small.jpg" class="stc-foto"><br/>
+				<b>Rodrigo Monroy</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/diego.munozd_small.jpg" class="stc-foto"><br/>
+				<b>Diego Muñoz</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/joaquin.nunez_small.jpg" class="stc-foto"><br/>
+				<b>Joaquin Nuñez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/gonzalo.pontigo_small.jpg" class="stc-foto"><br/>
+				<b>Gonzalo Pontigo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/matias.ramirezm_small.jpg" class="stc-foto"><br/>
+				<b>Matias Ramirez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/daniel.riverat_small.jpg" class="stc-foto"><br/>
+				<b>Daniel Rivera</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/ignacio.rodriguezg_small.jpg" class="stc-foto"><br/>
+				<b>Ignacio Rodriguez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/javier.ronda_small.jpg" class="stc-foto"><br/>
+				<b>Javier Ronda</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/patricio.saez_small.png" class="stc-foto"><br/>
+				<b>Patricio Saez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/simon.salvo_small.jpg" class="stc-foto"><br/>
+				<b>Simón Salvo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/anibal.silvao_small.jpg" class="stc-foto"><br/>
+				<b>Anibal Silva</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/nicolas.vergaram_small.jpg" class="stc-foto"><br/>
+				<b>Nicolas Vergara</b><br/>
+			</div>
+					
+			<div class="stc-pers">
+				<img src="media/images/assist/fabian.villarroel_small.jpg" class="stc-foto"><br/>
+				<b>Fabian Villarroel</b><br/>
+			</div>
+            <div style="clear:both"></div>
+
+
+			<div class="stc-apoyo">{{ lang.assist_validacion }}</div>
+
+			<div class="stc-pers">
+				<img src="media/images/assist/oscar.carrascod_small.jpg" class="stc-foto"><br/>
+				<b>Oscar Carrasco</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/luis.casanova_small.jpg" class="stc-foto"><br/>
+				<b>Luis Casanova</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/sebastian.contrerasr_small.jpg" class="stc-foto"><br/>
+				<b>Sebastian Contreras</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/esteban.daines_small.jpg" class="stc-foto"><br/>
+				<b>Esteban Daines</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/sebastian.diazar_small.png" class="stc-foto"><br/>
+				<b>Sebastian Diaz</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/roberto.diazu_small.jpg" class="stc-foto"><br/>
+				<b>Roberto Diaz</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/jorge.dinator_small.png" class="stc-foto"><br/>
+				<b>Jorge Dinator</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/ignacio.espinozav_small.jpg" class="stc-foto"><br/>
+				<b>Ignacio Espinoza</b><br/>
+			</div>
+										
+			<div class="stc-pers">
+				<img src="media/images/assist/sadoc.monsalve_small.jpg" class="stc-foto"><br/>
+				<b>Sadoc Monsalve</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/isaias.moraga_small.jpg" class="stc-foto"><br/>
+				<b>Isaias Moraga</b><br/>
+			</div>
+			
+			<div class="stc-pers">
+				<img src="media/images/assist/joaquin.munoz_small.jpg" class="stc-foto"><br/>
+				<b>Joaquín Muñoz</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/maria.pena_small.jpg" class="stc-foto"><br/>
+				<b>Maria Carolina Peña</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/maria.rebolledo_small.jpg" class="stc-foto"><br/>
+				<b>Maria Jose Rebolledo</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/oscar.rencoret_small.jpg" class="stc-foto"><br/>
+				<b>Oscar Rencoret</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/pablo.reyes_small.jpg" class="stc-foto"><br/>
+				<b>Pablo Reyes</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/felipe.rodriguez_small.jpg" class="stc-foto"><br/>
+				<b>Felipe Rodriguez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/hugo.saavedrap_small.jpg" class="stc-foto"><br/>
+				<b>Hugo Saavedra</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/diego.salazars_small.jpg" class="stc-foto"><br/>
+				<b>Diego Salazar</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/almendra.salgado_small.jpg" class="stc-foto"><br/>
+				<b>Almendra Salgado</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/sebastian.tapia_small.jpg" class="stc-foto"><br/>
+				<b>Sebastian Tapia</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/ignacio.ureta_small.jpg" class="stc-foto"><br/>
+				<b>Ignacio Ureta</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/julio.vasquez_small.jpg" class="stc-foto"><br/>
+				<b>Julio Vasquez</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/daniel.villalobos_small.jpg" class="stc-foto"><br/>
+				<b>Daniel Villalobos</b><br/>
+			</div>
+						
+			<div class="stc-pers">
+				<img src="media/images/assist/sergio.yanez_small.jpg" class="stc-foto"><br/>
+				<b>Sergio Yañez</b><br/>
+			</div>
+			
+			<div style="clear:both"></div>
+			
+		</div>
+
+
+    </div> <!-- end  .block-content -->
+</div> <!-- end  .content-section -->
+
+<div id="footer">
+    <div class="block-content">
+        <p class="copyright">&copy; 2011 All rights reserved.<br/>Powered by Google App Engine.</p>
+        <div class="twitter_followus"><a href="http://twitter.com/startechconf" title="follow us on twitter"><img src="media/images/follow_us.png" alt="follow us on twitter"/></a></div>
+        <div class="social_bar">
+
+            <div class="c_buzz">
+                <a title="Post to Google Buzz" data-button-style="small-count" data-imageurl="http://www.startechconf.com/media/images/main-logo.png" data-locale="{{lang.id}}" data-url="www.startechconf.com" data-message="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com" class="google-buzz-button" href="http://www.google.com/buzz/post">Buzz</a>
+                <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+            </div>
+            <div class="c_facebook">
+                <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.startechconf.com&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;width=116&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="width:116px; height:21px;" class="facebook-share-button" allowTransparency="true"></iframe>
+            </div>
+            <div class="c_twitter">
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <a href="http://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="startechconf"
+                   data-related="startechconf"
+                   data-url="www.startechconf.com"
+                   data-counturl="www.startechconf.com"
+                   data-text="{{lang.event_title}}. {{lang.date}} http://www.startechconf.com"
+                   data-via="#"
+                   data-lang="{{lang.id}}"
+                        >Tweet</a>
+            </div>
+            <div class="c_plusone">
+                <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+                <g:plusone size="medium"></g:plusone>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+</div>
+{% endblock %}

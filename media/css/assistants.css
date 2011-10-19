@@ -1,0 +1,59 @@
+.content-section .block-content {
+    padding: 0;
+}
+.morespace {
+    margin-top: 40px;
+}
+
+.ceeinf-logo{
+	display:inline;
+	position: relative;
+	margin-top:25px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.stc-titulo{
+	clear:both;
+	text-align:center;
+	font-size:16pt;
+	font-weight:bold;
+	margin-bottom:20px;
+}
+
+.stc-apoyo{
+	clear:both;
+	text-align:left;
+	font-size:12pt;
+	font-weight:bold;
+	padding-bottom:20px;
+	padding-top:20px;
+}
+
+.stc-foto{
+	width:80px;
+	height:80px;
+}
+
+.stc-pers{
+	font-size:10pt;
+	text-align:center;
+	width:130px;
+	height:120px;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline;
+	position: relative;
+	float: left;
+}
+
+#stc-equipo{
+	width:100%;
+	border-collapse:collapse;
+}
+
+
+#stc-equipo td{
+	vertical-align:top;
+	padding-bottom:10px;
+}

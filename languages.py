@@ -206,6 +206,7 @@ pt["links_version_device"] = "Vista em vers&atilde;o: <a href=\"/m\">M&oacute;ve
 pt["social_title"] = "&Oacute;timo!, deixar as pessoas sabem..."
 pt["social_message"] = "Estou indo para o maior evento de tecnologia no Chile."
 
+
 pt["crew_title"] = "A tripula&ccedil;&atilde;o por tr&aacute;s do evento"
 pt["crew_menu"] = "Organizadores"
 pt["crew_mauricio"] = "Prestigious academic of <a href=\"http://www.utfsm.cl\" target=\"_blank\">T&eacute;cnica Federico Santa Mar&iacute;a University</a>, Past President (three times) of the Chilean Society of Computer Science, a member of various international scientific communities and organizer of the World Congress of Computers in 2006."
@@ -216,3 +217,38 @@ pt["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_bl
 pt["schedule"] = "Schedule"
 pt["november_4"] = "4 de Noviembre"
 pt["november_5"] = "5 de Noviembre"
+
+
+en["assistants"] = "Support Team"
+es["assistants"] = "Equipo de Apoyo"
+pt["assistants"] = "Support Team"
+
+en["assist_title"] = "Assistant Team StarTechConf 2011"
+es["assist_title"] = "Equipo de Apoyo StarTechConf 2011"
+pt["assist_title"] = "Assistant Team StarTechConf 2011"
+
+en["assist_coordinacion"] = "Coordination Team"
+es["assist_coordinacion"] = "Equipo de Coordinaci&oacute;n"
+pt["assist_coordinacion"] = "Coordination Team"
+
+en["assist_acreditacion"] = "Team of Accreditation"
+es["assist_acreditacion"] = "Equipo de Acreditaci&oacute;n"
+pt["assist_acreditacion"] = "Team of Accreditation"
+
+en["assist_inter"] = "Assistants' team for International speakers"
+es["assist_inter"] = "Equipo de Ayudantes de Charlistas Internacionales"
+pt["assist_inter"] = "Assistants' team for International speakers"
+
+en["assist_local"] = "Assistants' team for Local speakers"
+es["assist_local"] = "Equipo de Ayudantes de Charlistas Locales"
+pt["assist_local"] = "Assistants' team for Local speakers"
+
+en["assist_security"] = "Security Officers"
+es["assist_security"] = "Equipo de Seguridad"
+pt["assist_security"] = "Security Officers"
+
+en["assist_validacion"] = "Team of Validation"
+es["assist_validacion"] = "Equipo de Validaci&oacute;n"
+pt["assist_validacion"] = "Team of Validation"
+
+

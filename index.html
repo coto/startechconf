@@ -19,10 +19,11 @@
                 <li><a href="/#sponsors">{{ lang.menu_sponsors }}</a></li>
                 <li><a href="/#price">{{ lang.menu_price }}</a></li>
                 <li><a href="/team">{{ lang.crew_menu }}</a></li>
+                <li><a href="/assistants">{{ lang.assistants }}</a></li>
                 <li><a href="http://blog.startechconf.com/">Blog</a></li>
                 <li class="rss"><a href="http://blog.startechconf.com/feeds/posts/default?alt=rss">Feed RSS</a></li>
             </ul>
-            <div id="select-language"> <span>{{lang.choose_your_language}}</span>
+            <div id="select-language">
                 <select class="selectlanguage" id="selectlanguage" current="{{lang.id}}">
                     <option value="es" {% ifequal "es" lang.id  %}selected="selected"{% endifequal %}>{{lang.spanish}}</option>
                     <option value="en" {% ifequal "en" lang.id  %}selected="selected"{% endifequal %}>{{lang.english}}</option>
