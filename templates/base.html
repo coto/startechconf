@@ -30,7 +30,17 @@
 </head>
 <body class="{% block bodyClass %}{% endblock %}">
     <div class="bloqueInfo" id="important-new">
-        <p><a href="http://blog.startechconf.com/2011/09/estas-son-las-charlas-seleccionadas.html">{{ lang.announce }}</a></p>
+        <p>
+            {% ifequal "es" lang.id %}
+            <a href="http://blog.startechconf.com/2011/09/recomendaciones-de-hoteles.html">
+            Recomendaciones de Hoteles
+            </a>
+            {% else %}
+            <a href="http://blog.startechconf.com/2011/10/hotel-recommnedations.html">
+            Hotel Recommnedations
+            </a>
+            {% endifequal %}
+        </p>
     </div>
     <div class="registration-button">
         <a href="https://eventioz.com/events/startechconf-2011/registrations/new" id="hiperlink" target="_blank">{{ lang.registration }}</a>
