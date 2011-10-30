@@ -3,9 +3,9 @@
 {% block title %}StarTechConf{% endblock %}
 {% block media %}
     <link href="media/css/main.css" type="text/css" rel="stylesheet" />
-    <script src="media/js/jquery-1.6.1.min.js"></script>
-    <script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
-    <script src="media/js/main.js"></script>
+    <script type="text/javascript" src="media/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
+    <script type="text/javascript" src="media/js/main.js"></script>
     <style type="text/css">
         .block-content h3 {
             display: none;
@@ -65,7 +65,7 @@
     <div id="main-nav">
         <div class="block-content">
             <ul id="menu">
-                <li><a href="/">{{ lang.menu_home }}</a></li>
+                <li class="home"><a href="/">{{ lang.menu_home }}</a></li>
                 <li><a href="/#keynoters">{{ lang.menu_speakers }}</a></li>
                 <li><a href="/schedule">{{ lang.schedule }}</a></li>
                 <li><a href="/sponsors">{{ lang.menu_sponsors }}</a></li>

@@ -207,14 +207,14 @@ pt["crew_leo"] = "Computer Science and Information Engineer <a href=\"http://www
 pt["crew_j4rs"] = "Passionate about technology, programming languages and the web. He delivers value and do things following his instincts and common sense. He Loves to have fun while it seems he's working. There is one thing he doesn't believe in nor care about - competition. He also believes there shouldn't be any secrets in the area of knowledge.  His management mantra... \"What\'s the point of hiring smart people and then telling them what to do?\". While dreaming about the best place to work he created <a href=\"http://www.continuum.cl\" target=\"_blank\">Continuum</a> and is the current CEO."
 pt["crew_coto"] = "Engineer at <a href=\"http://www.betazeta.com\" target=\"_blank\">Betazeta</a>. Graduated with Computer Science and Information Engineer at <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licentiate in Applied Engineering from the same institution, Electronic Technician from <a href=\"http://www.utfsm.cl\" target=\"_blank\">UTFSM</a>. A night he has a dream in which he meets a <a href=\"http://www.imdb.com/title/tt0105793/\">weird naked Indian</a> in which The Indian tells that his destiny is to create the biggest Tech Conf ever in Chile."
 pt["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"http://www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
-pt["schedule"] = "Schedule"
+pt["schedule"] = "Hor&aacute;rio"
 pt["november_4"] = "4 de Novembro"
 pt["november_5"] = "5 de Novembro"
 
 
 en["assistants"] = "Support Team"
 es["assistants"] = "Equipo de Apoyo"
-pt["assistants"] = "Support Team"
+pt["assistants"] = "Equipe de apoio"
 
 en["assist_title"] = "Assistant Team StarTechConf 2011"
 es["assist_title"] = "Equipo de Apoyo StarTechConf 2011"
@@ -248,20 +248,27 @@ en["interpreting"] = "<span class=\"simul\">(Simultaneous Interpreting)</a>"
 es["interpreting"] = "<span class=\"simul\">(Traducci&oacute;n simult&aacute;nea)</a>"
 pt["interpreting"] = "<span class=\"simul\">(Interpreta&ccedil;&atilde;o simult&acirc;nea)</a>"
 
+en["friday"] = "Friday"
+es["friday"] = "Viernes"
+pt["friday"] = "Sexta-feira"
+
+en["saturday"] = "Saturday"
+es["saturday"] = "S&aacute;bado"
+pt["saturday"] = "S&aacute;bado"
 
 en["speakers_title"] = "Speakers"
-pt["speakers_title"] = "Palestrantes"
 es["speakers_title"] = "Charlistas"
+pt["speakers_title"] = "Palestrantes"
 
 en["speakers_desc"] = "Thirteen rock stars as speakers"
 es["speakers_desc"] = "Trece estrellas mundiales como conferencistas"
-pt["speakers_desc"] = "Trze estrelas mundiais como palestrantes principais"
+pt["speakers_desc"] = "Treze estrelas mundiais como palestrantes principais"
 
 
 en["selectedSpeakers"] = "Selected Speakers"
 es["selectedSpeakers"] = "Charlistas seleccionados"
 pt["selectedSpeakers"] = "Parlestrantes selecionados"
 
-en["selectedSpeakers_desc"] = "Seventeen speakers selected"
-es["selectedSpeakers_desc"] = "Diecisiete Charlistas seleccionados"
-pt["selectedSpeakers_desc"] = "Dezessete palestrantes selecionados"
+en["selectedSpeakers_desc"] = "Eighteen speakers selected"
+es["selectedSpeakers_desc"] = "Dieciocho Charlistas seleccionados"
+pt["selectedSpeakers_desc"] = "Dezoito palestrantes selecionados"
