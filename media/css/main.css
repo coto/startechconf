@@ -1022,4 +1022,11 @@ p.where {
 body.schedule .block-content {
   width: 1020px !important;
 }
+
+.simul {
+    display: block;
+    border:  1px solid #F0C36D;
+    color: #222;
+    background: #F9EDBE;
+    padding: 2px 5px;
 }

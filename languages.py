@@ -208,8 +208,8 @@ pt["crew_j4rs"] = "Passionate about technology, programming languages and the we
 pt["crew_coto"] = "Engineer at <a href=\"http://www.betazeta.com\" target=\"_blank\">Betazeta</a>. Graduated with Computer Science and Information Engineer at <a href=\"http://www.usach.cl\" target=\"_blank\">USACH</a>, Licentiate in Applied Engineering from the same institution, Electronic Technician from <a href=\"http://www.utfsm.cl\" target=\"_blank\">UTFSM</a>. A night he has a dream in which he meets a <a href=\"http://www.imdb.com/title/tt0105793/\">weird naked Indian</a> in which The Indian tells that his destiny is to create the biggest Tech Conf ever in Chile."
 pt["crew_rey"] = "Member of the <a href=\"http://jquery.org/team/\" target=\"_blank\">jQuery Team</a> and Client-Web Community Program Manager for Microsoft. Editor of <a href=\"http://ScriptJunkie.com\">ScriptJunkie.com</a>. Most recently, He was listed by <a href=\"http://www.ThinkVitamin.com\" target=\"_blank\">ThinkVitamin.com</a> as one of the top web developers to follow on Twitter. That made him a little giddy."
 pt["schedule"] = "Schedule"
-pt["november_4"] = "4 de Noviembre"
-pt["november_5"] = "5 de Noviembre"
+pt["november_4"] = "4 de Novembro"
+pt["november_5"] = "5 de Novembro"
 
 
 en["assistants"] = "Support Team"
@@ -243,6 +243,10 @@ pt["assist_security"] = "Security Officers"
 en["assist_validacion"] = "Team of Validation"
 es["assist_validacion"] = "Equipo de Validaci&oacute;n"
 pt["assist_validacion"] = "Team of Validation"
+
+en["interpreting"] = "<span class=\"simul\">(Simultaneous Interpreting)</a>"
+es["interpreting"] = "<span class=\"simul\">(Traducci&oacute;n simult&aacute;nea)</a>"
+pt["interpreting"] = "<span class=\"simul\">(Interpreta&ccedil;&atilde;o simult&acirc;nea)</a>"
 
 
 en["speakers_title"] = "Speakers"
