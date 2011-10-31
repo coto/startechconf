@@ -260,10 +260,9 @@ en["speakers_title"] = "Speakers"
 es["speakers_title"] = "Charlistas"
 pt["speakers_title"] = "Palestrantes"
 
-en["speakers_desc"] = "Thirteen rock stars as speakers"
-es["speakers_desc"] = "Trece estrellas mundiales como conferencistas"
-pt["speakers_desc"] = "Treze estrelas mundiais como palestrantes principais"
-
+en["speakers_desc"] = "Twelve rock stars as speakers"
+es["speakers_desc"] = "Doce estrellas mundiales como conferencistas"
+pt["speakers_desc"] = "Doze estrelas mundiais como palestrantes principais"
 
 en["selectedSpeakers"] = "Selected Speakers"
 es["selectedSpeakers"] = "Charlistas seleccionados"
@@ -272,3 +271,11 @@ pt["selectedSpeakers"] = "Parlestrantes selecionados"
 en["selectedSpeakers_desc"] = "Eighteen speakers selected"
 es["selectedSpeakers_desc"] = "Dieciocho Charlistas seleccionados"
 pt["selectedSpeakers_desc"] = "Dezoito palestrantes selecionados"
+
+en["openDataSpeakers"] = "Open Data Speakers"
+es["openDataSpeakers"] = "Charlistas Open Data"
+pt["openDataSpeakers"] = "Parlestrantes Open Data"
+
+en["openDataSpeakers_desc"] = "One Open Data speaker"
+es["openDataSpeakers_desc"] = "Un Charlistas Open Data"
+pt["openDataSpeakers_desc"] = "Um palestrante Open Dat"
