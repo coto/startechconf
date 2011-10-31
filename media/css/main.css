@@ -1019,10 +1019,6 @@ p.where {
   margin-bottom: 30px;
 }
 
-body.schedule .block-content {
-  width: 1020px !important;
-}
-
 .simul {
     display: block;
     border:  1px solid #F0C36D;

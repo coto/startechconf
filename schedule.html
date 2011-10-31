@@ -3,14 +3,11 @@
 {% block title %}StarTechConf{% endblock %}
 {% block media %}
     <link href="media/css/main.css" type="text/css" rel="stylesheet" />
-    <script src="media/js/jquery-1.6.1.min.js"></script>
-    <script src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
-    <script src="media/js/main.js"></script>
+    <script type="text/javascript" src="media/js/jquery-1.6.1.min.js"></script>
+    <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=XSZtnLVbWuTQzPXpxihew&v=1"></script>
+    <script type="text/javascript" src="media/js/main.js"></script>
     <link rel=stylesheet href="https://docs.google.com/static/spreadsheets/client/css/2238438423-tiler_view_ltr.css" type="text/css" />
 <style type="text/css">
-html {
-    overflow: visible
-}
 
 .tblGenFixed td {
     padding: 0 3px;
@@ -319,7 +316,8 @@ html {
     overflow: hidden;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
-} </style>
+}
+</style>
 
 {% endblock %}
 {% block bodyClass %}schedule{% endblock %}
@@ -364,14 +362,13 @@ html {
     <div class="block-content">
         <div id="schedule">
           <h3>{{ lang.friday }} {{ lang.november_4 }}</h3>
-          <div class="allkeynoters2">
 
-              <table border=0 cellpadding=0 cellspacing=0 class='tblGenFixed' id='tblMain'>
+              <table border="0" cellpadding="0" cellspacing="0" class='tblGenFixed'>
                   <tr>
-                      <td class='s12' style='width:120px;'>{{ lang.november_4 }}</td>
-                      <td class='s13' style='width:300px;'>Track 1</td>
-                      <td class='s13' style='width:300px;'>Track 2 {{ lang.interpreting }}</td>
-                      <td class='s13' style='width:300px;'>Track 3</td>
+                      <td class='s12' style='width:9em;'>{{ lang.november_4 }}</td>
+                      <td class='s13' style='width:21em;'>Track 1</td>
+                      <td class='s13' style='width:22em;'>Track 2 {{ lang.interpreting }}</td>
+                      <td class='s13' style='width:21em;'>Track 3</td>
                   </tr>
                   <tr>
                       <td class='s2'>8:00 - 9:30</td>
@@ -391,8 +388,8 @@ html {
                       <td colspan="3" class='s7'>Robert Nymann: <br/>HTML5 APIs: Where no man has gone before</td>
                   </tr>
                   <tr>
-                      <td class='s2'>11:45 - 12:15
-                      <td colspan="3" class='s3'>Coffee Break
+                      <td class='s2'>11:45 - 12:15</td>
+                      <td colspan="3" class='s3'>Coffee Break</td>
                   </tr>
                   <tr>
                       <td class='s6'>12:15 - 12:45</td>
@@ -448,16 +445,15 @@ html {
                       <td colspan="3" class='s7'>Github Drink-up ( Cervezas y Networking )</td>
                   </tr>
               </table>
-          </div>
-            <h3>{{ lang.saturday }} {{ lang.november_5 }}</h3>
 
-            <div class="allkeynoters2">
-                <table border=0 cellpadding=0 cellspacing=0 class='tblGenFixed' id='tblMain'>
+              <h3>{{ lang.saturday }} {{ lang.november_5 }}</h3>
+
+                <table border="0" cellpadding="0" cellspacing="0" class='tblGenFixed'>
                   <tr>
-                      <td class='s12' style='width:120px;'>{{ lang.november_5 }}</td>
-                      <td class='s13' style='width:300px;'>Track 1</td>
-                      <td class='s13' style='width:300px;'>Track 2 {{ lang.interpreting }}</td>
-                      <td class='s13' style='width:300px;'>Track 3</td>
+                      <td class='s12' style='width:9em;'>{{ lang.november_5 }}</td>
+                      <td class='s13' style='width:21em;'>Track 1</td>
+                      <td class='s13' style='width:22em;'>Track 2 {{ lang.interpreting }}</td>
+                      <td class='s13' style='width:21em;'>Track 3</td>
                   </tr>
                     <tr>
                         <td class='s2'>8:00 - 9:00</td>
@@ -537,8 +533,6 @@ html {
                         <td colspan="3" class='s5'>Cierre</td>
                     </tr>
                 </table>
-          </div>
-        </div>
     </div> <!-- end  .block-content -->
 </div> <!-- end  .content-section -->
 
