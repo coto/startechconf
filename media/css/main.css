@@ -127,7 +127,7 @@ body {
 }
 
 .bloqueInfo {
-	padding: 16px 0;
+	padding: 10px 0;
 	position: absolute;
     top: 48px;
     right: 10%;
@@ -157,10 +157,8 @@ body {
 	padding: 16px;
 	position: absolute;
     cursor: pointer;
-    top: 120px;
+    top: 130px;
 	right: 10%;
-
-
 }
     .registration-button a {
         color:#fff;
