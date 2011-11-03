@@ -156,7 +156,6 @@ body {
 .registration-button {
 	padding: 16px;
 	position: absolute;
-    cursor: pointer;
     top: 130px;
 	right: 10%;
 }

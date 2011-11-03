@@ -44,8 +44,12 @@
             {% endifequal %}
         </p>
     </div>
-    <div class="registration-button">
-        <a href="https://eventioz.com/events/startechconf-2011/registrations/new" id="hiperlink" target="_blank">{{ lang.registration }}</a>
+    <div class="registration-button" style="color: #F59438; font-size: 3em; font-weight: bold;">
+        {% ifequal "es" lang.id %}
+         Entradas agotadas
+        {% else %}
+         SOLD OUT
+        {% endifequal %}
     </div>            
     {% block article %}{% endblock %}
 </body>
