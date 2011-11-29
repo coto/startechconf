@@ -460,7 +460,7 @@ p.where {
         width: 620px;
         margin-bottom: 40px;
     }
-        .keynoter img{
+        .keynoter img.person{
             width: 80px;
             height: 80px;
             margin-bottom: 26px;
