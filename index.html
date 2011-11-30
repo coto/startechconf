@@ -719,9 +719,11 @@ One of the key features about bigbluebutton is the API, which enables an easy in
                     <img class="person" src="media/images/selected/42.jpg" alt="Stephen Anderson"/>
                     <h4>Stephen Anderson</h4>
                     <p class="content_twiiter"><a href="https://twitter.com/#!/bendycode" class="sp_twitter" target="_blank">@bendycode</a></p>
-                    <p>Stephen goza de enseñar, mentorear, y traer nueva gente a disfrutar de Rails. Es un fundador de Bendyworks (http://bendyworks.com).<br>
-
-Stephen loves teaching, mentoring and bringing new people to Rails. He is a founder at Bendyworks (http://bendyworks.com).</p>
+                    {% ifequal "es" lang.id %}
+                    <p>Stephen goza de enseñar, mentorear, y traer nueva gente a disfrutar de Rails. Es un fundador de Bendyworks (<a href="http://bendyworks.com" target="_blank">http://bendyworks.com</a>).</p>
+                    {% else %}
+                    <p>Stephen loves teaching, mentoring and bringing new people to Rails. He is a founder at Bendyworks (<a href="http://bendyworks.com" target="_blank">http://bendyworks.com</a>).</p>
+                    {% endifequal %}
                     <div class="abstract-link-container">
                       <p>
                         {{ lang.talk_title }}:
