@@ -1,0 +1,11 @@
+
+== Install dependeces
+
+cd webmobile_sencha_nodejs
+npn install
+
+
+== Run the project
+
+cd webmobile_sencha_nodejs
+./dev.js
