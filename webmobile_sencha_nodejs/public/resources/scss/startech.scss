@@ -1,0 +1,248 @@
+// Let's start with the basics
+$base-color: #3a4759;
+$naranjo: #f29200;
+$active-color: #263040;
+$base-gradient: 'bevel';
+
+// Buttons
+$button-gradient: 'bevel';
+
+// Lists
+//$list-bg-color: #364457;
+$list-color: #BFCFE1;
+$list-pressed-color: black;
+$list-active-gradient: 'recessed';
+$list-header-bg-color: #999;
+$list-header-gradient: 'bevel';
+
+
+/* Sale en ingles loading... */
+.x-loading-msg {
+  font-size: 0px !important;
+}
+
+/*
+.front .x-panel-body {
+  color: $list-color;
+  background: url('http://www.startechconf.com/media/images/main-logo.png') no-repeat bottom right;
+}*/
+
+
+.x-toolbar-title {
+  background: url("http://src.sencha.io/100/http://www.startechconf.com/media/images/main-logo.png") 5px -3px no-repeat;
+  text-shadow: 2px 2px 7px #000 !important;
+  text-align: right !important;
+  margin-right: 10px;
+  margin-top: 3px;
+  text-transform: uppercase !important;
+}
+
+.x-msgbox-title .x-toolbar-title {
+  background: none;
+  text-transform: none !important;
+  text-align: center !important;
+}
+
+.front .x-toolbar-title {
+  background: none;
+}
+
+/* Sponsors */
+.sponsorsList > .x-scroller {
+  background-color: white !important;
+}   
+.sponsorsList > .x-scroller > .x-item-selected {
+  background: none !important;
+  background-color: white !important;
+}   
+.sponsorsList > .x-scroller a { 
+  color: black;
+  padding-left: 30px;
+}
+
+
+.frontContent {
+  padding: 10px;
+  div.desc {
+  }
+  div.when {
+    padding-bottom: 3px;
+    color: white;
+    text-align: right;
+    font-size: 0.7em;
+  }
+  div.weare {
+    color: $naranjo;
+    font-size: 1.3em;
+    text-align: right;
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  div.prices {
+    float: right;
+    text-align: right;
+    text-shadow: 2px 2px 5px black;
+  }
+}
+
+$spinner-color: $base-color;
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.speakers-list .x-list-item .x-list-item-body {
+
+  font-size: .8em;
+
+  .name {
+    color: $naranjo;
+    text-shadow: 1px 1px 2px #000;
+    font-size: 1.2em !important;
+  }
+
+  img {
+    -webkit-box-shadow: rgba(#000, .8) 0 0 6px;
+    border-radius: 5px;
+    margin-right: 10px;
+    float: left;
+  }
+
+}
+
+.right {
+  float: right;
+}
+.light {
+  font-size: 0.7em;
+}
+
+.twitter {
+  background: transparent url('http://www.startechconf.com/media/images/twitter_newbird_blue.png') center center no-repeat;
+  padding-left: 22px;
+}
+.facebook {
+  background: transparent url('http://www.startechconf.com/media/images/facebook.png') left center no-repeat;
+  padding-left: 22px;
+}
+
+
+
+
+
+
+.x-panel-body > .x-scroller-parent {
+        background: #364457;
+        color: #BFCFE1;
+}
+
+/* Evita el flocker, ya que tiene el fondo del mismo color que un panel renderizado.. :P */
+.x-panel {
+        background-color: #364457;
+}
+
+.front .x-panel-body > .x-scroller-parent {
+        background: url('http://www.startechconf.com/media/images/main-logo.png') no-repeat bottom right;
+        background-color: #364457;
+}
+
+
+
+/* Schedule */
+.schedule-list .x-list-item .x-list-item-body {
+
+	margin-left: 0px;
+	padding-left: 0px;
+
+	
+	.sch_left {
+		text-align: center;
+		float: left;
+		padding-right: 5px;
+		padding-left: 5px;
+		margin-right: 10px;
+		
+		padding-top: 10px;
+		padding-bottom: 5px;
+		margin-bottom: 5px;
+		
+		color: $base-color;
+		font-size: 0.6em;
+		background-color: #ccc;
+		color: black;
+		font-weight:bold;
+		
+	}
+
+	.name_speaker {
+		font-size: 0.6em;
+		float: right;
+	}
+
+	.track_-1 {
+		background-color: $naranjo;
+	}
+
+	.name_track_-1 {
+		color: white;
+		font-weight: bold;
+	}
+
+	.track_0 {
+		background-color: green;
+	}
+		
+	.name_track_0 {
+		//color: white;
+		font-weight: bold;
+	}
+	
+	.name_track {
+		font-size: 0.8em;
+	}
+
+/*
+	.track_0 {
+		background-color: $naranjo !important;
+		font-size: 0.60em;
+		color: white;
+	}
+	
+	.track_10 {
+		background-color: blue !important;
+		font-size: 0.60em;
+		color: white;
+		padding: 5px;
+	}
+	*/
+}
+
+
+
+
+$tabs-dark-active-color: $naranjo;
+
+@import 'sencha-touch/default/all';
+
+@include pictos-iconmask('user_fave');
+@include pictos-iconmask('search');
+@include pictos-iconmask('chat');
+@include pictos-iconmask('calendar');
+
+@include sencha-panel;
+@include sencha-buttons;
+@include sencha-sheet;
+@include sencha-picker;
+@include sencha-tabs;
+@include sencha-toolbar;
+@include sencha-toolbar-forms;
+@include sencha-carousel;
+@include sencha-indexbar;
+@include sencha-list;
+@include sencha-list-paging;
+@include sencha-list-pullrefresh;
+@include sencha-layout;
+@include sencha-form;
+@include sencha-msgbox;
+@include sencha-loading-spinner;
