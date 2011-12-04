@@ -86,7 +86,7 @@ es["spanish"] = "Espa&ntilde;ol"
 es["english"] = "Ingl&eacute;s"
 es["portuguese"] = "Portugues"
 
-es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile"
+es["event_title"] = "48 horas y el evento tecnol&oacute;gico m&aacute;s grande de Chile."
 es["when"] = "4 y 5 de Noviembre de 2011 / Santiago de Chile"
 es["where"] = "Universidad T&eacute;cnica Federico Santa Mar&iacute;a, Campus San Joaqu&iacute;n <a class=\"map\" href=\"http://goo.gl/maps/n7P0\" target=\"_blank\">(Mapa)</a>"
 es["date"] = "4 y 5 de Noviembre de 2011"
