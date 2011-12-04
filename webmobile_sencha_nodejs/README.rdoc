@@ -1,4 +1,8 @@
 
+== Install node
+
+brew install node
+
 == Install dependeces
 
 cd webmobile_sencha_nodejs
