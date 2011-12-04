@@ -1,5 +1,0 @@
-
-
-== Compile
-
-compass compile file.scss
