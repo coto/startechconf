@@ -1,4 +1,4 @@
-application: startechconf
+application: startechconf-site
 version: 4
 runtime: python
 api_version: 1
