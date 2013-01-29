@@ -95,6 +95,9 @@ def set_lang_cookie_and_return_dict(self):
     else:
         lang_cookie = self.request.get("hl")
 
+    if lang_cookie != "en" and lang_cookie != "es" and lang_cookie != "pt":
+        lang_cookie = "en"
+
     self.response.headers.add_header("Set-Cookie", "hl=" + lang_cookie + ";")
     lang = {
                'en': languages.en,
