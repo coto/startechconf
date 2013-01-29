@@ -47,8 +47,11 @@ handlers:
 - url: /fb
   static_dir: fb
 
-- url: /media
+- url: /2011/media
   static_dir: media
+
+- url: /2013/media
+  static_dir: 2013/media
 
 - url: /oauth/
   script: main.py

@@ -29,8 +29,8 @@ import util, template
 
 
 def get_country(self):
-    country = urlfetch.fetch("http://geoip.wtanaka.com/cc/" + self.request.remote_addr).content
-    return country
+    # country = urlfetch.fetch("http://geoip.wtanaka.com/cc/" + self.request.remote_addr).content
+    return "en"
 
 
 def isAddressValid(email):
@@ -152,6 +152,19 @@ class MainHandler(webapp.RequestHandler):
             'lang': set_lang_cookie_and_return_dict(self),
         }
         self.response.out.write(
+            template.render('2013.html', params))
+
+    def post(self):
+        self.redirect("/")
+
+
+class FirstVersionHandler(webapp.RequestHandler):
+    def get(self):
+        params = {
+            'path': self.request.path,
+            'lang': set_lang_cookie_and_return_dict(self),
+        }
+        self.response.out.write(
             template.render('index.html', params))
 
     def post(self):
@@ -236,11 +249,12 @@ def main():
     """
     application = webapp.WSGIApplication([
                                              ('/', MainHandler),
-                                             ('/counter', Counter),
-                                             ('/team', OrganizersHandler),
-                                             ('/assistants', AssistantsHandler),
-                                             ('/sponsors', SponsorsHandler),
-                                             ('/schedule', ScheduleHandler),
+                                             ('/2011/', FirstVersionHandler),
+                                             ('/2011/counter', Counter),
+                                             ('/2011/team', OrganizersHandler),
+                                             ('/2011/assistants', AssistantsHandler),
+                                             ('/2011/sponsors', SponsorsHandler),
+                                             ('/2011/schedule', ScheduleHandler),
                                              ('/m', RedirectHandler),
                                              (r'/salir/', RedirectHandler),
                                              (r"/participa", RedirectHandler),
