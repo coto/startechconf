@@ -47,7 +47,7 @@ handlers:
 - url: /fb
   static_dir: fb
 
-- url: /2011/media
+- url: /media
   static_dir: media
 
 - url: /2013/media
