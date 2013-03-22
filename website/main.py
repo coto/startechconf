@@ -152,20 +152,20 @@ class MainHandler(webapp.RequestHandler):
             'lang': set_lang_cookie_and_return_dict(self),
         }
         self.response.out.write(
-            template.render('2013.html', params))
+            template.render('index.html', params))
 
     def post(self):
         self.redirect("/")
 
 
-class FirstVersionHandler(webapp.RequestHandler):
+class NextVersionHandler(webapp.RequestHandler):
     def get(self):
         params = {
             'path': self.request.path,
             'lang': set_lang_cookie_and_return_dict(self),
         }
         self.response.out.write(
-            template.render('index.html', params))
+            template.render('2013.html', params))
 
     def post(self):
         self.redirect("/")
@@ -249,12 +249,12 @@ def main():
     """
     application = webapp.WSGIApplication([
                                              ('/', MainHandler),
-                                             ('/2011/', FirstVersionHandler),
-                                             ('/2011/counter', Counter),
-                                             ('/2011/team', OrganizersHandler),
-                                             ('/2011/assistants', AssistantsHandler),
-                                             ('/2011/sponsors', SponsorsHandler),
-                                             ('/2011/schedule', ScheduleHandler),
+                                             ('/call_for_collaborators_2013[/]?', NextVersionHandler),
+                                             ('/counter', Counter),
+                                             ('/team', OrganizersHandler),
+                                             ('/assistants', AssistantsHandler),
+                                             ('/sponsors', SponsorsHandler),
+                                             ('/schedule', ScheduleHandler),
                                              ('/m', RedirectHandler),
                                              (r'/salir/', RedirectHandler),
                                              (r"/participa", RedirectHandler),
