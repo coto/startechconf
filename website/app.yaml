@@ -3,6 +3,29 @@ version: 4
 runtime: python
 api_version: 1
 
+skip_files:
+- ^(.*/)?app\.yaml
+- ^(.*/)?app\.yml
+- ^(.*/)?#.*#
+- ^(.*/)?.*~
+- ^(.*/)?.*\.py[co]
+- ^(.*/)?.*/RCS/.*
+- ^(.*/)?\..*
+- ^(.*/)?tests$
+- ^(.*/)?test$
+- ^test/(.*/)?
+- ^media/docs/terminos-condiciones-participa.pages
+- ^README\..*
+- \.gitignore
+- ^\.git/.*
+- \.*\.lint$
+- ^fabfile\.py
+- ^testrunner\.py
+- ^Gruntfile\.js
+- ^node_modules/(.*/)?
+- ^.sass-cache/(.*/)?
+- datastore.sqlite
+
 handlers:
 - url: /favicon.ico
   static_files: media/favicon.ico
